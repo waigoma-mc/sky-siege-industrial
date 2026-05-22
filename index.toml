@@ -790,11 +790,6 @@ hash = "58650be97623a6bf442f76994776ebd9d9dd46bb264ee64c2cf8ae85457cd40f"
 metafile = true
 
 [[files]]
-file = "mods/shoulder-surfing-reloaded.pw.toml"
-hash = "f5b7f434cf2c359b397fdfac305718e899c65479748997f42040458e15069d94"
-metafile = true
-
-[[files]]
 file = "mods/skin-layers-3d.pw.toml"
 hash = "0b79b0cdd0c2dfbab6d881094bf8fc52d1921322097976be848778533b158c47"
 metafile = true
@@ -892,11 +887,6 @@ metafile = true
 [[files]]
 file = "mods/the-one-probe.pw.toml"
 hash = "97063e6b0b10ed95e42c1d4954ab577f8d6e94a79c0a8a93206b35475dce1460"
-metafile = true
-
-[[files]]
-file = "mods/third-person-shooting.pw.toml"
-hash = "ab9571a6901dd14fbc424ebc834d2206c2dbbe39bf65e2f234286baa496538a9"
 metafile = true
 
 [[files]]
