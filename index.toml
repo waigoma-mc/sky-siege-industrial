@@ -125,11 +125,6 @@ hash = "2299c6e362bf37c920008b1b11ac09f670eefc6b76701db4d37f0caf356c8f73"
 metafile = true
 
 [[files]]
-file = "mods/cameraoverhaul.pw.toml"
-hash = "5d530d1e87ae1324dd09eda7f5871052e557a31b01572800e31b8ab0d99dd790"
-metafile = true
-
-[[files]]
 file = "mods/carry-on.pw.toml"
 hash = "a613f5d2df911fea606968bbdb56eebfd05ac02ada846cf0d2e56e72345d9338"
 metafile = true
@@ -790,6 +785,11 @@ hash = "58650be97623a6bf442f76994776ebd9d9dd46bb264ee64c2cf8ae85457cd40f"
 metafile = true
 
 [[files]]
+file = "mods/shoulder-surfing-reloaded.pw.toml"
+hash = "1f73c31d79079b42aadcd745dc25a010426b742a490d35607e7e8ec5e2231cb8"
+metafile = true
+
+[[files]]
 file = "mods/skin-layers-3d.pw.toml"
 hash = "0b79b0cdd0c2dfbab6d881094bf8fc52d1921322097976be848778533b158c47"
 metafile = true
@@ -887,6 +887,11 @@ metafile = true
 [[files]]
 file = "mods/the-one-probe.pw.toml"
 hash = "97063e6b0b10ed95e42c1d4954ab577f8d6e94a79c0a8a93206b35475dce1460"
+metafile = true
+
+[[files]]
+file = "mods/third-person-shooting.pw.toml"
+hash = "989294bd5a949b20e2f0d40af68bd94d35de09661301dd65679ca0f03f5e309e"
 metafile = true
 
 [[files]]
