@@ -1,0 +1,13 @@
+name = "Ship In A Bottle"
+filename = "ship-in-a-bottle_by-mr._gummy_v1.2.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3819453f821b6f9c57c62c0906e1f723cb1aadce"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4821337
+project-id = 926746

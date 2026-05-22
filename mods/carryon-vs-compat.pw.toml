@@ -1,0 +1,13 @@
+name = "Carry On + Valkyrien Skies Compat"
+filename = "CarryOnVSCompat-Forge-1.20.1-1.0.1.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/VdZ1CoT5/versions/AnFgA2UR/CarryOnVSCompat-Forge-1.20.1-1.0.1.jar"
+hash-format = "sha512"
+hash = "81dd52761afbb0d03ff7b97d2e00af3b55e609286ee8a86dfe509b95a5de0cb80c5999e309393de5a42bb8b9b44d7a07fe1c5256b78887438084f256d6f8aa5e"
+
+[update]
+[update.modrinth]
+mod-id = "VdZ1CoT5"
+version = "AnFgA2UR"

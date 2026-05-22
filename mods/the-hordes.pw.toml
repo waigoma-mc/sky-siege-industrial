@@ -1,0 +1,13 @@
+name = "The Hordes"
+filename = "The-Hordes-1.20.1-1.6.3e-all.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1a8b55292085f48a1732d0a45d7bd0b484111c05"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8027309
+project-id = 485779

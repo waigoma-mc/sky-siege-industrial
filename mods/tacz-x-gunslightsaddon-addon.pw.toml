@@ -1,0 +1,13 @@
+name = "TaCZ x Guns Lights Addon [NEW] - Update 2.4.3"
+filename = "tacz_x_guns_lights_addon-2.4.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9174c3e793f00802e4bf49f7f7e629c71e66d07b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8127339
+project-id = 1325673

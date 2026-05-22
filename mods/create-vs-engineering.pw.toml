@@ -1,0 +1,13 @@
+name = "Create: VS Engineering"
+filename = "cvsengineering-1.4.0.68.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/kQp97k0m/versions/DyNvRj7J/cvsengineering-1.4.0.68.jar"
+hash-format = "sha512"
+hash = "7a4dd0c0e51c42cfed6980aa5d6e7123e5daf84f0ddb8e5542d20e5cd785306d14932daed42141bb3e32ff9cfc932b8ecda47c43ee4d244ed427f737806ddbfd"
+
+[update]
+[update.modrinth]
+mod-id = "kQp97k0m"
+version = "DyNvRj7J"

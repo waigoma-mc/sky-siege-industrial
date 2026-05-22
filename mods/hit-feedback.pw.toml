@@ -1,0 +1,13 @@
+name = "Hit Feedback"
+filename = "HitFeedback-1.20.1-1.1.8-forge.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "152e8f188646b76b8ab271cc87d122dfb4abe549"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6126589
+project-id = 1017526

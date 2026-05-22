@@ -1,0 +1,13 @@
+name = "PackagedTacz - AE2 auto craft Tacz ammos"
+filename = "packagedtacz-1.0.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "dcd9a4126bbf47632381e61760555e949450c6ff"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7754399
+project-id = 1346947

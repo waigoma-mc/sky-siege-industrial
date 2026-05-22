@@ -1,0 +1,13 @@
+name = "Sky Siege Industrial"
+author = "waigoma"
+version = "0.1.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "8751a4eeb5956575d1d94392e0d641cc063c6160edd9b978ca30c8d2af775d7e"
+
+[versions]
+forge = "47.4.20"
+minecraft = "1.20.1"

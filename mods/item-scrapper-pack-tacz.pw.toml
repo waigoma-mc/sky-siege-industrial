@@ -1,0 +1,13 @@
+name = "Item Scrapper Pack - TACZ"
+filename = "Item Scrapper Pack - TACZ.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3958b8fcbe326c4cb394d92e331b61f56d4f9950"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6658746
+project-id = 1288141

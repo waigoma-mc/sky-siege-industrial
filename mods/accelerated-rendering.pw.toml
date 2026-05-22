@@ -1,0 +1,13 @@
+name = "Accelerated Rendering"
+filename = "acceleratedrendering-1.0.8-1.20.1-alpha.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "b3a7f08f7f228228b852cc19bb061612eeedacdc"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7342975
+project-id = 1314021

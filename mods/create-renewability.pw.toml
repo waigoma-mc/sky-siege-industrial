@@ -1,0 +1,13 @@
+name = "Create Renewability"
+filename = "create_renewability-1.3.7-forge-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c3c3cd532d2fbb4d0c46bf11d1e9914839cf0814"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6829323
+project-id = 1081007
