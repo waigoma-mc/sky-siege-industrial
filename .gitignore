@@ -1,0 +1,3 @@
+output/*
+!output/packwiz-installer-bootstrap.jar
+./*.csv
