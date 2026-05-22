@@ -1,3 +1,13 @@
 output/*
+output/**
 !output/packwiz-installer-bootstrap.jar
+!.tool-versions
+output/.tool-versions
+output-client/
+output-client/**
+output-server/
+output-server/**
+tools/
+tools/**
+
 *.csv

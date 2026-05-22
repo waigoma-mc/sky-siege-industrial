@@ -4,3 +4,15 @@ README.md
 packwiz-add.log
 packwiz-add-remaining.log
 *:Zone.Identifier
+output/
+output/**
+output-client/
+output-client/**
+output-server/
+output-server/**
+manual-downloads/
+manual-downloads/**
+tools/
+tools/**
+scripts/
+scripts/**
