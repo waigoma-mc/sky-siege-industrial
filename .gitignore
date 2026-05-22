@@ -7,7 +7,5 @@ output-client/
 output-client/**
 output-server/
 output-server/**
-tools/
-tools/**
 
 *.csv
