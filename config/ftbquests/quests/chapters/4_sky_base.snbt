@@ -20,6 +20,7 @@
 				"飛行船内に耕地を作り、小麦・ニンジン・ジャガイモを植えろ。",
 				"農場は拠点の命綱だ。"
 			],
+			dependencies: ["C3_Q10"],
 			tasks: [
 				{
 					id: "C4_Q01_T1",
@@ -92,6 +93,7 @@
 				"IE の風車か Create の帆を使えば、空中でも発電できる。",
 				"工業化が進むにつれて電力需要は爆発的に増える——今から備えろ。"
 			],
+			dependencies: ["C3_Q10"],
 			tasks: [{
 				id: "C4_Q03_T1",
 				type: "checkmark",
@@ -225,7 +227,7 @@
 			y: -1.5d,
 			id: "C4_Q07",
 			title: "チャンクロード",
-			icon: "ftbchunks:chunk_overview",
+			icon: "minecraft:map",
 			description: [
 				"飛行船が離れていても空中拠点を稼働させ続けるには、",
 				"FTB Chunks でチャンクをロードしておく必要がある。",

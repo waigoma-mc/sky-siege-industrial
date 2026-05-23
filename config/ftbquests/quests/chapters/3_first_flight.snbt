@@ -4,7 +4,7 @@
 	order_index: 3,
 	filename: "3_first_flight",
 	title: "第3章：初飛行 / First Flight",
-	icon: "vs_eureka:ship_helm",
+	icon: "eureka:ship_helm",
 	subtitle: "地上を離れる時が来た。",
 	default_quest_shape: "square",
 	default_hide_dependency_lines: false,
@@ -14,16 +14,17 @@
 			y: 0.0d,
 			id: "C3_Q01",
 			title: "VS / Eureka 入門",
-			icon: "vs_eureka:ship_helm",
+			icon: "eureka:ship_helm",
 			description: [
 				"Valkyrien Skies + Eureka がこの Modpack の核だ。",
 				"ブロックで作った構造物を、物理演算で動かす。",
 				"Ship Helm（操舵輪）が飛行船の頭脳となる。"
 			],
+			dependencies: ["C2_Q12"],
 			tasks: [{
 				id: "C3_Q01_T1",
 				type: "item",
-				item: "vs_eureka:ship_helm",
+				item: "eureka:ship_helm",
 				count: 1L
 			}],
 			rewards: [
@@ -78,39 +79,30 @@
 			y: -1.5d,
 			id: "C3_Q03",
 			title: "Balloon / Propeller",
-			icon: "vs_eureka:balloon",
+			icon: "eureka:balloon",
 			description: [
 				"Eureka の飛行原理は浮力 + 推力だ。",
-				"Balloon を大量に積めば浮力が増す。",
-				"Propeller（プロペラ）で上下左右の推力を得ろ。"
+				"Balloon Block を大量に積めば浮力が増す。",
+				"エンジンや Create の扇風機で推力を加えろ。"
 			],
 			dependencies: ["C3_Q01"],
-			tasks: [
-				{
-					id: "C3_Q03_T1",
-					type: "item",
-					item: "vs_eureka:balloon",
-					count: 16L
-				},
-				{
-					id: "C3_Q03_T2",
-					type: "item",
-					item: "vs_eureka:propeller",
-					count: 4L
-				}
-			],
+			tasks: [{
+				id: "C3_Q03_T1",
+				type: "checkmark",
+				title: "飛行に必要な浮力源（Balloon または Phlogiston Engine 等）と推力源を用意した"
+			}],
 			rewards: [
 				{
 					id: "C3_Q03_R1",
 					type: "item",
-					item: "vs_eureka:balloon",
-					count: 16
+					item: "minecraft:white_wool",
+					count: 32
 				},
 				{
 					id: "C3_Q03_R2",
 					type: "item",
-					item: "vs_eureka:propeller",
-					count: 4
+					item: "create:encased_fan",
+					count: 2
 				}
 			]
 		},
@@ -318,7 +310,7 @@
 			y: 0.0d,
 			id: "C3_Q10",
 			title: "空中生活の幕開け",
-			icon: "vs_eureka:ship_helm",
+			icon: "eureka:ship_helm",
 			subtitle: "初飛行章クリア",
 			description: [
 				"地上から離れ、空中拠点を持つ者になった。",

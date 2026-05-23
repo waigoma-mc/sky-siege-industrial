@@ -16,10 +16,11 @@
 			title: "大型ダンジョン攻略 I",
 			icon: "minecraft:skeleton_skull",
 			description: [
-				"Sky Fortress の砲撃と強化装備で、大型ダンジョンを攻略しろ。",
+				"Sky Fortress の火力と強化装備で、大型ダンジョンを攻略しろ。",
 				"When Dungeons Arise や YUNG's の最上位ダンジョンが対象だ。",
 				"入念な準備をして、確実に制圧せよ。"
 			],
+			dependencies: ["C7_Q12"],
 			tasks: [
 				{
 					id: "C8_Q01_T1",
@@ -178,9 +179,10 @@
 			icon: "minecraft:white_banner",
 			description: [
 				"攻略した地域に永続前哨基地を建設しろ。",
-				"防壁・照明・補給チェスト・Waystone が揃った、",
+				"防壁・照明・補給チェスト・JourneyMap ウェイポイントが揃った、",
 				"守れる拠点でなければならない。"
 			],
+			dependencies: ["C7_Q12"],
 			tasks: [{
 				id: "C8_Q05_T1",
 				type: "checkmark",
@@ -196,7 +198,7 @@
 				{
 					id: "C8_Q05_R2",
 					type: "item",
-					item: "waystones:waystone",
+					item: "minecraft:compass",
 					count: 1
 				}
 			]

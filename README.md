@@ -24,306 +24,267 @@
 
 ---
 
-## 主要 Mod
+## 現行 Mod 一覧
+
+この一覧は `mods/*.pw.toml`、`tacz/*.pw.toml`、`shaderpacks/*.pw.toml` の現行メタデータに合わせています。
 
 ### コア・物理演算・空中拠点系
 
-- **Valkyrien Skies 2**  
-  物理演算付きの船・飛行船・移動構造物の基盤。
-
-- **Eureka! Ships! for Valkyrien Skies**  
-  ブロックで作った船や飛行船を比較的簡単に動かせるようにする。
-
-- **Create**  
-  機械、動力、搬送、加工ライン、ギミックの中心。
-
-- **Clockwork**  
-  Create と Valkyrien Skies を連携させる本命アドオン。Create の機械要素を使った物理演算マシン作りに使う。
-
-- **Create: Interactive**  
-  Create の contraption をより物理オブジェクト的に扱うための連携 Mod。
-
-- **Create: VS Engineering**  
-  Create + Valkyrien Skies の制御・機構系を増やすアドオン。
-
-- **Create: Propulsion**  
-  スラスター、推進、センサー系。空中工業船を作るなら相性が良い候補。
-
-- **Trackwork**  
-  履帯や車輪を追加。地上探索車両、採掘車両、戦車風マシン用。
-
----
-
-### 工業系
-
-- **Mekanism**  
-  高性能な工業機械、鉱石処理、ガス処理、装備、終盤技術を担当。
-
-- **Mekanism Generators**  
-  Mekanism の発電拡張。中盤以降の発電基盤。
-
-- **Applied Energistics 2 / AE2**  
-  倉庫、自動クラフト、物流の中枢。空中拠点のメインストレージとして使う。
-
-- **Immersive Engineering**  
-  重工業、発電、ケーブル、マルチブロック機械。空中要塞や工業船の見た目と相性が良い。
-
-- **Create Crafts & Additions**  
-  Create と電力系工業 Mod の橋渡し。
-
-- **Create Big Cannons**  
-  Create 系の大砲。空中要塞の主砲や防衛設備として使う。
-
----
-
-### 武器・戦争系
-
-- **Timeless and Classics Zero / TaCZ**  
-  銃火器 Mod。地上探索やダンジョン攻略のメイン武装。
-
-- **Superb Warfare**  
-  銃、大砲、車両、兵器系。地上制圧や空中拠点の武装化に使う。
-
-- **Create Big Cannons**  
-  工業と戦争の中間枠。Create で作る砲台として相性が良い。
-
----
-
-### 難易度上昇・地上危険化系
-
-- **The Hordes**  
-  ホード襲撃や感染系の要素を追加。地上を長居したくない場所にする。
-
-- **Born in Chaos**  
-  強めの敵 Mob を追加。探索時の緊張感を上げる。
-
-- **Majrusz's Progressive Difficulty**  
-  進行に応じて難易度を上げる。序盤から理不尽になりすぎず、徐々に危険化できる。
-
-- **Enhanced AI**  
-  Mob AI を強化。
-
-- **Zombie Awareness**  
-  ゾンビが音や血、光などに反応するようになり、地上での行動に緊張感が出る。
-
-- **Improved Mobs**  
-  敵が装備を持ったり、より厄介になる。導入時は難易度調整推奨。
-
----
-
-### バイオーム・地形変更系
-
-#### 第一候補
-
-- **Regions Unexplored**  
-  多数の新バイオームを追加。空から見下ろしたときの景色と冒険感を大きく強化する。
-
-- **TerraBlender**  
-  バイオーム追加系 Mod の前提として使われることが多い。
-
-#### 代替候補
-
-- **Biomes O' Plenty**  
-  定番の追加バイオーム Mod。建材、植物、景観を増やしたい場合に向く。
-
-- **GlitchCore**  
-  Biomes O' Plenty などの前提になることがあるライブラリ。
-
-#### 景色重視候補
-
-- **Terralith**  
-  バニラブロック中心で地形を大きく変える。空からの景色を重視する場合に強い。
-
-- **Tectonic**  
-  地形の起伏や山岳表現を強化。Terralith と合わせると景色の迫力が増す。
-
----
-
-### ワールド生成・探索系
-
-- **The Lost Cities**  
-  廃墟都市ワールド。地上が旧文明の危険地帯という雰囲気に合う。
-
-- **YUNG's Better Dungeons**  
-  ダンジョン改善。
-
-- **YUNG's Better Mineshafts**  
-  廃坑改善。
-
-- **When Dungeons Arise**  
-  大型ダンジョン・構造物追加。
-
-- **Integrated Dungeons and Structures**  
-  バニラや Mod 要素と馴染む構造物追加。
-
-- **Towns and Towers**  
-  村や塔などの構造物を追加。
-
-- **Repurposed Structures**  
-  既存構造物のバリエーション追加。
-
-- **Lootr**  
-  個別ルートチェスト。マルチでも探索報酬を取り合いにくい。
-
----
-
-### 空からの冒険を楽しくする系
-
-- **Distant Horizons**  
-  遠景表示。空中拠点や飛行船から世界を眺めるなら重要。
-
-- **Xaero's Minimap**  
-  ミニマップ。降下地点や危険地帯の把握に使う。
-
-- **Xaero's World Map**  
-  世界地図。飛行船での長距離探索と相性が良い。
-
-- **Nature's Compass**  
-  追加バイオーム探し用。
-
-- **Explorer's Compass**  
-  ダンジョンや構造物探し用。便利すぎる場合は中盤以降に解禁してもよい。
-
----
-
-### QoL・便利系
-
-- **JEI** または **EMI**  
-  レシピ確認。
-
-- **Jade**  
-  見ているブロックや Mob の情報表示。
-
-- **Mouse Tweaks**  
-  インベントリ操作改善。
-
-- **AppleSkin**  
-  食料回復量表示。
-
-- **Sophisticated Backpacks**  
-  地上探索・戦利品回収用バックパック。
-
-- **Waystones**  
-  ワープポイント。便利すぎる場合は、空中拠点や攻略済み拠点のみ設置可などの制限を推奨。
-
-- **FTB Chunks**  
-  チャンク保護・チャンクロード。
-
-- **FTB Teams**  
-  チーム管理。FTB Chunks とセットで使う。
-
----
-
-### 軽量化・安定化系
-
-- **Embeddium**  
-  Forge 版の描画最適化。Sodium 枠。
-
-- **FerriteCore**  
-  メモリ使用量削減。
-
-- **ModernFix**  
-  起動時間、メモリ、各種パフォーマンス改善。
-
-- **Entity Culling**  
-  見えていないエンティティを描画しない。
-
-- **ImmediatelyFast**  
-  描画まわりの軽量化。
-
-- **Canary**  
-  ゲームロジック最適化。Lithium 枠。
-
-- **AI Improvements**  
-  Mob AI の負荷軽減。
-
-- **Clumps**  
-  経験値オーブをまとめて負荷軽減。
-
----
-
-## 最小テスト構成
-
-まずは以下の構成で起動・ワールド生成・TPS・クラッシュ有無を確認します。
-
-```text
-Minecraft 1.20.1
-Forge
-
-# Core
-Create
-Valkyrien Skies 2
-Eureka
-Clockwork
-
-# Industry
-Mekanism
-Mekanism Generators
-Applied Energistics 2
-Immersive Engineering
-Create Crafts & Additions
-
-# Weapons
-TaCZ
-Superb Warfare
-
-# Difficulty
-The Hordes
-Born in Chaos
-Majrusz's Progressive Difficulty
-Zombie Awareness
-
-# Biome / Terrain
-Regions Unexplored
-TerraBlender
-
-# Exploration
-The Lost Cities
-When Dungeons Arise
-YUNG's Better Dungeons
-YUNG's Better Mineshafts
-Lootr
-
-# Air Adventure
-Distant Horizons
-Xaero's Minimap
-Xaero's World Map
-Nature's Compass
-Explorer's Compass
-
-# QoL
-JEI
-Jade
-Sophisticated Backpacks
-Waystones
-FTB Chunks
-FTB Teams
-
-# Performance
-Embeddium
-ModernFix
-FerriteCore
-Entity Culling
-ImmediatelyFast
-Canary
-AI Improvements
-Clumps
-```
-
-問題がなければ、以下を追加検証します。
-
-```text
-Create: Interactive
-Create: VS Engineering
-Create: Propulsion
-Trackwork
-Create Big Cannons
-Integrated Dungeons and Structures
-Towns and Towers
-Repurposed Structures
-Improved Mobs
-Enhanced AI
-```
+- Valkyrien Skies
+- Eureka! Ships! for Valkyrien Skies (Forge/Fabric)
+- Clockwork
+- Trackwork
+- Create
+- Create: Interactive
+- Create: VS Engineering
+- Create: Propulsion
+- Create: Copycats+
+- Create Renewability
+- Valkyrien Warium
+- Valkyrien Pirates
+- Ship In A Bottle
+- Carry On + Valkyrien Skies Compat
+
+### 工業・ストレージ・自動化系
+
+- Mekanism
+- Mekanism Additions
+- Mekanism Generators
+- Mekanism Tools
+- More Mekanism Processing
+- Applied Energistics 2
+- AdvancedAE
+- AE2 MEGA Things
+- AE2 Things [Forge]
+- AEInfinityBooster
+- Applied Mekanistics
+- ExtendedAE
+- ME Requester
+- MEGA Cells
+- Modern AE2 Additions
+- Polymorphic Energistics
+- Immersive Engineering
+- More Immersive Wires
+- Create Crafts & Additions
+- Flux Networks
+- Glodium
+- PackagedAuto
+- PackagedTacz - AE2 auto craft Tacz ammos
+- Storage Drawers
+- Iron Chests
+
+### 武器・戦闘・TaCZ 系
+
+- [TaCZ] Timeless and Classics Zero Guns
+- Create: Timeless and Classics Zero [TaCZ]
+- Create: TaCZ Automation
+- Project TaCZ (Timeless & Classic Zero Addon)
+- TaCZ addon
+- TACZ Turrets
+- Just Enough Guns
+- TACZ Bullet Proof Enchant Forge Add-on
+- TaCZ x Guns Lights Addon [NEW] - Update 2.4.3
+- [TACZ] Gucci & Vuitton Attachments
+- [TACZ] LesRaisins Tactical Equipements
+- [SBW] Superb Warfare
+- Fel's Machine Guns II
+- FMGII: German Pack
+- Pillager's Gun
+- ChaosZProject: Bandits! - Pillager's Gun Addon
+- Third Person Shooting: Zero
+- Item Scrapper
+- Item Scrapper Pack - TACZ
+
+### TaCZ データパック
+
+- [TaCZ] ARIPS Content Expansion Pack
+- [TaCZ]Applied Armorer
+- [TaCZ]Call of Duty Warzone Gunpack
+- [TACZ]classics reborn
+- [TaCZ]Create Armorer
+- [TaCZ]Cyber Armorer
+- [TacZ]Gunpowder Revolution:Great War gunpack
+- [TaCZ]Immersive Armorer
+- [TaCZ]Suffuse GunSmoke
+- [TACZ]The Division gunpack
+- 【TACZ】Anomaly Interception EX Pack
+
+### 難易度・敵・進行系
+
+- The Hordes
+- Born in Chaos
+- Enhanced AI
+- Zombie Awareness
+- Majrusz's Progressive Difficulty
+- In Control!
+- Apotheosis
+- Apotheosis Modern Ragnarok: Zero
+- Apothic Attributes
+- MmmMmmMmmMmm (Target Dummy)
+
+### バイオーム・地形・構造物系
+
+- Regions Unexplored
+- TerraBlender (Forge)
+- Terralith
+- Tectonic
+- The Lost Cities
+- The Lost Castle [NeoForge/Fabric]
+- Alex's Caves
+- Dungeons Enhanced
+- When Dungeons Arise - Forge!
+- Towns and Towers
+- ChoiceTheorem's Overhauled Village
+- Repurposed Structures (Neoforge/Forge)
+- MSS - Moog's Soaring Structures
+- Moog's Structure Lib (moogs_structures)
+- Structure Gel API
+- Lithostitched
+- Cristel Lib
+- YUNG's API (Forge/NeoForge)
+- YUNG's Better Desert Temples (Forge/NeoForge)
+- YUNG's Better Dungeons (Forge/NeoForge)
+- YUNG's Better End Island (Forge/NeoForge)
+- YUNG's Better Jungle Temples (Forge/NeoForge)
+- YUNG's Better Mineshafts (Forge/NeoForge)
+- YUNG's Better Nether Fortresses (Forge/NeoForge)
+- YUNG's Better Ocean Monuments (Forge/NeoForge)
+- YUNG's Better Witch Huts (Forge/NeoForge)
+
+### 食料・農業・生活系
+
+- Farmer's Delight
+- Chef's Delight [Forge] - Farmer's Delight Villagers
+- End's Delight
+- Festive Delight - Christmas eve
+- Maturi Delight
+- Nether's Delight
+- Pam's HarvestCraft 2 - Food Extended
+- Cooking for Blockheads
+- [Let's Do] Vinery
+- Animal Feeding Trough [Fabric | Forge | Quilt | NeoForge]
+- Easy Villagers
+
+### 探索・プレイヤー操作・ユーティリティ系
+
+- Distant Horizons: A Level of Detail mod
+- JourneyMap
+- Nature's Compass
+- Paragliders
+- Hookshot - From Zelda
+- Do a Barrel Roll
+- Shoulder Surfing Reloaded
+- Auto Third Person
+- Cosmetic Armor Reworked
+- Curious Lanterns
+- Radiant Gear (Fabric/Forge/Quilt)
+- GraveStone Mod
+- PlayerRevive
+- Carry On
+- Construction Wand
+- Hole Filler Mod
+- IkkatsuHakai
+- IkkatsuHakai Shovel
+- KleeSlabs
+- FallingTree
+- Climb Ladders Fast [Fabric/Forge]
+- Skin Layers 3D
+- Yes Steve Model
+
+### レシピ・情報表示・UI・QoL 系
+
+- Just Enough Items (JEI)
+- Just Enough Effect Descriptions (JEED)
+- Just Enough Mekanism Multiblocks
+- Just Enough Professions (JEP)
+- Just Enough Resources (JER)
+- Jade 🔍
+- Jade Addons (Neo/Forge)
+- JadeColonies
+- The One Probe
+- AppleSkin
+- Better Advancements
+- Configured
+- Controlling
+- Enchantment Descriptions
+- FTB Backups 2
+- FTB Library (NeoForge)
+- FTB Quests (NeoForge)
+- FTB Teams (NeoForge)
+- Game Menu Mod Option [Forge]
+- GuideME
+- In-Game Account Switcher
+- Inventory Profiles Next
+- libIPN
+- Loot Beams: Relooted!
+- Lootr (Forge & NeoForge)
+- Neat
+- Ping Wheel
+- Polymorph (Fabric/Forge/Quilt)
+- RebindNarrator [Forge]
+- Searchables
+- Sophisticated Backpacks
+- Sophisticated Core
+- Tooltip Overhaul
+- Untranslated Items
+- What Are They Up To (Watut)
+
+### 表示・音響・軽量化・安定化系
+
+- Embeddium
+- Embeddium (Rubidium) Extra
+- Oculus
+- Complementary Shaders - Unbound
+- Accelerated Rendering
+- Better Fps - Render Distance[Forge]
+- Clumps
+- Connectivity
+- Entity Culling Fabric/Forge
+- FerriteCore ((Neo)Forge)
+- FastFurnace
+- FastWorkbench
+- Memory Leak Fix
+- ModernFix
+- Noisium
+- Observable
+- Packet Fixer
+- XXL Packets
+- AmbientSounds 6
+- EnhancedVisuals
+- Hit Feedback
+- Lucent
+- Presence Footsteps (Forge)
+- Sound Physics Remastered
+- Stylish Effects
+- [LEGACY] Drip Sounds (Forge)
+
+### ライブラリ・前提 Mod
+
+- Architectury API
+- Atlas Lib
+- Balm
+- Bookshelf
+- Citadel
+- Cloth Config API (Fabric/Forge/NeoForge)
+- CoroUtil
+- CreativeCore
+- Cupboard
+- Curios API (Forge/NeoForge)
+- Forgified Fabric API
+- Framework
+- GeckoLib
+- Iguana Lib
+- InsaneLib
+- Knight Lib
+- Kotlin for Forge
+- Majrusz Library
+- Moonlight Lib
+- Patchouli
+- Placebo
+- playerAnimator
+- PolyLib
+- Puzzles Lib
+- VLib
 
 ---
 
@@ -337,7 +298,7 @@ Enhanced AI
 - Mekanism の上位機械は空中拠点のみ。
 - Digital Miner は中盤後半まで禁止。
 - MekaSuit は終盤まで禁止。
-- Waystone は空中拠点または攻略済み拠点のみ設置可能。
+- 長距離移動や補給路は飛行船、JourneyMap、Nature's Compass を前提に計画する。
 - 地上での長時間放置は禁止。
 - ホード発生時、地上施設は放棄してもよい。
 
@@ -441,7 +402,7 @@ FTB Quests などで実装することを想定した、章ごとのクエスト
 - 空中拠点に倉庫区画を作る
 - AE2 の ME Chest を作る
 - AE2 の ME Drive を作る
-- 空中拠点をチャンクロードする
+- 空中拠点の常時稼働させたい区画を決める
 
 報酬案:
 
@@ -498,7 +459,7 @@ FTB Quests などで実装することを想定した、章ごとのクエスト
 
 - 空中拠点に武器庫を作る
 - 空中拠点に弾薬庫を作る
-- 空中拠点に Create Big Cannons などの防衛砲台を設置する
+- 空中拠点に Superb Warfare / TaCZ Turrets などの防衛設備を設置する
 - 小型降下艇または探索船を作る
 - Mekanism の上位鉱石処理ラインを作る
 - 空中拠点に大型発電設備を作る

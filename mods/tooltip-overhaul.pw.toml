@@ -1,0 +1,13 @@
+name = "Tooltip Overhaul"
+filename = "tooltipoverhaul-forge-1.20.1-1.4.3.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "d3e2ce89fd870d496dd0a86c635305a3f34825c1"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7672584
+project-id = 1327508

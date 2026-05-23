@@ -20,6 +20,7 @@
 				"銅は Create と Immersive Engineering の両方で使う。",
 				"地上探索の序盤で優先して集めろ。"
 			],
+			dependencies: ["C0_Q10"],
 			tasks: [{
 				id: "C1_Q01_T1",
 				type: "item",

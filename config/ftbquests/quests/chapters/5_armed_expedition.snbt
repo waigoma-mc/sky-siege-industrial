@@ -20,6 +20,7 @@
 				"TaCZ（Timeless & Classics Zero）の銃火器を手に入れろ。",
 				"地上の強化 Mob には、まともな武器が必要だ。"
 			],
+			dependencies: ["C4_Q12"],
 			tasks: [{
 				id: "C5_Q01_T1",
 				type: "checkmark",
@@ -84,6 +85,7 @@
 				"少なくとも鉄装備フル一式は揃えておけ。",
 				"装備を惜しんで死ぬくらいなら、最初から全力で行け。"
 			],
+			dependencies: ["C4_Q12"],
 			tasks: [
 				{
 					id: "C5_Q03_T1",
@@ -167,15 +169,15 @@
 			title: "大型構造物の発見",
 			icon: "minecraft:spyglass",
 			description: [
-				"Explorer's Compass で大型ダンジョンや廃墟都市の位置を探せ。",
-				"When Dungeons Arise の巨大構造物は戦利品の宝庫だ。",
+				"JourneyMap のウェイポイントや Nature's Compass で大型ダンジョンを探せ。",
+				"When Dungeons Arise・Dungeons Enhanced の巨大構造物は戦利品の宝庫だ。",
 				"上空から偵察して、降下計画を立てろ。"
 			],
 			dependencies: ["C5_Q01"],
 			tasks: [{
 				id: "C5_Q05_T1",
 				type: "item",
-				item: "minecraft:spyglass",
+				item: "naturescompass:compass",
 				count: 1L
 			}],
 			rewards: [

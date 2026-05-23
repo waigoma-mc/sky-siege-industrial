@@ -15,11 +15,11 @@
 	Limiter = 0
 	#Integer: 0
 	#0:not decrease durability 1,2:decrease durability(1=until whole blocks 2=until break an item)
-	Durability = 0
+	Durability = 2
 	#Boolean: false
-	AutoCollect = false
+	AutoCollect = true
 	#Boolean: false
-	DropGather = false
+	DropGather = true
 	#String: "mod_mineall"
 	channelName = "mod_mineall"
 	#Boolean: true

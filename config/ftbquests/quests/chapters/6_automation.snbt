@@ -20,6 +20,7 @@
 				"まず Enrichment Chamber（濃縮室）から始めろ。",
 				"鉱石を粉末にして処理量を2倍に増やす最初の機械だ。"
 			],
+			dependencies: ["C5_Q12"],
 			tasks: [{
 				id: "C6_Q01_T1",
 				type: "item",
@@ -132,6 +133,7 @@
 				"Pattern Provider にパターンを登録すれば、",
 				"材料を入れるだけで自動でアイテムが完成する。"
 			],
+			dependencies: ["C5_Q12"],
 			tasks: [{
 				id: "C6_Q04_T1",
 				type: "item",
@@ -236,6 +238,7 @@
 				"地上から荷揚げした鉱石が、加工ラインを流れていく——",
 				"これが Create の美学だ。"
 			],
+			dependencies: ["C5_Q12"],
 			tasks: [
 				{
 					id: "C6_Q07_T1",

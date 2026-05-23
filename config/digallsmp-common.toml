@@ -8,18 +8,18 @@
 	#String: "KEY_G"
 	Key = "KEY_G"
 	#Integer: 11
-	Limiter = 11
+	Limiter = 7
 	#Integer: 0
 	#0:not decrease durability 1,2:decrease durability(1=until whole blocks 2=until break an item)
-	Durability = 0
+	Durability = 2
 	#Boolean: true
-	DestroyUnder = true
+	DestroyUnder = false
 	#Boolean: true
 	StartMode = true
 	#Boolean: false
-	AutoCollect = false
+	AutoCollect = true
 	#Boolean: false
-	DropGather = false
+	DropGather = true
 	#String: "mod_digall"
 	channelName = "mod_digall"
 

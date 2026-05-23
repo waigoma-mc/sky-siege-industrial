@@ -413,6 +413,10 @@ file = "config/forge-client.toml"
 hash = "0b1b3c45343435184c9dde3149b38afcdb97953e287686ecda54385f53ebcddc"
 
 [[files]]
+file = "config/ftbbackups2.json"
+hash = "f5708aa3e52602812c8e0a48767acd505fd2ae8894678bd29c6273034b12f4cc"
+
+[[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
 hash = "5ad11896bf9746b6b2eb4f6a4cbb8cdf4790d7bb4475f8c2e82e4efffde12aa4"
 
@@ -4103,6 +4107,21 @@ hash = "af138ead9ed4013fab79bd0ebda5cd381c982dd6513e96f13d324a06e374cdd2"
 metafile = true
 
 [[files]]
+file = "mods/ftb-library-forge.pw.toml"
+hash = "9db3089b9504be94818135f452daa1f2abbcb478d31abba2b19833902ea5daa5"
+metafile = true
+
+[[files]]
+file = "mods/ftb-quests-forge.pw.toml"
+hash = "7b2cc450f553b82439ae9422b8c2b4406dae1af3c48f7ce791a3576acff1d122"
+metafile = true
+
+[[files]]
+file = "mods/ftb-teams-forge.pw.toml"
+hash = "efda76423b21f9bfab4ad8d0411f0b06a199ab7e3e12ca16dc0586c1828b8f07"
+metafile = true
+
+[[files]]
 file = "mods/gamemenumodoption.pw.toml"
 hash = "5780a8fe15320f3b6d11e8eabd5f114596e90e0b061e490466d3c0bf09a439eb"
 metafile = true
@@ -4583,18 +4602,8 @@ hash = "e417ff955d6d43c4df74f7859be0dbddf406d33e67c643150b5befd60a2f09fc"
 metafile = true
 
 [[files]]
-file = "mods/tacz-dolphin-dive.pw.toml"
-hash = "4caa4b58a5e9d5cac259d457ef46a478881691be31c44d61b960c5d97d36fad2"
-metafile = true
-
-[[files]]
 file = "mods/tacz-gucci-vuitton-attachments.pw.toml"
 hash = "a15342a63bf18e434f474e8a420af783aceb24b70ca261d0513857668b8eca84"
-metafile = true
-
-[[files]]
-file = "mods/tacz-leaning.pw.toml"
-hash = "12fb406a7c8b3010c05e856a1428c95e1179dd74b00394c842c4beefc79034cd"
 metafile = true
 
 [[files]]
@@ -4655,6 +4664,11 @@ metafile = true
 [[files]]
 file = "mods/timeless-and-classics-zero.pw.toml"
 hash = "14dfa617c4d1d656674e412dda1c7309c12bbce747d33804a6f8a3070c9cf0a1"
+metafile = true
+
+[[files]]
+file = "mods/tooltip-overhaul.pw.toml"
+hash = "b008ca05beec5f49f000a377560daae3974bdc23143c8b32543af6e06d6e54f3"
 metafile = true
 
 [[files]]

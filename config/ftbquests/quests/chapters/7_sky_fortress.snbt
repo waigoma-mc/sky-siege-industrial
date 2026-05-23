@@ -4,7 +4,7 @@
 	order_index: 7,
 	filename: "7_sky_fortress",
 	title: "第7章：空中要塞 / Sky Fortress",
-	icon: "create_big_cannons:cannon_mount",
+	icon: "minecraft:tnt",
 	subtitle: "これは拠点ではない。要塞だ。",
 	default_quest_shape: "square",
 	default_hide_dependency_lines: false,
@@ -20,6 +20,7 @@
 				"降下前はここで装備を整え、帰還後はここで補充する。",
 				"武器庫が整えば、作戦の効率が大幅に上がる。"
 			],
+			dependencies: ["C6_Q14"],
 			tasks: [{
 				id: "C7_Q01_T1",
 				type: "checkmark",
@@ -84,39 +85,31 @@
 			x: 2.0d,
 			y: -1.5d,
 			id: "C7_Q03",
-			title: "砲台の設置",
-			icon: "create_big_cannons:cannon_mount",
+			title: "TACZ タレットの設置",
+			icon: "minecraft:iron_bars",
 			description: [
-				"Create Big Cannons で空中拠点に砲台を設置しろ。",
-				"Cannon Mount と Cannon Barrel を組み合わせて作る。",
-				"地上を見下ろす砲台——これが要塞の証だ。"
+				"TACZ Turrets で空中拠点に自動迎撃タレットを設置しろ。",
+				"電力を供給すれば、接近した敵を自動で攻撃してくれる。",
+				"空中拠点の四方に設置して、防衛網を作れ。"
 			],
 			dependencies: ["C7_Q01"],
-			tasks: [
-				{
-					id: "C7_Q03_T1",
-					type: "item",
-					item: "create_big_cannons:cannon_mount",
-					count: 1L
-				},
-				{
-					id: "C7_Q03_T2",
-					type: "checkmark",
-					title: "空中拠点に砲台を設置し、発射テストを行った"
-				}
-			],
+			tasks: [{
+				id: "C7_Q03_T1",
+				type: "checkmark",
+				title: "TACZ Turrets のタレットを空中拠点に設置し、動作を確認した"
+			}],
 			rewards: [
 				{
 					id: "C7_Q03_R1",
 					type: "item",
-					item: "create_big_cannons:cannon_barrel",
-					count: 4
+					item: "minecraft:iron_ingot",
+					count: 32
 				},
 				{
 					id: "C7_Q03_R2",
 					type: "item",
-					item: "create_big_cannons:solid_ammo_casing",
-					count: 16
+					item: "minecraft:gunpowder",
+					count: 64
 				}
 			]
 		},
@@ -124,26 +117,26 @@
 			x: 4.0d,
 			y: 0.0d,
 			id: "C7_Q04",
-			title: "Sky Fortress の主砲",
-			icon: "create_big_cannons:cannon_barrel",
+			title: "Superb Warfare — 重砲装備",
+			icon: "minecraft:tnt",
 			subtitle: "要塞の牙。",
 			description: [
-				"単発の砲台ではない——複数門の砲列を作れ。",
-				"前・後・左・右——全方向に対応した砲台配置が理想だ。",
+				"Superb Warfare の重火器・砲撃兵器で要塞の攻撃力を上げろ。",
+				"タレットとの組み合わせで、地上を完全制圧できる火力を得る。",
 				"地上の何物も、空からの砲撃に耐えられない。"
 			],
 			dependencies: ["C7_Q02", "C7_Q03"],
 			tasks: [{
 				id: "C7_Q04_T1",
 				type: "checkmark",
-				title: "空中要塞に3門以上の砲台を設置し、地上への砲撃テストに成功した"
+				title: "Superb Warfare の重火器を装備し、地上への砲撃テストに成功した"
 			}],
 			rewards: [
 				{
 					id: "C7_Q04_R1",
 					type: "item",
-					item: "create_big_cannons:solid_ammo_casing",
-					count: 32
+					item: "minecraft:gunpowder",
+					count: 128
 				},
 				{
 					id: "C7_Q04_R2",
@@ -157,12 +150,13 @@
 			y: -3.5d,
 			id: "C7_Q05",
 			title: "小型降下艇の建造",
-			icon: "vs_eureka:ship_helm",
+			icon: "eureka:ship_helm",
 			description: [
 				"母艦（メイン要塞）とは別に、地上降下専用の小型船を作れ。",
 				"母艦は空中に留め、降下艇で地上へ向かうのが安全な運用だ。",
-				"降下艇が撃墜されても、母艦は無事だ。"
+				"降下艇が被弾しても、母艦は無事だ。"
 			],
+			dependencies: ["C6_Q14"],
 			tasks: [{
 				id: "C7_Q05_T1",
 				type: "checkmark",
@@ -178,8 +172,8 @@
 				{
 					id: "C7_Q05_R2",
 					type: "item",
-					item: "vs_eureka:balloon",
-					count: 16
+					item: "eureka:ship_helm",
+					count: 1
 				}
 			]
 		},
@@ -187,33 +181,25 @@
 			x: 2.0d,
 			y: -3.5d,
 			id: "C7_Q06",
-			title: "前哨基地補給ネットワーク",
-			icon: "waystones:waystone",
+			title: "JourneyMap ウェイポイント網",
+			icon: "minecraft:compass",
 			description: [
-				"地上の各前哨基地にウェイストーンを設置しろ。",
-				"空中要塞から前哨基地へのワープルートを確立することで、",
-				"補給と撤退が劇的に速くなる。"
+				"JourneyMap で地上の各前哨基地にウェイポイントを設置しろ。",
+				"空中要塞から各前哨基地への降下ルートを地図上に記録することで、",
+				"補給と撤退が素早くできるようになる。"
 			],
 			dependencies: ["C7_Q05"],
-			tasks: [
-				{
-					id: "C7_Q06_T1",
-					type: "item",
-					item: "waystones:waystone",
-					count: 3L
-				},
-				{
-					id: "C7_Q06_T2",
-					type: "checkmark",
-					title: "空中要塞と地上前哨基地を Waystone で繋いだ"
-				}
-			],
+			tasks: [{
+				id: "C7_Q06_T1",
+				type: "checkmark",
+				title: "JourneyMap で空中要塞・地上前哨基地のウェイポイントを設定し、補給路を確立した"
+			}],
 			rewards: [
 				{
 					id: "C7_Q06_R1",
 					type: "item",
-					item: "waystones:waystone",
-					count: 2
+					item: "minecraft:compass",
+					count: 4
 				},
 				{
 					id: "C7_Q06_R2",
@@ -271,7 +257,7 @@
 			tasks: [{
 				id: "C7_Q08_T1",
 				type: "checkmark",
-				title: "Mekanism で鉱石4倍化ライン（または5段階処理）を稼働させた"
+				title: "Mekanism で鉱石4倍化ライン（5段階処理）を稼働させた"
 			}],
 			rewards: [
 				{
@@ -358,7 +344,7 @@
 			y: 0.0d,
 			id: "C7_Q11",
 			title: "補給ネットワーク完成",
-			icon: "waystones:waystone",
+			icon: "minecraft:compass",
 			description: [
 				"前哨基地・採掘拠点・地上補給ポイントを繋ぐ網を整備しろ。",
 				"3か所以上の前哨基地が空中要塞と繋がった時、",
@@ -390,10 +376,10 @@
 			y: 0.0d,
 			id: "C7_Q12",
 			title: "Sky Fortress 完成",
-			icon: "create_big_cannons:cannon_barrel",
+			icon: "minecraft:nether_star",
 			subtitle: "これが、空中工業要塞だ。",
 			description: [
-				"武器庫・弾薬庫・砲台・4倍化ライン・大型発電設備・補給網——",
+				"武器庫・弾薬庫・タレット・4倍化ライン・大型発電設備・補給網——",
 				"すべてが揃った。",
 				"これはもはや飛行船ではない——空中要塞だ。",
 				"地上奪還の時が来た。"

@@ -20,6 +20,7 @@
 				"Brass Alloy や染料混合など、多くのレシピに使う。",
 				"Basin とセットで使うのが基本だ。"
 			],
+			dependencies: ["C1_Q12"],
 			tasks: [{
 				id: "C2_Q01_T1",
 				type: "item",
@@ -52,6 +53,7 @@
 				"上下一対で噛み合わせる必要がある。",
 				"速度が重要——速すぎると砕けないので注意。"
 			],
+			dependencies: ["C1_Q12"],
 			tasks: [{
 				id: "C2_Q02_T1",
 				type: "item",
@@ -124,6 +126,7 @@
 				"まずは風力発電機（Windmill）か熱電発電機を作れ。",
 				"空中拠点への電力供給を見越した設計を心がけろ。"
 			],
+			dependencies: ["C1_Q12"],
 			tasks: [{
 				id: "C2_Q04_T1",
 				type: "item",
