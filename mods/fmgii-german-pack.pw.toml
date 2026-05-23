@@ -1,0 +1,13 @@
+name = "FMGII: German Pack"
+filename = "fmgii_gp-1.20.1-0.0.7.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "88def89f7509eb7af142d56a690a37fc765a33a1"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8105196
+project-id = 1503825

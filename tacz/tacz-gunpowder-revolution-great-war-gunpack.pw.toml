@@ -1,0 +1,13 @@
+name = "[TacZ]Gunpowder Revolution:Great War gunpack"
+filename = "GunpowderRevolution_gunpack v1.2.7.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "eb48efd5495d69dbc804e91c880e703d2707e6f5"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6982844
+project-id = 1079856

@@ -1,0 +1,13 @@
+name = "TACZ DOLPHIN DIVE"
+filename = "dolphindive-2.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2fab773581873e0e91f010b2354fed0c8b685d6b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7921555
+project-id = 1404990

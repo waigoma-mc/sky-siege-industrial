@@ -1,0 +1,13 @@
+name = "[TaCZ]Suffuse GunSmoke"
+filename = "Suffuse-GunSmoke-Pack1.0.7--hotfix.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "bbef5a7285e15f4ac07f834e1b71c814d5fd87c6"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6563620
+project-id = 1061140

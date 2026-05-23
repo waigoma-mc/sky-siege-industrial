@@ -1,0 +1,13 @@
+name = "[TaCZ]Call of Duty Warzone Gunpack"
+filename = "[TaCZ]Warzone Ver1.1.7B.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c768ca3141a0e988271c0635e0166881af57f353"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7929228
+project-id = 1196617

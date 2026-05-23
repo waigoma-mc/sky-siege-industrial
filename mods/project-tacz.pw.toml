@@ -1,0 +1,13 @@
+name = "Project TaCZ (Timeless & Classic Zero Addon)"
+filename = "project_tacz-1.0.9.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "48b125de79ac640e2ec973f49622d8520d21700e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7575660
+project-id = 1436098

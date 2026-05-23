@@ -1,0 +1,13 @@
+name = "[TACZ]classics reborn"
+filename = "[TACZ1.1.7+Arcana]ClassicRCCRP 1.1.5 release_hotfix4.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b27957c21510c81f9218064982082b3bc92c306c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7924909
+project-id = 1079169

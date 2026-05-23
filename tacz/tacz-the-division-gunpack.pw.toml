@@ -1,0 +1,13 @@
+name = "[TACZ]The Division gunpack"
+filename = "The Division pack_ver.0.3.3.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f3dfccafb5558929f0177e05a3b6fc1b2dab2e3a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6130805
+project-id = 1031253

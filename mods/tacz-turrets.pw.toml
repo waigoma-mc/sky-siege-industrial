@@ -1,0 +1,13 @@
+name = "TACZ Turrets"
+filename = "tacz_turrets-1.1.2-all.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6e34b4c010e927d1c26bcde57fb3be82097365bb"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7780988
+project-id = 1376660

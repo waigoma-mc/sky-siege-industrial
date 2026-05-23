@@ -1,0 +1,13 @@
+name = "【TACZ】Anomaly Interception EX Pack"
+filename = "Anomaly ZZ ver.1.5[BETA].zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "68bf8b76cbe2ff79dd52a479c75a15cd576f19b3"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7999624
+project-id = 1190671
