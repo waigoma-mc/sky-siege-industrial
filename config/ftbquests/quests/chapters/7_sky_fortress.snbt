@@ -1,420 +1,577 @@
 {
-	id: "C7",
-	group: "",
-	order_index: 7,
-	filename: "7_sky_fortress",
-	title: "第7章：空中要塞 / Sky Fortress",
-	icon: "minecraft:tnt",
-	subtitle: "これは拠点ではない。要塞だ。",
-	default_quest_shape: "square",
-	default_hide_dependency_lines: false,
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "7_sky_fortress"
+	group: ""
+	icon: {
+		Count: 1
+		id: "minecraft:shield"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "00000000000000C7"
+	order_index: 7
+	quest_links: [ ]
 	quests: [
 		{
-			x: 0.0d,
-			y: 0.0d,
-			id: "C7_Q01",
-			title: "武器庫の設置",
-			icon: "minecraft:iron_sword",
+			dependencies: [
+				"624B5EC70C9C3697"
+				"7FC2DA849E1F8204"
+			]
 			description: [
-				"全ての武器・弾薬・装備を一か所に集めた武器庫を作れ。",
-				"降下前はここで装備を整え、帰還後はここで補充する。",
+				"全ての武器・弾薬・装備を一か所に集めた武器庫を作れ。"
+				"降下前はここで装備を整え、帰還後はここで補充する。"
 				"武器庫が整えば、作戦の効率が大幅に上がる。"
-			],
-			dependencies: ["C6_Q14"],
-			tasks: [{
-				id: "C7_Q01_T1",
-				type: "checkmark",
-				title: "武器・弾薬・装備を管理する専用の武器庫区画を空中拠点に設置した"
-			}],
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3A2A85E37138ECB9"
 			rewards: [
 				{
-					id: "C7_Q01_R1",
-					type: "item",
-					item: "minecraft:diamond_sword",
-					count: 1
-				},
+					id: "12F5604E321B8BDE"
+					item: {
+						Count: 1
+						id: "minecraft:diamond_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
 				{
-					id: "C7_Q01_R2",
-					type: "item",
-					item: "minecraft:diamond_chestplate",
-					count: 1
+					id: "7430A9E725B6D481"
+					item: {
+						Count: 1
+						id: "minecraft:diamond_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
 				}
 			]
-		},
+			tasks: [{
+				id: "02E0E4D7CE0C6DB6"
+				title: "武器・弾薬・装備を管理する専用の武器庫区画を空中拠点に設置した"
+				type: "checkmark"
+			}]
+			title: "武器庫の設置"
+			x: -2.0d
+			y: 0.0d
+		}
 		{
-			x: 2.0d,
-			y: 1.5d,
-			id: "C7_Q02",
-			title: "弾薬庫の設置",
-			icon: "minecraft:tnt",
+			dependencies: ["3A2A85E37138ECB9"]
 			description: [
-				"武器庫の隣に弾薬庫を設ける。",
-				"大砲の砲弾・銃弾・爆薬——全て分類して保管しろ。",
+				"武器庫の隣に弾薬庫を設ける。"
+				"大砲の砲弾・銃弾・爆薬——全て分類して保管しろ。"
 				"爆発物の扱いには注意しろ——近くにベッドを置くな。"
-			],
-			dependencies: ["C7_Q01"],
+			]
+			icon: "minecraft:tnt"
+			id: "3FC2FC4D2AB8B2FF"
+			rewards: [
+				{
+					count: 32
+					id: "49460C1DBC01CF90"
+					item: "minecraft:tnt"
+					type: "item"
+				}
+				{
+					count: 128
+					id: "28F2C72E1DCB8E9E"
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
-					id: "C7_Q02_T1",
-					type: "checkmark",
+					id: "6DC41A26BE44D13E"
 					title: "弾薬庫区画を設置し、砲弾・銃弾・爆薬を保管した"
-				},
+					type: "checkmark"
+				}
 				{
-					id: "C7_Q02_T2",
-					type: "item",
-					item: "minecraft:gunpowder",
 					count: 256L
-				}
-			],
-			rewards: [
-				{
-					id: "C7_Q02_R1",
-					type: "item",
-					item: "minecraft:tnt",
-					count: 32
-				},
-				{
-					id: "C7_Q02_R2",
-					type: "item",
-					item: "minecraft:gunpowder",
-					count: 128
+					id: "4055334F08B4E9D1"
+					item: "minecraft:gunpowder"
+					type: "item"
 				}
 			]
-		},
+			title: "弾薬庫の設置"
+			x: 0.0d
+			y: 1.5d
+		}
 		{
-			x: 2.0d,
-			y: -1.5d,
-			id: "C7_Q03",
-			title: "TACZ タレットの設置",
-			icon: "minecraft:iron_bars",
+			dependencies: ["3A2A85E37138ECB9"]
 			description: [
-				"TACZ Turrets で空中拠点に自動迎撃タレットを設置しろ。",
-				"電力を供給すれば、接近した敵を自動で攻撃してくれる。",
-				"空中拠点の四方に設置して、防衛網を作れ。"
-			],
-			dependencies: ["C7_Q01"],
-			tasks: [{
-				id: "C7_Q03_T1",
-				type: "checkmark",
-				title: "TACZ Turrets のタレットを空中拠点に設置し、動作を確認した"
-			}],
+				"空中拠点に防衛火力を配置しろ。"
+				"銃座、タレット、射撃窓、迎撃用の足場を作り、地上からの接近に備える。"
+				"重要なのは、空中要塞が無防備な倉庫で終わらないことだ。"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:crossbow"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "24130F7A799C5C0C"
 			rewards: [
 				{
-					id: "C7_Q03_R1",
-					type: "item",
-					item: "minecraft:iron_ingot",
 					count: 32
-				},
+					id: "1C1D6CAC362FFAE6"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
 				{
-					id: "C7_Q03_R2",
-					type: "item",
-					item: "minecraft:gunpowder",
 					count: 64
+					id: "038735148EC76A9D"
+					item: "minecraft:gunpowder"
+					type: "item"
 				}
 			]
-		},
-		{
-			x: 4.0d,
-			y: 0.0d,
-			id: "C7_Q04",
-			title: "Superb Warfare — 重砲装備",
-			icon: "minecraft:tnt",
-			subtitle: "要塞の牙。",
-			description: [
-				"Superb Warfare の重火器・砲撃兵器で要塞の攻撃力を上げろ。",
-				"タレットとの組み合わせで、地上を完全制圧できる火力を得る。",
-				"地上の何物も、空からの砲撃に耐えられない。"
-			],
-			dependencies: ["C7_Q02", "C7_Q03"],
 			tasks: [{
-				id: "C7_Q04_T1",
-				type: "checkmark",
-				title: "Superb Warfare の重火器を装備し、地上への砲撃テストに成功した"
-			}],
+				id: "3922AC639B6D145E"
+				title: "空中拠点に防衛火力を設置し、射線と動作を確認した"
+				type: "checkmark"
+			}]
+			title: "防衛火力の設置"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"3FC2FC4D2AB8B2FF"
+				"24130F7A799C5C0C"
+			]
+			description: [
+				"単発の防衛設備ではない——複数方向を守れる火力配置を作れ。"
+				"前・後・左・右、どこから接近されても迎撃できるのが理想だ。"
+				"地上へ降りる前に、帰る場所を守れる要塞にする。"
+			]
+			icon: "minecraft:tnt"
+			id: "6EDF7256E3212FA0"
 			rewards: [
 				{
-					id: "C7_Q04_R1",
-					type: "item",
-					item: "minecraft:gunpowder",
-					count: 128
-				},
+					count: 64
+					id: "5897728B4437BF41"
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
 				{
-					id: "C7_Q04_R2",
-					type: "xp",
+					id: "362F73E0E309D7F4"
+					type: "xp"
 					xp: 200
 				}
 			]
-		},
-		{
-			x: 0.0d,
-			y: -3.5d,
-			id: "C7_Q05",
-			title: "小型降下艇の建造",
-			icon: "eureka:ship_helm",
-			description: [
-				"母艦（メイン要塞）とは別に、地上降下専用の小型船を作れ。",
-				"母艦は空中に留め、降下艇で地上へ向かうのが安全な運用だ。",
-				"降下艇が被弾しても、母艦は無事だ。"
-			],
-			dependencies: ["C6_Q14"],
+			subtitle: "要塞の牙。"
 			tasks: [{
-				id: "C7_Q05_T1",
-				type: "checkmark",
-				title: "母艦とは別に、地上降下専用の小型飛行船または降下艇を建造した"
-			}],
+				id: "4E5A33921A5FF77B"
+				title: "空中要塞に複数方向の防衛火力を配置し、地上への火力テストに成功した"
+				type: "checkmark"
+			}]
+			title: "Sky Fortress の火力網"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"624B5EC70C9C3697"
+				"7FC2DA849E1F8204"
+			]
+			description: [
+				"母艦（メイン要塞）とは別に、地上降下専用の小型船を作れ。"
+				"母艦は空中に留め、降下艇で地上へ向かうのが安全な運用だ。"
+				"降下艇が撃墜されても、母艦は無事だ。"
+			]
+			icon: "vs_eureka:oak_ship_helm"
+			id: "3B4C1435EB82ED89"
 			rewards: [
 				{
-					id: "C7_Q05_R1",
-					type: "item",
-					item: "minecraft:oak_planks",
 					count: 64
-				},
+					id: "1F1836E98E8ECDAD"
+					item: "minecraft:oak_planks"
+					type: "item"
+				}
 				{
-					id: "C7_Q05_R2",
-					type: "item",
-					item: "eureka:ship_helm",
-					count: 1
+					count: 16
+					id: "710C19B2ADB236C0"
+					item: "vs_eureka:balloon"
+					type: "item"
 				}
 			]
-		},
-		{
-			x: 2.0d,
-			y: -3.5d,
-			id: "C7_Q06",
-			title: "JourneyMap ウェイポイント網",
-			icon: "minecraft:compass",
-			description: [
-				"JourneyMap で地上の各前哨基地にウェイポイントを設置しろ。",
-				"空中要塞から各前哨基地への降下ルートを地図上に記録することで、",
-				"補給と撤退が素早くできるようになる。"
-			],
-			dependencies: ["C7_Q05"],
 			tasks: [{
-				id: "C7_Q06_T1",
-				type: "checkmark",
-				title: "JourneyMap で空中要塞・地上前哨基地のウェイポイントを設定し、補給路を確立した"
-			}],
+				id: "11713FF89DC5DA2C"
+				title: "母艦とは別に、地上降下専用の小型飛行船または降下艇を建造した"
+				type: "checkmark"
+			}]
+			title: "小型降下艇の建造"
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3B4C1435EB82ED89"]
+			description: [
+				"地上の各前哨基地を地図に記録しろ。"
+				"JourneyMap のウェイポイントやコンパスを使い、降下地点と撤退ルートを管理する。"
+				"補給と撤退が迷わずできることが、作戦の生存率を上げる。"
+			]
+			icon: "minecraft:compass"
+			id: "4154D4CED2F26881"
 			rewards: [
 				{
-					id: "C7_Q06_R1",
-					type: "item",
-					item: "minecraft:compass",
 					count: 4
-				},
+					id: "5035B06EEAEC20AB"
+					item: "minecraft:compass"
+					type: "item"
+				}
 				{
-					id: "C7_Q06_R2",
-					type: "item",
-					item: "minecraft:ender_pearl",
 					count: 16
+					id: "4DEDB7DF51D61C7C"
+					item: "minecraft:ender_pearl"
+					type: "item"
 				}
 			]
-		},
+			tasks: [{
+				id: "4DCD29CD25B67FA8"
+				title: "空中要塞と地上前哨基地のウェイポイントを設定し、補給路を確立した"
+				type: "checkmark"
+			}]
+			title: "前哨基地補給ネットワーク"
+			x: 0.0d
+			y: -3.5d
+		}
 		{
-			x: 4.0d,
-			y: -2.0d,
-			id: "C7_Q07",
-			title: "Chemical Injection Chamber",
-			icon: "mekanism:chemical_injection_chamber",
+			dependencies: ["6EDF7256E3212FA0"]
 			description: [
-				"4倍化ラインへの道。",
-				"Chemical Injection Chamber（化学注入室）で、",
+				"4倍化ラインへの道。"
+				"Chemical Injection Chamber（化学注入室）で、"
 				"クリスタル→シャード化処理を行うことで鉱石4倍処理が始まる。"
-			],
-			dependencies: ["C7_Q04"],
-			tasks: [{
-				id: "C7_Q07_T1",
-				type: "item",
-				item: "mekanism:chemical_injection_chamber",
-				count: 1L
-			}],
+			]
+			icon: "mekanism:chemical_injection_chamber"
+			id: "7E2C4C0A5A7E3229"
 			rewards: [
 				{
-					id: "C7_Q07_R1",
-					type: "item",
-					item: "mekanism:alloy_atomic",
 					count: 8
-				},
+					id: "1AF539C5A58A22EF"
+					item: "mekanism:alloy_atomic"
+					type: "item"
+				}
 				{
-					id: "C7_Q07_R2",
-					type: "item",
-					item: "mekanism:chemical_dissolution_chamber",
-					count: 1
+					id: "11BAC54548076D57"
+					item: "mekanism:chemical_dissolution_chamber"
+					type: "item"
 				}
 			]
-		},
+			tasks: [{
+				id: "3EFA888FC01D53FA"
+				item: "mekanism:chemical_injection_chamber"
+				type: "item"
+			}]
+			title: "Chemical Injection Chamber"
+			x: 4.0d
+			y: 0.0d
+		}
 		{
-			x: 6.0d,
-			y: 0.0d,
-			id: "C7_Q08",
-			title: "鉱石4倍化ライン",
-			icon: "minecraft:iron_block",
+			dependencies: ["7E2C4C0A5A7E3229"]
 			description: [
-				"Dissolution Chamber → Washer → Crystallizer → Injection Chamber の",
-				"完全な5段処理ラインで、鉱石1個から4倍の金属が手に入る。",
+				"Dissolution Chamber → Washer → Crystallizer → Injection Chamber の"
+				"完全な5段処理ラインで、鉱石1個から4倍の金属が手に入る。"
 				"一度作れば、採掘効率が根本から変わる。"
-			],
-			dependencies: ["C7_Q07"],
-			tasks: [{
-				id: "C7_Q08_T1",
-				type: "checkmark",
-				title: "Mekanism で鉱石4倍化ライン（5段階処理）を稼働させた"
-			}],
+			]
+			icon: "minecraft:iron_block"
+			id: "7FA80C132FEF2D10"
 			rewards: [
 				{
-					id: "C7_Q08_R1",
-					type: "item",
-					item: "minecraft:iron_block",
 					count: 32
-				},
+					id: "7C4C71ABE979C3E1"
+					item: "minecraft:iron_block"
+					type: "item"
+				}
 				{
-					id: "C7_Q08_R2",
-					type: "item",
-					item: "minecraft:diamond",
 					count: 16
+					id: "1A560F89DDA8C7A2"
+					item: "minecraft:diamond"
+					type: "item"
 				}
 			]
-		},
+			tasks: [{
+				id: "7D29831872FD56AC"
+				title: "Mekanism で鉱石4倍化ライン（または5段階処理）を稼働させた"
+				type: "checkmark"
+			}]
+			title: "鉱石4倍化ライン"
+			x: 6.0d
+			y: 0.0d
+		}
 		{
-			x: 6.0d,
-			y: -3.5d,
-			id: "C7_Q09",
-			title: "大型発電設備",
-			icon: "mekanismgenerators:gas_burning_generator",
+			dependencies: ["7FA80C132FEF2D10"]
 			description: [
-				"4倍化ラインを安定稼働させるには膨大な電力が必要だ。",
-				"Mekanism の Gas Burning Generator や Wind Generator を大量設置しろ。",
+				"4倍化ラインを安定稼働させるには膨大な電力が必要だ。"
+				"Mekanism の Gas Burning Generator や Wind Generator を大量設置しろ。"
 				"いずれ核分裂炉（Fission Reactor）への布石にもなる。"
-			],
-			dependencies: ["C7_Q08"],
+			]
+			icon: "mekanismgenerators:gas_burning_generator"
+			id: "2BD1081A2FC5C21F"
+			rewards: [
+				{
+					count: 16
+					id: "7D23349F8E77B5BC"
+					item: "mekanism:energy_tablet"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "50ED8FF8317CEA3B"
+					item: "mekanism:alloy_atomic"
+					type: "item"
+				}
+			]
 			tasks: [{
-				id: "C7_Q09_T1",
-				type: "checkmark",
+				id: "6F3B4079B5BC534E"
 				title: "空中要塞に大型発電設備を設置し、4倍化ラインを安定稼働させた"
-			}],
-			rewards: [
-				{
-					id: "C7_Q09_R1",
-					type: "item",
-					item: "mekanism:energy_tablet",
-					count: 16
-				},
-				{
-					id: "C7_Q09_R2",
-					type: "item",
-					item: "mekanism:alloy_atomic",
-					count: 8
-				}
-			]
-		},
+				type: "checkmark"
+			}]
+			title: "大型発電設備"
+			x: 8.0d
+			y: 0.0d
+		}
 		{
-			x: 4.0d,
-			y: 3.0d,
-			id: "C7_Q10",
-			title: "MekaSuit への道",
-			icon: "mekanism:meka_suit_helmet",
+			dependencies: ["7FA80C132FEF2D10"]
 			description: [
-				"Mekanism の最終装備——MekaSuit。",
-				"今はまだ材料収集の段階だが、方向性を定めろ。",
+				"Mekanism の最終装備——MekaSuit。"
+				"今はまだ材料収集の段階だが、方向性を定めろ。"
 				"地上奪還作戦の前に、最高の装備を纏う権利がある。"
-			],
-			dependencies: ["C7_Q08"],
-			tasks: [{
-				id: "C7_Q10_T1",
-				type: "item",
-				item: "mekanism:alloy_atomic",
-				count: 16L
-			}],
+			]
+			icon: "mekanism:mekasuit_helmet"
+			id: "6E1A19E3FF3A2970"
 			rewards: [
 				{
-					id: "C7_Q10_R1",
-					type: "item",
-					item: "mekanism:alloy_atomic",
 					count: 8
-				},
+					id: "53487C09EB459824"
+					item: "mekanism:alloy_atomic"
+					type: "item"
+				}
 				{
-					id: "C7_Q10_R2",
-					type: "item",
-					item: "minecraft:netherite_ingot",
 					count: 4
+					id: "1B687AD586FEB5CF"
+					item: "minecraft:netherite_ingot"
+					type: "item"
 				}
 			]
-		},
+			tasks: [{
+				count: 16L
+				id: "6BC5C0A93D66131E"
+				item: "mekanism:alloy_atomic"
+				type: "item"
+			}]
+			title: "MekaSuit への道"
+			x: 8.0d
+			y: 2.0d
+		}
 		{
-			x: 8.0d,
-			y: 0.0d,
-			id: "C7_Q11",
-			title: "補給ネットワーク完成",
-			icon: "minecraft:compass",
+			dependencies: [
+				"4154D4CED2F26881"
+				"2BD1081A2FC5C21F"
+			]
 			description: [
-				"前哨基地・採掘拠点・地上補給ポイントを繋ぐ網を整備しろ。",
-				"3か所以上の前哨基地が空中要塞と繋がった時、",
+				"前哨基地・採掘拠点・地上補給ポイントを繋ぐ網を整備しろ。"
+				"3か所以上の前哨基地が空中要塞と繋がった時、"
 				"真の補給体制が完成する。"
-			],
-			dependencies: ["C7_Q06", "C7_Q09"],
-			tasks: [{
-				id: "C7_Q11_T1",
-				type: "checkmark",
-				title: "空中要塞と3か所以上の地上前哨基地を補給ネットワーク化した"
-			}],
+			]
+			icon: "minecraft:compass"
+			id: "6C28C4AD0202873E"
 			rewards: [
 				{
-					id: "C7_Q11_R1",
-					type: "item",
-					item: "minecraft:diamond",
 					count: 16
-				},
+					id: "1D2C356385608656"
+					item: "minecraft:diamond"
+					type: "item"
+				}
 				{
-					id: "C7_Q11_R2",
-					type: "item",
-					item: "minecraft:emerald",
 					count: 32
+					id: "5ECCB32816C9682F"
+					item: "minecraft:emerald"
+					type: "item"
 				}
 			]
-		},
-		{
-			x: 10.0d,
-			y: 0.0d,
-			id: "C7_Q12",
-			title: "Sky Fortress 完成",
-			icon: "minecraft:nether_star",
-			subtitle: "これが、空中工業要塞だ。",
-			description: [
-				"武器庫・弾薬庫・タレット・4倍化ライン・大型発電設備・補給網——",
-				"すべてが揃った。",
-				"これはもはや飛行船ではない——空中要塞だ。",
-				"地上奪還の時が来た。"
-			],
-			dependencies: ["C7_Q10", "C7_Q11"],
 			tasks: [{
-				id: "C7_Q12_T1",
-				type: "checkmark",
-				title: "Sky Fortress（空中工業要塞）の完成を確認・宣言した"
-			}],
+				id: "01D4640CB82A197D"
+				title: "空中要塞と3か所以上の地上前哨基地を補給ネットワーク化した"
+				type: "checkmark"
+			}]
+			title: "補給ネットワーク完成"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6E1A19E3FF3A2970"
+				"6C28C4AD0202873E"
+			]
+			description: [
+				"武器庫・弾薬庫・防衛火力・4倍化ライン・大型発電設備・補給網——"
+				"すべてが揃った。"
+				"これはもはや飛行船ではない——空中要塞だ。"
+				"地上奪還の時が来た。"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:shield"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5392D9546E4787AD"
 			rewards: [
 				{
-					id: "C7_Q12_R1",
-					type: "item",
-					item: "minecraft:netherite_ingot",
 					count: 4
-				},
+					id: "1456CBBEFCD8D897"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
 				{
-					id: "C7_Q12_R2",
-					type: "item",
-					item: "minecraft:diamond",
 					count: 32
-				},
+					id: "3EA6991664005E47"
+					item: "minecraft:diamond"
+					type: "item"
+				}
 				{
-					id: "C7_Q12_R3",
-					type: "item",
-					item: "minecraft:firework_rocket",
 					count: 16
-				},
+					id: "5146EE4B65C68DD1"
+					item: "minecraft:firework_rocket"
+					type: "item"
+				}
 				{
-					id: "C7_Q12_R4",
-					type: "xp",
+					id: "39E5B42773984974"
+					type: "xp"
 					xp: 1000
 				}
 			]
+			subtitle: "これが、空中工業要塞だ。"
+			tasks: [{
+				id: "43E3CD7E8808216E"
+				title: "Sky Fortress（空中工業要塞）の完成を確認・宣言した"
+				type: "checkmark"
+			}]
+			title: "Sky Fortress 完成"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["24130F7A799C5C0C"]
+			description: [
+				"TACZ Turrets を要塞の外壁・甲板に設置しろ。"
+				"弾薬を供給し続ければ、接近してくる Mob を自動で迎撃する。"
+				"人間が操縦しなくても要塞が勝手に戦う——これが本物の防衛設備だ。"
+				"複数方向に配置して死角をなくせ。"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:crossbow"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "219F4339CFE659A7"
+			rewards: [
+				{
+					count: 64
+					id: "1B59C8003280D1E4"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 128
+					id: "04EE8CD715BFEFAB"
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0E6CF531B8A568D6"
+					title: "TACZ Turret を空中要塞の防衛ポイントに設置した"
+					type: "checkmark"
+				}
+				{
+					id: "11D7EA2E68696C06"
+					title: "TACZ Turret が Mob を自動迎撃することを確認した"
+					type: "checkmark"
+				}
+			]
+			title: "TACZ Turrets 設置"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6E1A19E3FF3A2970"]
+			description: [
+				"MekaSuit の前段として、Mekanism Tools の装備一式を揃えろ。"
+				"Osmium・Steel・Bronze の合金装備は、ダイヤより高い耐久性を持つ。"
+				"地上奪還作戦の前に、最低でも Mekanism Tools の防具を纏え。"
+			]
+			icon: "mekanism:mekasuit_helmet"
+			id: "0123E44F61E1709B"
+			rewards: [
+				{
+					count: 4
+					id: "7C442DDB0520274E"
+					item: "mekanism:alloy_atomic"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "05141A416952D07F"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4AF5CDA95793B24F"
+				title: "Mekanism Tools の防具一式（ヘルメット・胸当て・レギンス・ブーツ）を作成した"
+				type: "checkmark"
+			}]
+			title: "Mekanism Tools 装備"
+			x: 8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7FA80C132FEF2D10"]
+			description: [
+				"More Mekanism Processing で通常の Mekanism では処理できない素材に対応する。"
+				"追加の鉱石処理レシピ・変換レシピが解放される。"
+				"4倍化ラインと組み合わせれば、素材収率がさらに向上する。"
+			]
+			icon: "mekanism:purification_chamber"
+			id: "34FD04B31BF4FDA7"
+			rewards: [
+				{
+					count: 32
+					id: "7925023AE0D1870A"
+					item: "mekanism:ingot_osmium"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "76318AAF48B30083"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "40D7EB5F6621A53D"
+				title: "More Mekanism Processing の追加レシピを使って素材を処理した"
+				type: "checkmark"
+			}]
+			title: "More Mekanism Processing"
+			x: 8.0d
+			y: -2.5d
 		}
 	]
+	title: "第7章：空中要塞 / Sky Fortress"
 }

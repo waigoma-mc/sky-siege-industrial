@@ -1,399 +1,514 @@
 {
-	id: "C8",
-	group: "",
-	order_index: 8,
-	filename: "8_reclaim_surface",
-	title: "第8章：地上奪還 / Reclaim the Surface",
-	icon: "minecraft:beacon",
-	subtitle: "地上を、取り戻せ。",
-	default_quest_shape: "square",
-	default_hide_dependency_lines: false,
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "8_reclaim_surface"
+	group: ""
+	icon: "minecraft:beacon"
+	id: "00000000000000C8"
+	order_index: 8
+	quest_links: [ ]
 	quests: [
 		{
-			x: 0.0d,
-			y: 0.0d,
-			id: "C8_Q01",
-			title: "大型ダンジョン攻略 I",
-			icon: "minecraft:skeleton_skull",
+			dependencies: ["5392D9546E4787AD"]
 			description: [
-				"Sky Fortress の火力と強化装備で、大型ダンジョンを攻略しろ。",
-				"When Dungeons Arise や YUNG's の最上位ダンジョンが対象だ。",
+				"Sky Fortress の砲撃と強化装備で、大型ダンジョンを攻略しろ。"
+				"When Dungeons Arise や YUNG's の最上位ダンジョンが対象だ。"
 				"入念な準備をして、確実に制圧せよ。"
-			],
-			dependencies: ["C7_Q12"],
+			]
+			icon: "minecraft:skeleton_skull"
+			id: "2D14365BBC4F0D78"
+			rewards: [
+				{
+					count: 16
+					id: "7C98D9A2238C92A5"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "4AFE0C571CAC5A45"
+					item: "minecraft:netherite_scrap"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "52835F9C08B2FA87"
+					item: "minecraft:enchanted_book"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
-					id: "C8_Q01_T1",
-					type: "kill",
-					entity: "minecraft:skeleton",
+					entity: "minecraft:skeleton"
+					id: "1CE5F18D48D73649"
+					type: "kill"
 					value: 50L
-				},
+				}
 				{
-					id: "C8_Q01_T2",
-					type: "checkmark",
+					id: "3544B4255C73C702"
 					title: "大型ダンジョン（1か所目）を完全制圧した"
-				}
-			],
-			rewards: [
-				{
-					id: "C8_Q01_R1",
-					type: "item",
-					item: "minecraft:diamond",
-					count: 16
-				},
-				{
-					id: "C8_Q01_R2",
-					type: "item",
-					item: "minecraft:netherite_scrap",
-					count: 2
-				},
-				{
-					id: "C8_Q01_R3",
-					type: "item",
-					item: "minecraft:enchanted_book",
-					count: 3
+					type: "checkmark"
 				}
 			]
-		},
+			title: "大型ダンジョン攻略 I"
+			x: 0.0d
+			y: 0.0d
+		}
 		{
-			x: 2.0d,
-			y: 0.0d,
-			id: "C8_Q02",
-			title: "大型ダンジョン攻略 II",
-			icon: "minecraft:wither_skeleton_skull",
+			dependencies: ["2D14365BBC4F0D78"]
 			description: [
-				"1か所の攻略で終わりにするな。",
-				"地上を奪還するには、主要な脅威を根絶する必要がある。",
+				"1か所の攻略で終わりにするな。"
+				"地上を奪還するには、主要な脅威を根絶する必要がある。"
 				"2か所目——今度はより大規模な構造物を選べ。"
-			],
-			dependencies: ["C8_Q01"],
-			tasks: [{
-				id: "C8_Q02_T1",
-				type: "checkmark",
-				title: "大型ダンジョン（2か所目）を完全制圧した"
-			}],
+			]
+			icon: "minecraft:wither_skeleton_skull"
+			id: "2999D90764D8F351"
 			rewards: [
 				{
-					id: "C8_Q02_R1",
-					type: "item",
-					item: "minecraft:diamond",
 					count: 24
-				},
+					id: "2679BEF14871AAC1"
+					item: "minecraft:diamond"
+					type: "item"
+				}
 				{
-					id: "C8_Q02_R2",
-					type: "item",
-					item: "minecraft:netherite_scrap",
 					count: 3
+					id: "751693786A2F2E3F"
+					item: "minecraft:netherite_scrap"
+					type: "item"
 				}
 			]
-		},
+			tasks: [{
+				id: "689009343DB870E6"
+				title: "大型ダンジョン（2か所目）を完全制圧した"
+				type: "checkmark"
+			}]
+			title: "大型ダンジョン攻略 II"
+			x: 2.0d
+			y: 0.0d
+		}
 		{
-			x: 4.0d,
-			y: 0.0d,
-			id: "C8_Q03",
-			title: "大型ダンジョン攻略 III",
-			icon: "minecraft:dragon_head",
+			dependencies: ["2999D90764D8F351"]
 			description: [
-				"3か所目の大型ダンジョンを攻略せよ。",
-				"ここまで来たあなたは、もはや空中の支配者だ。",
+				"3か所目の大型ダンジョンを攻略せよ。"
+				"ここまで来たあなたは、もはや空中の支配者だ。"
 				"地上の何者も、あなたの前に立ちはだかれない。"
-			],
-			dependencies: ["C8_Q02"],
-			tasks: [{
-				id: "C8_Q03_T1",
-				type: "checkmark",
-				title: "大型ダンジョン（3か所目）を完全制圧した"
-			}],
+			]
+			icon: "minecraft:dragon_head"
+			id: "45FD8C0215613276"
 			rewards: [
 				{
-					id: "C8_Q03_R1",
-					type: "item",
-					item: "minecraft:netherite_ingot",
 					count: 2
-				},
+					id: "45DB1757EAB15FE5"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
 				{
-					id: "C8_Q03_R2",
-					type: "item",
-					item: "minecraft:diamond",
 					count: 32
-				},
+					id: "30CDB9F801811D4C"
+					item: "minecraft:diamond"
+					type: "item"
+				}
 				{
-					id: "C8_Q03_R3",
-					type: "item",
-					item: "minecraft:enchanted_book",
 					count: 4
+					id: "2DBDBC005879C536"
+					item: "minecraft:enchanted_book"
+					type: "item"
 				}
 			]
-		},
+			tasks: [{
+				id: "749BD7BEEBCB2E8D"
+				title: "大型ダンジョン（3か所目）を完全制圧した"
+				type: "checkmark"
+			}]
+			title: "大型ダンジョン攻略 III"
+			x: 4.0d
+			y: 0.0d
+		}
 		{
-			x: 2.0d,
-			y: -2.5d,
-			id: "C8_Q04",
-			title: "廃墟都市の制圧",
-			icon: "minecraft:lantern",
+			dependencies: ["2999D90764D8F351"]
 			description: [
-				"Lost Cities の廃墟都市を1つ、完全制圧しろ。",
-				"Zombie を50体以上倒し、全てのチェストを開け、",
+				"地上の大型構造物を1つ、完全制圧しろ。"
+				"Zombie を50体以上倒し、全てのチェストを開け、"
 				"旗（Banner）を建てて制圧の証とせよ。"
-			],
-			dependencies: ["C8_Q02"],
+			]
+			icon: "minecraft:lantern"
+			id: "4E18292AF6718EA2"
+			rewards: [
+				{
+					count: 8
+					id: "1D6F65BA6A55C1E0"
+					item: "minecraft:gold_block"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "7FFEA01D42F88407"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "4A058FDA15B0948F"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
-					id: "C8_Q04_T1",
-					type: "kill",
-					entity: "minecraft:zombie",
+					entity: "minecraft:zombie"
+					id: "4BCA0C8703656282"
+					type: "kill"
 					value: 100L
-				},
+				}
 				{
-					id: "C8_Q04_T2",
-					type: "checkmark",
+					id: "61D1D5874CAB486C"
 					title: "廃墟都市1か所を制圧し、制圧の証（旗や記念碑）を建てた"
-				}
-			],
-			rewards: [
-				{
-					id: "C8_Q04_R1",
-					type: "item",
-					item: "minecraft:gold_block",
-					count: 8
-				},
-				{
-					id: "C8_Q04_R2",
-					type: "item",
-					item: "minecraft:diamond",
-					count: 16
-				},
-				{
-					id: "C8_Q04_R3",
-					type: "item",
-					item: "minecraft:nether_star",
-					count: 1
+					type: "checkmark"
 				}
 			]
-		},
+			title: "廃墟都市の制圧"
+			x: 2.0d
+			y: -2.5d
+		}
 		{
-			x: 0.0d,
-			y: 2.5d,
-			id: "C8_Q05",
-			title: "地上前哨基地 I",
-			icon: "minecraft:white_banner",
+			dependencies: ["5392D9546E4787AD"]
 			description: [
-				"攻略した地域に永続前哨基地を建設しろ。",
-				"防壁・照明・補給チェスト・JourneyMap ウェイポイントが揃った、",
+				"攻略した地域に永続前哨基地を建設しろ。"
+				"防壁・照明・補給チェスト・ウェイポイントが揃った、"
 				"守れる拠点でなければならない。"
-			],
-			dependencies: ["C7_Q12"],
+			]
+			icon: "minecraft:white_banner"
+			id: "1D656604D7BC7D6C"
+			rewards: [
+				{
+					count: 16
+					id: "2CF9BAEBA6BDA9A9"
+					item: "minecraft:iron_block"
+					type: "item"
+				}
+				{
+					id: "2168DBF22395E6AC"
+					item: "minecraft:compass"
+					type: "item"
+				}
+			]
 			tasks: [{
-				id: "C8_Q05_T1",
-				type: "checkmark",
+				id: "78A987EF61EB60FE"
 				title: "防衛済み地上前哨基地（1か所目）を建設した"
-			}],
-			rewards: [
-				{
-					id: "C8_Q05_R1",
-					type: "item",
-					item: "minecraft:iron_block",
-					count: 16
-				},
-				{
-					id: "C8_Q05_R2",
-					type: "item",
-					item: "minecraft:compass",
-					count: 1
-				}
-			]
-		},
+				type: "checkmark"
+			}]
+			title: "地上前哨基地 I"
+			x: 0.0d
+			y: 2.5d
+		}
 		{
-			x: 2.0d,
-			y: 2.5d,
-			id: "C8_Q06",
-			title: "地上前哨基地 II",
-			icon: "minecraft:cyan_banner",
+			dependencies: ["1D656604D7BC7D6C"]
 			description: [
-				"2か所目の前哨基地を建設しろ。",
-				"場所は資源の豊富な地点か、ダンジョンへの中継点が良い。",
+				"2か所目の前哨基地を建設しろ。"
+				"場所は資源の豊富な地点か、ダンジョンへの中継点が良い。"
 				"前哨基地は、地上征服の足場だ。"
-			],
-			dependencies: ["C8_Q05"],
-			tasks: [{
-				id: "C8_Q06_T1",
-				type: "checkmark",
-				title: "防衛済み地上前哨基地（2か所目）を建設した"
-			}],
+			]
+			icon: "minecraft:cyan_banner"
+			id: "46CD2651A1A6465F"
 			rewards: [
 				{
-					id: "C8_Q06_R1",
-					type: "item",
-					item: "minecraft:iron_block",
 					count: 16
-				},
+					id: "4663A5C90D96CA32"
+					item: "minecraft:iron_block"
+					type: "item"
+				}
 				{
-					id: "C8_Q06_R2",
-					type: "item",
-					item: "minecraft:diamond",
 					count: 8
+					id: "24584D5707D6A955"
+					item: "minecraft:diamond"
+					type: "item"
 				}
 			]
-		},
+			tasks: [{
+				id: "537D2FDD3E9DD7A0"
+				title: "防衛済み地上前哨基地（2か所目）を建設した"
+				type: "checkmark"
+			}]
+			title: "地上前哨基地 II"
+			x: 2.0d
+			y: 2.5d
+		}
 		{
-			x: 4.0d,
-			y: 2.5d,
-			id: "C8_Q07",
-			title: "地上前哨基地 III",
-			icon: "minecraft:red_banner",
+			dependencies: ["46CD2651A1A6465F"]
 			description: [
-				"3か所目の前哨基地が完成した時、地上に安全地帯の網が張られる。",
+				"3か所目の前哨基地が完成した時、地上に安全地帯の網が張られる。"
 				"もはや地上は恐怖の場所ではなく——あなたの領土だ。"
-			],
-			dependencies: ["C8_Q06"],
-			tasks: [{
-				id: "C8_Q07_T1",
-				type: "checkmark",
-				title: "防衛済み地上前哨基地（3か所目）を建設した"
-			}],
+			]
+			icon: "minecraft:red_banner"
+			id: "2D2CF84A72E22065"
 			rewards: [
 				{
-					id: "C8_Q07_R1",
-					type: "item",
-					item: "minecraft:diamond",
 					count: 16
-				},
+					id: "48D67267169D3A2B"
+					item: "minecraft:diamond"
+					type: "item"
+				}
 				{
-					id: "C8_Q07_R2",
-					type: "item",
-					item: "minecraft:emerald",
 					count: 32
+					id: "794D88D4F60872F6"
+					item: "minecraft:emerald"
+					type: "item"
 				}
 			]
-		},
-		{
-			x: 6.0d,
-			y: 0.0d,
-			id: "C8_Q08",
-			title: "核分裂炉の稼働",
-			icon: "mekanism:fission_fuel_assembly",
-			description: [
-				"Mekanism の核分裂炉（Fission Reactor）を稼働させろ。",
-				"膨大な電力が手に入る——ただし制御を誤れば大惨事だ。",
-				"安全機構を十分に整えてから起動しろ。"
-			],
-			dependencies: ["C8_Q03", "C8_Q04"],
 			tasks: [{
-				id: "C8_Q08_T1",
-				type: "checkmark",
-				title: "Mekanism 核分裂炉を安全装置付きで稼働させた"
-			}],
+				id: "0B149DCC72A21DF4"
+				title: "防衛済み地上前哨基地（3か所目）を建設した"
+				type: "checkmark"
+			}]
+			title: "地上前哨基地 III"
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"45FD8C0215613276"
+				"4E18292AF6718EA2"
+			]
+			description: [
+				"Mekanism の核分裂炉（Fission Reactor）を稼働させろ。"
+				"膨大な電力が手に入る——ただし制御を誤れば大惨事だ。"
+				"安全機構を十分に整えてから起動しろ。"
+			]
+			icon: "mekanismgenerators:fission_fuel_assembly"
+			id: "3DB806BD483E41FF"
 			rewards: [
 				{
-					id: "C8_Q08_R1",
-					type: "item",
-					item: "mekanism:energy_tablet",
 					count: 16
-				},
+					id: "7EE24E2FC609D88D"
+					item: "mekanism:energy_tablet"
+					type: "item"
+				}
 				{
-					id: "C8_Q08_R2",
-					type: "item",
-					item: "mekanism:alloy_atomic",
 					count: 16
+					id: "22ECE7393A36D89E"
+					item: "mekanism:alloy_atomic"
+					type: "item"
 				}
 			]
-		},
+			tasks: [{
+				id: "18AAA983710E475D"
+				title: "Mekanism 核分裂炉を安全装置付きで稼働させた"
+				type: "checkmark"
+			}]
+			title: "核分裂炉の稼働"
+			x: 6.0d
+			y: 0.0d
+		}
 		{
-			x: 8.0d,
-			y: 1.5d,
-			id: "C8_Q09",
-			title: "地上に記念碑を",
-			icon: "minecraft:beacon",
+			dependencies: [
+				"2D2CF84A72E22065"
+				"3DB806BD483E41FF"
+			]
 			description: [
-				"ここが、あなたが最初に降り立った場所だ。",
-				"ビーコンまたは記念碑を建てろ。",
+				"ここが、あなたが最初に降り立った場所だ。"
+				"ビーコンまたは記念碑を建てろ。"
 				"地上を恐怖から取り戻した者の証として——永遠にそこに立ち続けるだろう。"
-			],
-			dependencies: ["C8_Q07", "C8_Q08"],
+			]
+			icon: "minecraft:beacon"
+			id: "00663179902FB2DF"
+			rewards: [
+				{
+					id: "21F016577D27AFC5"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7BECEABDD4570F95"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
-					id: "C8_Q09_T1",
-					type: "item",
-					item: "minecraft:beacon",
-					count: 1L
-				},
-				{
-					id: "C8_Q09_T2",
-					type: "checkmark",
-					title: "地上に記念碑またはビーコンを建設した"
+					id: "3C33512F2B99CB0F"
+					item: "minecraft:beacon"
+					type: "item"
 				}
-			],
-			rewards: [
 				{
-					id: "C8_Q09_R1",
-					type: "item",
-					item: "minecraft:nether_star",
-					count: 1
-				},
-				{
-					id: "C8_Q09_R2",
-					type: "item",
-					item: "minecraft:netherite_ingot",
-					count: 4
+					id: "628A8EC243FE70D2"
+					title: "地上に記念碑またはビーコンを建設した"
+					type: "checkmark"
 				}
 			]
-		},
+			title: "地上に記念碑を"
+			x: 8.0d
+			y: 1.5d
+		}
 		{
-			x: 10.0d,
-			y: 0.0d,
-			id: "C8_Q10",
-			title: "地上奪還完了！",
-			icon: "minecraft:nether_star",
-			subtitle: "Sky Siege Industrial — クリア",
+			dependencies: ["00663179902FB2DF"]
 			description: [
-				"空中工業要塞 Sky Fortress を完成させ、",
-				"地上の大型ダンジョンを3か所制圧し、",
-				"廃墟都市を奪還し、",
-				"地上に3か所の防衛済み前哨基地を築き、",
-				"核分裂炉を稼働させ、",
-				"記念碑を建てた。",
-				"",
-				"地上は、あなたのものだ。",
-				"",
+				"空中工業要塞 Sky Fortress を完成させ、"
+				"地上の大型ダンジョンを3か所制圧し、"
+				"廃墟都市を奪還し、"
+				"地上に3か所の防衛済み前哨基地を築き、"
+				"核分裂炉を稼働させ、"
+				"記念碑を建てた。"
+				""
+				"地上は、あなたのものだ。"
+				""
 				"お疲れ様でした。"
-			],
-			dependencies: ["C8_Q09"],
-			tasks: [{
-				id: "C8_Q10_T1",
-				type: "checkmark",
-				title: "Sky Siege Industrial をクリアした"
-			}],
+			]
+			icon: "minecraft:nether_star"
+			id: "42C275F9F9E3E805"
 			rewards: [
 				{
-					id: "C8_Q10_R1",
-					type: "item",
-					item: "minecraft:nether_star",
 					count: 3
-				},
+					id: "75D2D9EC54C78115"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
 				{
-					id: "C8_Q10_R2",
-					type: "item",
-					item: "minecraft:netherite_ingot",
 					count: 8
-				},
+					id: "611F7BD80919141B"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
 				{
-					id: "C8_Q10_R3",
-					type: "item",
-					item: "minecraft:firework_rocket",
 					count: 64
-				},
+					id: "0F8BA47703AEC479"
+					item: "minecraft:firework_rocket"
+					type: "item"
+				}
 				{
-					id: "C8_Q10_R4",
-					type: "item",
-					item: "minecraft:diamond_block",
 					count: 4
-				},
+					id: "5C9CE27AC886BC43"
+					item: "minecraft:diamond_block"
+					type: "item"
+				}
 				{
-					id: "C8_Q10_R5",
-					type: "xp",
+					id: "7A77E38ED124C4BA"
+					type: "xp"
 					xp: 2000
 				}
 			]
+			subtitle: "Sky Siege Industrial — クリア"
+			tasks: [{
+				id: "2E5BAB96E63BE11C"
+				title: "Sky Siege Industrial をクリアした"
+				type: "checkmark"
+			}]
+			title: "地上奪還完了！"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2D14365BBC4F0D78"]
+			description: [
+				"Alex's Caves の特殊洞窟バイオームが地下に隠されている。"
+				"磁気洞窟・原始洞窟・古代都市の深部——"
+				"通常の洞窟とは全く異なる環境と Mob、そして固有のドロップが待っている。"
+				"Nature's Compass で洞窟バイオームを探して潜れ。"
+			]
+			icon: "minecraft:amethyst_shard"
+			id: "2F9EAFD17834C973"
+			rewards: [
+				{
+					count: 8
+					id: "7A6E185396BD747F"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "140C02D9CA38F549"
+					item: "minecraft:amethyst_shard"
+					type: "item"
+				}
+				{
+					id: "29D1B2F7134546B3"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				id: "3492DEAF0B205A53"
+				title: "Alex's Caves の特殊洞窟バイオームを1種類発見・探索した"
+				type: "checkmark"
+			}]
+			title: "Alex's Caves 探索"
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4E18292AF6718EA2"]
+			description: [
+				"Apotheosis が追加するボスは、バニラの Mob より遥かに強い。"
+				"Apotheosis Boss（Silver・Gold・Diamond Tier）を討伐し、"
+				"固有の Gem・Soul Gem を回収しろ。"
+				"MekaSuit 完成前の最終試練だ。"
+			]
+			icon: "minecraft:nether_star"
+			id: "115B508EDB82DAF0"
+			rewards: [
+				{
+					count: 4
+					id: "31822682301CF7E8"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "280EC9C70568321E"
+					item: "minecraft:enchanted_book"
+					type: "item"
+				}
+				{
+					id: "6AE130EADC3F577B"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "021585E189A0294E"
+				title: "Apotheosis の強化ボス（Gold 以上のTier）を1体討伐した"
+				type: "checkmark"
+			}]
+			title: "Apotheosis ボス討伐"
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3DB806BD483E41FF"]
+			description: [
+				"Mekanism の核融合炉（Fusion Reactor）は核分裂炉の上位に位置する。"
+				"消耗燃料が不要で、D-T Fuel を注入し続ける限り無尽蔵に発電できる。"
+				"Sky Fortress の全ての機械を賄える電力源——これがエンドゲームの電力だ。"
+			]
+			icon: "mekanismgenerators:fission_fuel_assembly"
+			id: "260F689B39B10F53"
+			rewards: [
+				{
+					count: 16
+					id: "5A38E6FD3B5EB88D"
+					item: "mekanism:energy_tablet"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "4FA481CE6D965D36"
+					item: "mekanism:alloy_atomic"
+					type: "item"
+				}
+				{
+					id: "41F137B8C8557619"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [{
+				id: "2CC153DD3982B86A"
+				title: "Mekanism 核融合炉を稼働させ、安定発電を確認した"
+				type: "checkmark"
+			}]
+			title: "核融合炉の稼働"
+			x: 8.0d
+			y: -2.0d
 		}
 	]
+	title: "第8章：地上奪還 / Reclaim the Surface"
 }

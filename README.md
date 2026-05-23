@@ -128,7 +128,6 @@
 - TerraBlender (Forge)
 - Terralith
 - Tectonic
-- The Lost Cities
 - The Lost Castle [NeoForge/Fabric]
 - Alex's Caves
 - Dungeons Enhanced

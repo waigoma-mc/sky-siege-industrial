@@ -3,7 +3,7 @@ _version = 4
 [server]
 	#
 	# Defines the distance the player will receive updates around.
-	realTimeUpdateDistanceRadiusInChunks = 256
+	realTimeUpdateDistanceRadiusInChunks = 64
 	#
 	# Prefix of the level keys sent to the clients.
 	# If the mod is running behind a proxy, each backend should use a unique value.
@@ -239,7 +239,7 @@ _version = 4
 		# CHAT 
 		# LOG 
 		# DISABLED
-		showGenerationProgress = "DISABLED"
+		showGenerationProgress = "OVERLAY"
 		#
 		# The max radius in chunks around the central point where world generation is allowed. 
 		# If this value is set to 0, generation bounds are disabled and the render distance will be used. 

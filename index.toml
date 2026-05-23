@@ -10,7 +10,7 @@ hash = "d86beab1176c367beeed3b8fb8a2a8dfbd8a1db7293f067c01bc38c73020e398"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "f4b87623d0f8d12e3c418c82194536b4f2f7ea32ce6672c4e9be180e636fae20"
+hash = "8c63e81e38811dfbafc04a7d6fc147461eca85da6228f6a366563c7cb0e1e77f"
 
 [[files]]
 file = "config/Mekanism/additions-client.toml"
@@ -318,7 +318,7 @@ hash = "f676f89ded588888f7b45802271683cd0a2dfb7a02d437b0dfb683cef5767ba7"
 
 [[files]]
 file = "config/digallsmp-common.toml"
-hash = "3e6c58869e76ee42a90e48e16a6f51b9c50cf2f6dfa420d6ccd840340e061388"
+hash = "fa54d0e88912a55d46281989f5d0b5d85872500b54a23dc4ed9c6bf19c31cf1a"
 
 [[files]]
 file = "config/do_a_barrel_roll-client.json"
@@ -418,43 +418,47 @@ hash = "f5708aa3e52602812c8e0a48767acd505fd2ae8894678bd29c6273034b12f4cc"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "5ad11896bf9746b6b2eb4f6a4cbb8cdf4790d7bb4475f8c2e82e4efffde12aa4"
+hash = "739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/0_crash_landing.snbt"
-hash = "3d1fc9fc014a48dcda9bf98269cdf582967586cae19fab0171ca11a827a8e93a"
+hash = "aefc828a6d133bed72ba06a15b7b3a97be5efd92443aa3cde2f3f5cb9ce8d123"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/1_ground_survival.snbt"
-hash = "f1953c2626124ad3bde4252a1924e939841739f54b6f18124ba10f5e9f5eaf4d"
+hash = "ae10ed438c5472e3ffaef60767fb6259a9c0f6fdf4cb1563475ca9aad863a5a8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/2_first_industry.snbt"
-hash = "bbeb80f9a043f7264188400f807f277a6861a76a7bd884512aebd4b4a9a35534"
+hash = "60514f7347046178fa14e69f6edd05a01cd018e5f053d7ae8bdcdd729f9e9bb5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/3_first_flight.snbt"
-hash = "56ea4897b0cda2d2894aeac1cadbf7da08be6ea616bdcdd5f754b63466799482"
+hash = "11ae1c0b14fb5ee288431b685401fec65a76f70518bb488589e4d7fe32b9d37a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/4_sky_base.snbt"
-hash = "72ea3e2b6b466a063b1a57cdc7bd72cca9d5a826077ad846745d85e5bcae3c31"
+hash = "ea096f4ffe013e0b3e5d439ed0b95b2313d3e0d981d49eacde56a3f7ea0ad26a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/5_armed_expedition.snbt"
-hash = "db4f6b9149b2117c31ca9f62c471003a0c68dfbbc78dd263b6a6899c4940019d"
+hash = "eb04f2f420296d9029eb46f676c848b30f709013b9bc7f9b2dc119549dd43a76"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/6_automation.snbt"
-hash = "11bbfd2b2feb1527c6bd6af8881c906d257d012b550308ade9c759af2cccc445"
+hash = "1589bbefba0c6c49786198a71b26eea75221de4a0c8771f313fc42aa264cba46"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/7_sky_fortress.snbt"
-hash = "70cbb161f473cf612776cc2d9fadb2e30a8334c4f2311b7ac8166432a2cef038"
+hash = "b72b791bfcd4cb54ea783be4f262d32abbf5e716fd52400e2665d5fc3ae67a7f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/8_reclaim_surface.snbt"
-hash = "5f8e48b000ffee696ab1ed9f14e4600199efc60400f3cd1574e2372b1ac7728f"
+hash = "229020582f96239a758684056ca22d236c3b4b95eedb3814867ac7a1ae317677"
+
+[[files]]
+file = "config/ftbquests/quests/data.snbt"
+hash = "ed7875116d2c86b1e8c58e9a714c1566043be46ff1c927f8ab31b2a806c50acc"
 
 [[files]]
 file = "config/gamemenumodoption-client.toml"
@@ -809,78 +813,6 @@ file = "config/lootr-common.toml"
 hash = "c056a537b6cbc9cf4c49f29ec98480537a68932e412f7c5dbd7f0a70bee69ce4"
 
 [[files]]
-file = "config/lostcities/common.toml"
-hash = "b17413b54a21962cf8b52080e1304a22921a026b006bbe1d40cda875fd20c741"
-
-[[files]]
-file = "config/lostcities/profiles/ancient.json"
-hash = "df67f112416e171615b059edd6270b4e80692447e23458721f03d9b675587060"
-
-[[files]]
-file = "config/lostcities/profiles/atlantis.json"
-hash = "9725b9c25fa00ca02000ae1b09b2ecd5c7c33e881d3f8ce449d48a995b958ac5"
-
-[[files]]
-file = "config/lostcities/profiles/bio_wasteland.json"
-hash = "91c7949e7f4800f3f1b41c57f571148896c5eae8dfbe74822a195d519cd7c834"
-
-[[files]]
-file = "config/lostcities/profiles/biosphere.json"
-hash = "a210513b26281e220ba75fb2dbe4fa2f717fef31f91fb3cacdf5c17ef672570e"
-
-[[files]]
-file = "config/lostcities/profiles/biosphere_caves.json"
-hash = "955c62012c8920c98aebb57bf7cac0e74cb50ea3e3b0322a00b4c2fb21813548"
-
-[[files]]
-file = "config/lostcities/profiles/cavern.json"
-hash = "8e64fec26d9f7350832df42852af4f16efa612b4ce185363acb8bbc21cb8604b"
-
-[[files]]
-file = "config/lostcities/profiles/default.json"
-hash = "d4aa45555f9e7a3919bc0e4d8ea213e15e69594c944fc28aa718d922cb0d5cad"
-
-[[files]]
-file = "config/lostcities/profiles/floating.json"
-hash = "2221186244a46f507a5cb04ddccb52b3249641b58b7850d73d6cb2f15451c021"
-
-[[files]]
-file = "config/lostcities/profiles/largecities.json"
-hash = "4a21df9af91ec2d4707322d6aceab26853092fae58c7596757a724036b62a403"
-
-[[files]]
-file = "config/lostcities/profiles/nodamage.json"
-hash = "7608ebec1f811d4c9b4f733ca1ea8daf8b179d21465ac36eda0b4ff8537a8b5d"
-
-[[files]]
-file = "config/lostcities/profiles/onlycities.json"
-hash = "6c91febacb5abe85fc98ebea3feb56fcbdbe7515de600f9233cdfad3702218aa"
-
-[[files]]
-file = "config/lostcities/profiles/rarecities.json"
-hash = "8e15f8c761371ea905c1641edb5dd257a3f0153025895a4706b6dc3a61246acd"
-
-[[files]]
-file = "config/lostcities/profiles/safe.json"
-hash = "7ba6b393b56ebf10a61e53559a2d7d431d53711935d78b605eaecaebb593b9f3"
-
-[[files]]
-file = "config/lostcities/profiles/space.json"
-hash = "2e7ae0defdbc2e8a5c3b3b83515da7cfdadd1f9c63612a328c615f6d59ed5534"
-
-[[files]]
-file = "config/lostcities/profiles/tallbuildings.json"
-hash = "3d960c809a8053351fa84e52dbca23a26bad28a249200a2a94025d6808db40b4"
-
-[[files]]
-file = "config/lostcities/profiles/void_outside.json"
-hash = "09fbc173216c7eef38123f0e28737a1ed106c82f41ddc5bfac3d4ba419c6d3f8"
-
-[[files]]
-file = "config/lostcities/profiles/wasteland.json"
-hash = "5a4942d2f297924015d1f02abd65c5051fbd997e68f083630c442dfc99fce085"
-
-[[files]]
 file = "config/lrtactical-client.toml"
 hash = "4e6a04bad1226d0691f13d43adca9ba261c9237305f1f6757f08040a678b448e"
 
@@ -918,7 +850,7 @@ hash = "a87e0e5a2bacb1c4c5399265ba2615d6b697f1a23513dad44044b18d400f1015"
 
 [[files]]
 file = "config/mineallsmp-common.toml"
-hash = "185b5365868f75678acce7618984a9aa2a1837b7b2869b2db52a713c2f991188"
+hash = "adf4c19038bb3d47d24024650ff80d240868d81a67947b6338353b2ae97699da"
 
 [[files]]
 file = "config/modernfix-common.toml"
@@ -4122,6 +4054,11 @@ hash = "efda76423b21f9bfab4ad8d0411f0b06a199ab7e3e12ca16dc0586c1828b8f07"
 metafile = true
 
 [[files]]
+file = "mods/ftb-ultimine-forge.pw.toml"
+hash = "95b3a27eadc2854462de996ddce5ff2468771e13ac97c46ed96d41a6edaa056e"
+metafile = true
+
+[[files]]
 file = "mods/gamemenumodoption.pw.toml"
 hash = "5780a8fe15320f3b6d11e8eabd5f114596e90e0b061e490466d3c0bf09a439eb"
 metafile = true
@@ -4644,11 +4581,6 @@ metafile = true
 [[files]]
 file = "mods/the-lost-castle.pw.toml"
 hash = "706c7143eeba0cee6ca9f099dc8473f6ab428c499a370b34bb5278f871e1877b"
-metafile = true
-
-[[files]]
-file = "mods/the-lost-cities.pw.toml"
-hash = "8dd5466639256a5fdde1d3ef5b8e8d4700c660a9bd42a6dc048775677a8c7a32"
 metafile = true
 
 [[files]]

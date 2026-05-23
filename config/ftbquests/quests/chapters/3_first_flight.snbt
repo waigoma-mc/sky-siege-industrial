@@ -1,353 +1,408 @@
 {
-	id: "C3",
-	group: "",
-	order_index: 3,
-	filename: "3_first_flight",
-	title: "第3章：初飛行 / First Flight",
-	icon: "eureka:ship_helm",
-	subtitle: "地上を離れる時が来た。",
-	default_quest_shape: "square",
-	default_hide_dependency_lines: false,
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "3_first_flight"
+	group: ""
+	icon: "vs_eureka:oak_ship_helm"
+	id: "00000000000000C3"
+	order_index: 3
+	quest_links: [ ]
 	quests: [
 		{
-			x: 0.0d,
-			y: 0.0d,
-			id: "C3_Q01",
-			title: "VS / Eureka 入門",
-			icon: "eureka:ship_helm",
+			dependencies: ["7CD9D579D92F3D3E"]
 			description: [
-				"Valkyrien Skies + Eureka がこの Modpack の核だ。",
-				"ブロックで作った構造物を、物理演算で動かす。",
+				"Valkyrien Skies + Eureka がこの Modpack の核だ。"
+				"ブロックで作った構造物を、物理演算で動かす。"
 				"Ship Helm（操舵輪）が飛行船の頭脳となる。"
-			],
-			dependencies: ["C2_Q12"],
-			tasks: [{
-				id: "C3_Q01_T1",
-				type: "item",
-				item: "eureka:ship_helm",
-				count: 1L
-			}],
+			]
+			icon: "vs_eureka:oak_ship_helm"
+			id: "7551A1BF0FC33247"
 			rewards: [
 				{
-					id: "C3_Q01_R1",
-					type: "item",
-					item: "minecraft:oak_planks",
 					count: 64
-				},
+					id: "409CCD7FD3F356C8"
+					item: "minecraft:oak_planks"
+					type: "item"
+				}
 				{
-					id: "C3_Q01_R2",
-					type: "item",
-					item: "minecraft:oak_log",
 					count: 32
+					id: "41BE49FDC642A3DD"
+					item: "minecraft:oak_log"
+					type: "item"
 				}
 			]
-		},
+			tasks: [{
+				id: "656E3A6198BD2264"
+				item: "vs_eureka:oak_ship_helm"
+				type: "item"
+			}]
+			title: "VS / Eureka 入門"
+			x: 0.0d
+			y: 0.0d
+		}
 		{
-			x: 2.0d,
-			y: 1.5d,
-			id: "C3_Q02",
-			title: "飛行船の骨格",
-			icon: "minecraft:oak_planks",
+			dependencies: ["7551A1BF0FC33247"]
 			description: [
-				"飛行船の船体を組め。",
-				"まずは小さくていい——5×5×3 程度の箱型でも飛べる。",
+				"飛行船の船体を組め。"
+				"まずは小さくていい——5×5×3 程度の箱型でも飛べる。"
 				"後で拡張できる設計にしておくと後が楽だ。"
-			],
-			dependencies: ["C3_Q01"],
-			tasks: [{
-				id: "C3_Q02_T1",
-				type: "checkmark",
-				title: "飛行船の基本船体（最低限の構造物）を組み上げた"
-			}],
+			]
+			icon: "minecraft:oak_planks"
+			id: "72C08A502222C7D8"
 			rewards: [
 				{
-					id: "C3_Q02_R1",
-					type: "item",
-					item: "minecraft:glass",
 					count: 32
-				},
+					id: "0F5B79E25DA79EFA"
+					item: "minecraft:glass"
+					type: "item"
+				}
 				{
-					id: "C3_Q02_R2",
-					type: "item",
-					item: "minecraft:oak_planks",
 					count: 64
+					id: "4CB77181CCED9D84"
+					item: "minecraft:oak_planks"
+					type: "item"
 				}
 			]
-		},
-		{
-			x: 2.0d,
-			y: -1.5d,
-			id: "C3_Q03",
-			title: "Balloon / Propeller",
-			icon: "eureka:balloon",
-			description: [
-				"Eureka の飛行原理は浮力 + 推力だ。",
-				"Balloon Block を大量に積めば浮力が増す。",
-				"エンジンや Create の扇風機で推力を加えろ。"
-			],
-			dependencies: ["C3_Q01"],
 			tasks: [{
-				id: "C3_Q03_T1",
-				type: "checkmark",
-				title: "飛行に必要な浮力源（Balloon または Phlogiston Engine 等）と推力源を用意した"
-			}],
-			rewards: [
-				{
-					id: "C3_Q03_R1",
-					type: "item",
-					item: "minecraft:white_wool",
-					count: 32
-				},
-				{
-					id: "C3_Q03_R2",
-					type: "item",
-					item: "create:encased_fan",
-					count: 2
-				}
-			]
-		},
+				id: "5A0D35770EE1CF69"
+				title: "飛行船の基本船体（最低限の構造物）を組み上げた"
+				type: "checkmark"
+			}]
+			title: "飛行船の骨格"
+			x: 2.0d
+			y: 1.5d
+		}
 		{
-			x: 4.0d,
-			y: 0.0d,
-			id: "C3_Q04",
-			title: "組み上げ！",
-			icon: "minecraft:lever",
+			dependencies: ["7551A1BF0FC33247"]
 			description: [
-				"Ship Helm を船体に設置し、Assemble を実行する。",
-				"成功すれば構造物が1つの「船」として扱われる。",
+				"Eureka の飛行は、まず十分な浮力を確保するところから始まる。"
+				"Balloon を船体に積み、重すぎる構造になっていないか確認しろ。"
+				"推力まわりは追加アドオン側の要素に任せ、ここでは浮ける船を作る。"
+			]
+			icon: "vs_eureka:balloon"
+			id: "59A33587D0807D33"
+			rewards: [{
+				count: 16
+				id: "7D570EAE63F97960"
+				item: "vs_eureka:balloon"
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "3AAD3B3D8A54725D"
+				item: "vs_eureka:balloon"
+				type: "item"
+			}]
+			title: "Balloon"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"72C08A502222C7D8"
+				"59A33587D0807D33"
+			]
+			description: [
+				"Ship Helm を船体に設置し、Assemble を実行する。"
+				"成功すれば構造物が1つの「船」として扱われる。"
 				"失敗してもやり直せる——まずやってみろ。"
-			],
-			dependencies: ["C3_Q02", "C3_Q03"],
-			tasks: [{
-				id: "C3_Q04_T1",
-				type: "checkmark",
-				title: "Ship Helm で飛行船を Assemble した"
-			}],
+			]
+			icon: "minecraft:lever"
+			id: "4D114B33FCF90AFE"
 			rewards: [
 				{
-					id: "C3_Q04_R1",
-					type: "item",
-					item: "minecraft:glass",
 					count: 32
-				},
+					id: "290BFF8E60CE38EA"
+					item: "minecraft:glass"
+					type: "item"
+				}
 				{
-					id: "C3_Q04_R2",
-					type: "item",
-					item: "minecraft:iron_block",
 					count: 4
+					id: "0A25ABD08B4331D7"
+					item: "minecraft:iron_block"
+					type: "item"
 				}
 			]
-		},
-		{
-			x: 6.0d,
-			y: 0.0d,
-			id: "C3_Q05",
-			title: "初飛行成功！",
-			icon: "minecraft:feather",
-			subtitle: "空は、あなたのものだ。",
-			description: [
-				"Helm に乗り込み、操縦桿を握れ。",
-				"地面が遠ざかっていく——",
-				"これが、Sky Siege Industrial の始まりだ。"
-			],
-			dependencies: ["C3_Q04"],
 			tasks: [{
-				id: "C3_Q05_T1",
-				type: "checkmark",
-				title: "飛行船で地上から離脱し、高度 50 以上を飛行した"
-			}],
+				id: "5BDEEDE90F7010B6"
+				title: "Ship Helm で飛行船を Assemble した"
+				type: "checkmark"
+			}]
+			title: "組み上げ！"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D114B33FCF90AFE"]
+			description: [
+				"Helm に乗り込み、操縦桿を握れ。"
+				"地面が遠ざかっていく——"
+				"これが、Sky Siege Industrial の始まりだ。"
+			]
+			icon: "minecraft:feather"
+			id: "728FCDF52C1DB561"
 			rewards: [
 				{
-					id: "C3_Q05_R1",
-					type: "item",
-					item: "minecraft:firework_rocket",
 					count: 8
-				},
+					id: "65FB7E80ED14B93A"
+					item: "minecraft:firework_rocket"
+					type: "item"
+				}
 				{
-					id: "C3_Q05_R2",
-					type: "xp",
+					id: "6B82DA735A38EE1A"
+					type: "xp"
 					xp: 200
 				}
 			]
-		},
+			subtitle: "空は、あなたのものだ。"
+			tasks: [{
+				id: "75FEBEFFA07936D4"
+				title: "飛行船で地上から離脱し、高度 50 以上を飛行した"
+				type: "checkmark"
+			}]
+			title: "初飛行成功！"
+			x: 6.0d
+			y: 0.0d
+		}
 		{
-			x: 8.0d,
-			y: 1.5d,
-			id: "C3_Q06",
-			title: "空中作業台",
-			icon: "minecraft:crafting_table",
+			dependencies: ["728FCDF52C1DB561"]
 			description: [
-				"飛行中でも物作りができる環境を整えろ。",
+				"飛行中でも物作りができる環境を整えろ。"
 				"作業台・箱・かまど——空中の拠点として最低限必要なものを置け。"
-			],
-			dependencies: ["C3_Q05"],
+			]
+			icon: "minecraft:crafting_table"
+			id: "48FEEA3BB6859F93"
+			rewards: [{
+				count: 32
+				id: "0E3290F7A0FF2BA2"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
 			tasks: [
 				{
-					id: "C3_Q06_T1",
-					type: "item",
-					item: "minecraft:crafting_table",
-					count: 1L
-				},
+					id: "6A4AB1743298E389"
+					item: "minecraft:crafting_table"
+					type: "item"
+				}
 				{
-					id: "C3_Q06_T2",
-					type: "item",
-					item: "minecraft:chest",
 					count: 4L
-				},
+					id: "206214C3A45EF4B6"
+					item: "minecraft:chest"
+					type: "item"
+				}
 				{
-					id: "C3_Q06_T3",
-					type: "item",
-					item: "minecraft:furnace",
 					count: 2L
+					id: "55ABD641D01E9E4D"
+					item: "minecraft:furnace"
+					type: "item"
 				}
-			],
-			rewards: [{
-				id: "C3_Q06_R1",
-				type: "item",
-				item: "minecraft:iron_ingot",
-				count: 32
-			}]
-		},
+			]
+			title: "空中作業台"
+			x: 8.0d
+			y: 1.5d
+		}
 		{
-			x: 8.0d,
-			y: -1.5d,
-			id: "C3_Q07",
-			title: "空中のベッド",
-			icon: "minecraft:red_bed",
+			dependencies: ["728FCDF52C1DB561"]
 			description: [
-				"夜に地上へ降りる必要をなくせ。",
-				"飛行船にベッドを設置して空中で夜を越せ。",
+				"夜に地上へ降りる必要をなくせ。"
+				"飛行船にベッドを設置して空中で夜を越せ。"
 				"これが本当の「空中生活」の始まりだ。"
-			],
-			dependencies: ["C3_Q05"],
-			tasks: [{
-				id: "C3_Q07_T1",
-				type: "item",
-				item: "minecraft:red_bed",
-				count: 1L
-			}],
+			]
+			icon: "minecraft:red_bed"
+			id: "636E104FE0ECC9AC"
 			rewards: [
 				{
-					id: "C3_Q07_R1",
-					type: "item",
-					item: "minecraft:white_wool",
 					count: 16
-				},
+					id: "2569AFBD5C1E8FAD"
+					item: "minecraft:white_wool"
+					type: "item"
+				}
 				{
-					id: "C3_Q07_R2",
-					type: "item",
-					item: "minecraft:oak_planks",
 					count: 32
+					id: "277CC0C8D9370942"
+					item: "minecraft:oak_planks"
+					type: "item"
 				}
 			]
-		},
+			tasks: [{
+				id: "4726CDF986DAD0EF"
+				item: "minecraft:red_bed"
+				type: "item"
+			}]
+			title: "空中のベッド"
+			x: 8.0d
+			y: -1.5d
+		}
 		{
-			x: 10.0d,
-			y: 0.0d,
-			id: "C3_Q08",
-			title: "荷物を空へ",
-			icon: "minecraft:chest",
+			dependencies: [
+				"48FEEA3BB6859F93"
+				"636E104FE0ECC9AC"
+			]
 			description: [
-				"地上に蓄えた素材を飛行船に積み込め。",
-				"AE2 で整理するまでは、チェストに分類して保管しろ。",
+				"地上に蓄えた素材を飛行船に積み込め。"
+				"AE2 で整理するまでは、チェストに分類して保管しろ。"
 				"次の章では、この飛行船を本格的な拠点に変える。"
-			],
-			dependencies: ["C3_Q06", "C3_Q07"],
-			tasks: [{
-				id: "C3_Q08_T1",
-				type: "checkmark",
-				title: "地上の主要素材（鉄x64以上）を飛行船に積み込んだ"
-			}],
+			]
+			icon: "minecraft:chest"
+			id: "77A4CAD4567CDF13"
 			rewards: [
 				{
-					id: "C3_Q08_R1",
-					type: "item",
-					item: "minecraft:chest",
 					count: 8
-				},
+					id: "050C3E41DED1CD72"
+					item: "minecraft:chest"
+					type: "item"
+				}
 				{
-					id: "C3_Q08_R2",
-					type: "item",
-					item: "minecraft:barrel",
 					count: 4
+					id: "0469BD377915CD7F"
+					item: "minecraft:barrel"
+					type: "item"
 				}
 			]
-		},
+			tasks: [{
+				id: "16358D2EBCBF44C1"
+				title: "地上の主要素材（鉄x64以上）を飛行船に積み込んだ"
+				type: "checkmark"
+			}]
+			title: "荷物を空へ"
+			x: 10.0d
+			y: 0.0d
+		}
 		{
-			x: 10.0d,
-			y: -3.0d,
-			id: "C3_Q09",
-			title: "地上探索船",
-			icon: "minecraft:map",
+			dependencies: ["728FCDF52C1DB561"]
 			description: [
-				"飛行船はただの移動手段ではない——偵察艦でもある。",
-				"上空から地上の地形・廃墟・ダンジョンを観察しろ。",
+				"飛行船はただの移動手段ではない——偵察艦でもある。"
+				"上空から地上の地形・廃墟・ダンジョンを観察しろ。"
 				"次の降下地点を、空から決めるのが賢いやり方だ。"
-			],
-			dependencies: ["C3_Q05"],
-			tasks: [{
-				id: "C3_Q09_T1",
-				type: "checkmark",
-				title: "飛行船で上空から地形を偵察し、次の降下目標を決めた"
-			}],
+			]
+			icon: "minecraft:map"
+			id: "5D1D3DDE3C635E2F"
 			rewards: [
 				{
-					id: "C3_Q09_R1",
-					type: "item",
-					item: "minecraft:spyglass",
-					count: 1
-				},
+					id: "71E703E94A3404AA"
+					item: "minecraft:spyglass"
+					type: "item"
+				}
 				{
-					id: "C3_Q09_R2",
-					type: "item",
-					item: "minecraft:map",
 					count: 3
+					id: "7B7AA2235BA5BC4B"
+					item: "minecraft:map"
+					type: "item"
 				}
 			]
-		},
-		{
-			x: 12.0d,
-			y: 0.0d,
-			id: "C3_Q10",
-			title: "空中生活の幕開け",
-			icon: "eureka:ship_helm",
-			subtitle: "初飛行章クリア",
-			description: [
-				"地上から離れ、空中拠点を持つ者になった。",
-				"これが Sky Siege Industrial のスタートラインだ。",
-				"次の章では、飛行船を本格的な工業拠点に仕上げる。"
-			],
-			dependencies: ["C3_Q08", "C3_Q09"],
 			tasks: [{
-				id: "C3_Q10_T1",
-				type: "checkmark",
-				title: "第3章クリアを確認"
-			}],
+				id: "3E284A13D04DC63E"
+				title: "飛行船で上空から地形を偵察し、次の降下目標を決めた"
+				type: "checkmark"
+			}]
+			title: "地上探索船"
+			x: 10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"77A4CAD4567CDF13"
+				"5D1D3DDE3C635E2F"
+			]
+			description: [
+				"地上から離れ、空中拠点を持つ者になった。"
+				"これが Sky Siege Industrial のスタートラインだ。"
+				"次の章では、飛行船を本格的な工業拠点に仕上げる。"
+			]
+			icon: "vs_eureka:oak_ship_helm"
+			id: "558E99F60999AB62"
 			rewards: [
 				{
-					id: "C3_Q10_R1",
-					type: "item",
-					item: "minecraft:iron_block",
 					count: 8
-				},
+					id: "59816B078FCFC920"
+					item: "minecraft:iron_block"
+					type: "item"
+				}
 				{
-					id: "C3_Q10_R2",
-					type: "item",
-					item: "create:brass_ingot",
 					count: 16
-				},
+					id: "4E01898392D48433"
+					item: "create:brass_ingot"
+					type: "item"
+				}
 				{
-					id: "C3_Q10_R3",
-					type: "item",
-					item: "ae2:certus_quartz_crystal",
 					count: 16
-				},
+					id: "27330641CCFBFD00"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
 				{
-					id: "C3_Q10_R4",
-					type: "xp",
+					id: "63E8F64508836675"
+					type: "xp"
 					xp: 300
 				}
 			]
+			subtitle: "初飛行章クリア"
+			tasks: [{
+				id: "0AD4B35B57983CE0"
+				title: "第3章クリアを確認"
+				type: "checkmark"
+			}]
+			title: "空中生活の幕開け"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["728FCDF52C1DB561"]
+			description: [
+				"Clockwork は Valkyrien Skies と Create を統合する拡張だ。"
+				"Create の Blaze Burner・Steam Engine・Mechanical Bearing を船に積めば、"
+				"「蒸気で動く飛行船」が完成する。"
+				"浮くだけの船から、工業動力で飛ぶ艦へ——格が違う。"
+			]
+			icon: "minecraft:piston"
+			id: "2599FE684B7ED991"
+			rewards: [
+				{
+					count: 16
+					id: "037B73D3B286997B"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "095FBC92DE39CA64"
+					item: "vs_eureka:balloon"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "14B6883216178DFA"
+				title: "Clockwork のエンジンを飛行船に搭載し、Create 動力で推進または旋回させた"
+				type: "checkmark"
+			}]
+			title: "機械仕掛けの翼"
+			x: 8.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["728FCDF52C1DB561"]
+			description: [
+				"Radiant Gear を装備した状態でアイテムを手に持つと発光する。"
+				"洞窟降下・夜間探索で松明がなくても視界を確保できる。"
+				"特にダンジョン内部での視認性が大きく変わる——軽量で省スペースな必携装備だ。"
+			]
+			icon: "minecraft:glowstone_dust"
+			id: "478D8CC8849CB66D"
+			rewards: [{
+				count: 16
+				id: "3AC5E09002DC77D7"
+				item: "minecraft:glowstone_dust"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1832A1D690307ED4"
+				title: "Radiant Gear を装備して暗所での視認性を確保した"
+				type: "checkmark"
+			}]
+			title: "Radiant Gear"
+			x: 10.0d
+			y: -5.5d
 		}
 	]
+	title: "第3章：初飛行 / First Flight"
 }
