@@ -10,7 +10,7 @@ hash = "d86beab1176c367beeed3b8fb8a2a8dfbd8a1db7293f067c01bc38c73020e398"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "9554c601f3072011e6b5df4a62fe2b13deab55eb05b3065b185bc28d2f97562d"
+hash = "a8bfe65c2305036274f9a0d09cab3b137f650cc42d5b04b7726680928b700369"
 
 [[files]]
 file = "config/Mekanism/additions-client.toml"
@@ -438,11 +438,11 @@ hash = "bbc775fff50b0922910679a93f424c4603ae5908ab8113f74c27c9824dcbb28b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/4_sky_base.snbt"
-hash = "a94341081849ace0f8d9fe853b4c431a9bddad20d27ca03194c55f6ebbc73025"
+hash = "8f5f698da6b538906cfd92eb4d9ebf99b4b4e76a88951db030f84e90a086152e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/5_armed_expedition.snbt"
-hash = "645fe68adb8751e423a6fd33c4d0f97d71aa5ec0559b2f72addc08502ed5d31a"
+hash = "5e999ba8c5723c2416b46dce7e0f3a589beae024eebb9c3829a51cef27088ab2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/6_automation.snbt"
