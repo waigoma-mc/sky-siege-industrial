@@ -16,7 +16,7 @@
 	allow_projectile_destroy_blocks = false
 	#Set true to allow projectiles to load chunks
 	#是否允许投射物加载区块
-	projectile_chunk_loading = true
+	projectile_chunk_loading = false
 
 [explosion]
 	#The percentage of explosion damage you take behind cover

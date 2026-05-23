@@ -10,7 +10,7 @@ hash = "d86beab1176c367beeed3b8fb8a2a8dfbd8a1db7293f067c01bc38c73020e398"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "8c63e81e38811dfbafc04a7d6fc147461eca85da6228f6a366563c7cb0e1e77f"
+hash = "9554c601f3072011e6b5df4a62fe2b13deab55eb05b3065b185bc28d2f97562d"
 
 [[files]]
 file = "config/Mekanism/additions-client.toml"
@@ -422,39 +422,39 @@ hash = "739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/0_crash_landing.snbt"
-hash = "aefc828a6d133bed72ba06a15b7b3a97be5efd92443aa3cde2f3f5cb9ce8d123"
+hash = "c29b0f7c56042c821ba28635af8627e27dfd207b1945990138430d310c89abe2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/1_ground_survival.snbt"
-hash = "ae10ed438c5472e3ffaef60767fb6259a9c0f6fdf4cb1563475ca9aad863a5a8"
+hash = "848c9642021c1c4977b49dd12d21e15ec18b2f8e1faffa4b02ab54a565667993"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/2_first_industry.snbt"
-hash = "60514f7347046178fa14e69f6edd05a01cd018e5f053d7ae8bdcdd729f9e9bb5"
+hash = "a158404f5a8d376a05778f9c3f2f0194d60046443245244678d9fcd86699661d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/3_first_flight.snbt"
-hash = "11ae1c0b14fb5ee288431b685401fec65a76f70518bb488589e4d7fe32b9d37a"
+hash = "bbc775fff50b0922910679a93f424c4603ae5908ab8113f74c27c9824dcbb28b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/4_sky_base.snbt"
-hash = "ea096f4ffe013e0b3e5d439ed0b95b2313d3e0d981d49eacde56a3f7ea0ad26a"
+hash = "a94341081849ace0f8d9fe853b4c431a9bddad20d27ca03194c55f6ebbc73025"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/5_armed_expedition.snbt"
-hash = "eb04f2f420296d9029eb46f676c848b30f709013b9bc7f9b2dc119549dd43a76"
+hash = "645fe68adb8751e423a6fd33c4d0f97d71aa5ec0559b2f72addc08502ed5d31a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/6_automation.snbt"
-hash = "1589bbefba0c6c49786198a71b26eea75221de4a0c8771f313fc42aa264cba46"
+hash = "5a0308ea7eacff4d8da2d89a3ee5f651dbd1fd596cdb252597b42ef507423844"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/7_sky_fortress.snbt"
-hash = "b72b791bfcd4cb54ea783be4f262d32abbf5e716fd52400e2665d5fc3ae67a7f"
+hash = "ebaab5b10ec78e36c1176efc5666c2b3c8cfef80cf24e37b4c54c2e2314c22ff"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/8_reclaim_surface.snbt"
-hash = "229020582f96239a758684056ca22d236c3b4b95eedb3814867ac7a1ae317677"
+hash = "97a950807e7f4933cce7862119761dcaccd498e7569402f0b6fd89e93db609d3"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -3647,6 +3647,118 @@ hash = "00ff526cac2b731e015e24d760ec44769d946a3144e5673ee7e63d658583a578"
 [[files]]
 file = "config/zombieawareness/PlayerRulesAndLists.toml"
 hash = "e766740f523b7da0d0cdc9db47f6e69c16489509c6b5e1eee63742c295f5f508"
+
+[[files]]
+file = "defaultconfigs/constructionwand-server.toml"
+hash = "8bfbd4c0283ab896479590f1c9d2203494c72e6742a5de00ee8cd24ae7703031"
+
+[[files]]
+file = "defaultconfigs/copycats-server.toml"
+hash = "6eccc702431fd40b6a2ab45c6d9e15b881324a2cb3ff6e0dbb0a8c1ebf465409"
+
+[[files]]
+file = "defaultconfigs/create-server.toml"
+hash = "d196a7ddbde80a01ed511f10ce159a94e8317f7147a067e40bd244088b10184b"
+
+[[files]]
+file = "defaultconfigs/create_interactive-server.toml"
+hash = "0803bcc1c499263e52b6aa04f2c9dd74409ce13f84f6d394ea9208dc991e379a"
+
+[[files]]
+file = "defaultconfigs/createpropulsion-server.toml"
+hash = "6174aa8b3b6d86e9946f105a793553fe99f717c71954f0b7f44dbcc43fdcc75a"
+
+[[files]]
+file = "defaultconfigs/curios-server.toml"
+hash = "31818944254f689e486489e6ca4fb63a8a409e099e5f3ef99bab39c4d6e8008a"
+
+[[files]]
+file = "defaultconfigs/easy_villagers-server.toml"
+hash = "e70d42676abc935173e7b1a9161f85d3e64391142ab92a1c8f0b2b395d79a5bb"
+
+[[files]]
+file = "defaultconfigs/fluxnetworks-server.toml"
+hash = "4ab8239f1d272fceacabd9b87c2efa485e2b16ab0e20598b2f57d8694ec65b9c"
+
+[[files]]
+file = "defaultconfigs/forge-server.toml"
+hash = "e2c32c27453033ef3910d5b6a24ae1a8c1fd224c2ac0a97388d5aa27a6a00ad1"
+
+[[files]]
+file = "defaultconfigs/gravestone-server.toml"
+hash = "dca2d292f2108879af3c11dab5a070d463228830c79c215e3d8318010d6f0a6f"
+
+[[files]]
+file = "defaultconfigs/hole_filler_mod-server.toml"
+hash = "0ed61d9dfa8bef14afc67580eeecae6a4f6e6eca2f4b61fefd0dd81c0c720880"
+
+[[files]]
+file = "defaultconfigs/immersiveengineering-server.toml"
+hash = "5ece0a11280d17293e1da6f3f63c716f4445cbccf3d961274fd83043e071bfa9"
+
+[[files]]
+file = "defaultconfigs/incontrol-server.toml"
+hash = "eadfa3c3382d98976012fae60c9f67b334433c860c7976ab52b9b2abee74555e"
+
+[[files]]
+file = "defaultconfigs/jeg-server.toml"
+hash = "723f200fe7c6e292d44d69a2963a7307bd7749320f04245c2ddd9749476b5a66"
+
+[[files]]
+file = "defaultconfigs/jei-server.toml"
+hash = "9736d42f228f95c96c96b90b79b0988931caf7e1b6d455c982c1441371031979"
+
+[[files]]
+file = "defaultconfigs/journeymap-server.toml"
+hash = "7711871843872e29af07d860a4a5cde0b481bec0531f1638f54c4bd96a9d1b5f"
+
+[[files]]
+file = "defaultconfigs/lrtactical-server.toml"
+hash = "41747ed68388e8cff52ecc0e56b30540aec118e5ad39293ccdd9a61af18990a8"
+
+[[files]]
+file = "defaultconfigs/more_immersive_wires-server.toml"
+hash = "fada89be0a2a28524430d6a58475566657b16af92707b8ffb6ffa1c0b0870b2d"
+
+[[files]]
+file = "defaultconfigs/packagedauto-server.toml"
+hash = "548aa87e2e02bb78f754d89ac0f831b7be4334d7ca9a3082842fb7af51f599ac"
+
+[[files]]
+file = "defaultconfigs/paraglider-server.toml"
+hash = "3aabce36a33c7aa3d0cac5fa718bb178f683c9ad06b5e7e7fb2f2e15333d8cee"
+
+[[files]]
+file = "defaultconfigs/sophisticatedbackpacks-server.toml"
+hash = "57d939f61f5cc3aad741da95e611d1dd97c313c84671f50eec2e518fd9f25896"
+
+[[files]]
+file = "defaultconfigs/superbwarfare-server.toml"
+hash = "e3734c4fcd893ec1c1526c891b6a18211cd2f2ae69a3fdd3a1ffd910059f18dc"
+
+[[files]]
+file = "defaultconfigs/tacz-server.toml"
+hash = "f8c4e78147eb6d51772fee54166e04713c61f83b2376845438f0e5dac7c2ace8"
+
+[[files]]
+file = "defaultconfigs/trackwork-server.toml"
+hash = "e481c5a1ba1eefc63a74534acd21478c9165da163ec39624e2487c91e828501a"
+
+[[files]]
+file = "defaultconfigs/valkyrienskies/valkyrienskies-server.toml"
+hash = "9aad597d62f13fe1c9fa6a2518d3f22029724497f69f33492a6b78e57e138a75"
+
+[[files]]
+file = "defaultconfigs/valkyrienskies/vs-core-server.toml"
+hash = "7567242840971bb6d72c4cf539f87bba030c6b9c28d4469a4379b520c097f0c3"
+
+[[files]]
+file = "defaultconfigs/valkyrienskies/vs_eureka.toml"
+hash = "250af38e1aaa04b2fb2d24d961e20ca920ea81728c11c633213597d6bfcecb35"
+
+[[files]]
+file = "defaultconfigs/yes_steve_model-server.toml"
+hash = "38b759e00758ae225db9f596437b8ffe1ec3e3019d0391702f0c76111b89b013"
 
 [[files]]
 file = "mods/accelerated-rendering.pw.toml"

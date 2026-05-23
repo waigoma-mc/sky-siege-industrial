@@ -572,6 +572,70 @@
 			x: 8.0d
 			y: -2.5d
 		}
+		{
+			dependencies: ["7FA80C132FEF2D10"]
+			description: [
+				"IE の Excavator（採掘機）は多ブロック構造の巨大採掘設備だ。"
+				"特定の鉱石を自動で掘り続け、バケットホイールで地表に引き上げる。"
+				"地上への降下回数を大幅に減らせる——拠点そばに設置して酷使しろ。"
+			]
+			icon: "immersiveengineering:excavator_bucket"
+			id: "F10000000000001F"
+			rewards: [
+				{
+					count: 32
+					id: "F300000000000059"
+					item: "mekanism:ingot_osmium"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "F300000000000060"
+					item: "immersiveengineering:ingot_steel"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "F200000000000036"
+				title: "IE の Excavator（採掘機）を設置・稼働させた"
+				type: "checkmark"
+			}]
+			title: "IE Excavator"
+			x: 10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2BD1081A2FC5C21F"]
+			description: [
+				"Mekanism の Quantum Entangloporter で、離れた場所にエネルギー・アイテム・液体を無線転送できる。"
+				"地上前哨基地と空中要塞をリアルタイムで繋ぎ、"
+				"エネルギー・素材を双方向に転送する補給網を完成させろ。"
+			]
+			icon: "mekanism:quantum_entangloporter"
+			id: "F100000000000020"
+			rewards: [
+				{
+					count: 8
+					id: "F300000000000061"
+					item: "mekanism:alloy_atomic"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "F300000000000062"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "F200000000000037"
+				item: "mekanism:quantum_entangloporter"
+				type: "item"
+			}]
+			title: "Quantum Entangloporter"
+			x: 10.0d
+			y: 2.5d
+		}
 	]
 	title: "第7章：空中要塞 / Sky Fortress"
 }

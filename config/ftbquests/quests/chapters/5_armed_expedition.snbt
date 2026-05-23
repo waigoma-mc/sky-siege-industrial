@@ -689,6 +689,122 @@
 			x: 4.0d
 			y: 3.0d
 		}
+		{
+			dependencies: ["4CE93DE96BCC9D08"]
+			description: [
+				"Do a Barrel Roll は Elytra の飛行操作を根本から変える。"
+				"バレルロール・急降下・急上昇——戦闘機さながらの空中機動が可能になる。"
+				"地上への降下時、空中から一気に奇襲をかけろ。"
+			]
+			icon: "minecraft:elytra"
+			id: "F100000000000028"
+			rewards: [
+				{
+					count: 16
+					id: "F30000000000002A"
+					item: "minecraft:firework_rocket"
+					type: "item"
+				}
+				{
+					id: "F30000000000002B"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "F200000000000028"
+					item: "minecraft:elytra"
+					type: "item"
+				}
+				{
+					id: "F200000000000029"
+					title: "Do a Barrel Roll の空中機動を使い、戦闘または移動に活用した"
+					type: "checkmark"
+				}
+			]
+			title: "空中曲芸飛行"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["75ABE90137D1A8F5"]
+			description: [
+				"Valkyrien Pirates は武装した空の海賊団を追加する。"
+				"海賊船は独自の VS 船体を持ち、近づけばすぐに攻撃を仕掛けてくる。"
+				"SkySiege の名に懸けて——敵飛行船を撃墜せよ。"
+			]
+			icon: "minecraft:crossbow"
+			id: "F100000000000029"
+			rewards: [
+				{
+					count: 16
+					id: "F30000000000002C"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "F30000000000002D"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "F20000000000002A"
+					title: "Valkyrien Pirates の海賊船に遭遇した"
+					type: "checkmark"
+				}
+				{
+					id: "F20000000000002B"
+					title: "海賊船または海賊の首領を撃破した"
+					type: "checkmark"
+				}
+			]
+			title: "空の海賊団を撃破せよ"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["55B00A1E976B75A5"]
+			description: [
+				"The Lost Castle は大規模な城型ダンジョンだ。"
+				"複数のフロアに強力なボス Mob が配置され、容易には攻略できない。"
+				"TaCZ の銃火器で武装し、城の主を討て。"
+			]
+			icon: "minecraft:stone_bricks"
+			id: "F10000000000002A"
+			rewards: [
+				{
+					count: 16
+					id: "F30000000000002E"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "F30000000000002F"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "F20000000000002C"
+					title: "The Lost Castle のダンジョンを発見した"
+					type: "checkmark"
+				}
+				{
+					id: "F20000000000002D"
+					title: "城の主（ボス）を討伐した"
+					type: "checkmark"
+				}
+			]
+			title: "失われた城の攻略"
+			x: 6.0d
+			y: -7.0d
+		}
 	]
 	title: "第5章：武装降下作戦 / Armed Expedition"
 }

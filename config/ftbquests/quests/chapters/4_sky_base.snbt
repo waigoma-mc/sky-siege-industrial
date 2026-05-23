@@ -550,6 +550,69 @@
 			x: 4.0d
 			y: -1.5d
 		}
+		{
+			dependencies: ["558E99F60999AB62"]
+			description: [
+				"Moog's Soaring Structures は空中に散らばる遺構を追加する。"
+				"廃墟の塔・浮遊島・天空神殿——飛行船からでなければ到達できない場所だ。"
+				"上空を飛びながら、空の遺産を探し出せ。"
+			]
+			icon: "minecraft:map"
+			id: "F100000000000026"
+			rewards: [
+				{
+					count: 4
+					id: "F300000000000026"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "F300000000000027"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "F200000000000026"
+				title: "Moog's Soaring Structures の空中遺構を1つ発見し、内部を探索した"
+				type: "checkmark"
+			}]
+			title: "空の遺構を発見せよ"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["558E99F60999AB62"]
+			description: [
+				"Create: Propulsion は VS 飛行船に能動的な推進力を与える。"
+				"プロペラや蒸気機関を船体に組み込み、独自の推進システムを設計しろ。"
+				"風任せで漂う時代は終わりだ——自分の力で空を走れ。"
+			]
+			icon: "create:mechanical_bearing"
+			id: "F100000000000027"
+			rewards: [
+				{
+					count: 8
+					id: "F300000000000028"
+					item: "create:shaft"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "F300000000000029"
+					item: "create:cogwheel"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "F200000000000027"
+				title: "Create: Propulsion の推進装置を飛行船に取り付け、自力で推進した"
+				type: "checkmark"
+			}]
+			title: "艦の推進装置"
+			x: -3.0d
+			y: -2.5d
+		}
 	]
 	title: "第4章：空中拠点化 / Sky Base"
 }

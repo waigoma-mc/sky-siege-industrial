@@ -418,6 +418,48 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["7B99CF066A058D34"]
+			description: [
+				"地上のどこかに隕石が落ちている。"
+				"Sky Stone（隕石岩）でできたクレーターを探せ。"
+				"内部に Certus Quartz Crystal と Sky Stone が埋まっている——"
+				"これが AE2 のすべての始まりだ。"
+				"隕石コンパス（ae2:meteorite_compass）を作れば次の隕石を探せる。"
+			]
+			icon: "ae2:sky_stone_block"
+			id: "F10000000000001E"
+			rewards: [
+				{
+					count: 8
+					id: "F300000000000057"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "F300000000000058"
+					item: "ae2:sky_stone_block"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "F200000000000034"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
+				{
+					id: "F200000000000035"
+					title: "AE2 の隕石を発見し、Sky Stone と Certus Quartz を採掘した"
+					type: "checkmark"
+				}
+			]
+			title: "隕石を探せ"
+			x: 8.0d
+			y: 1.5d
+		}
+		{
 			dependencies: ["7638FD8CD5B17DAE"]
 			description: [
 				"FallingTree が入っている。"
