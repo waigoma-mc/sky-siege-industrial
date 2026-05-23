@@ -1,0 +1,386 @@
+{
+	id: "C1",
+	group: "",
+	order_index: 1,
+	filename: "1_ground_survival",
+	title: "第1章：地上サバイバル / Ground Survival",
+	icon: "create:andesite_alloy",
+	subtitle: "工業化の種を、危険な地上で育てろ。",
+	default_quest_shape: "square",
+	default_hide_dependency_lines: false,
+	quests: [
+		{
+			x: 0.0d,
+			y: 0.0d,
+			id: "C1_Q01",
+			title: "銅の採掘",
+			icon: "minecraft:raw_copper",
+			description: [
+				"鉄だけでは足りない。",
+				"銅は Create と Immersive Engineering の両方で使う。",
+				"地上探索の序盤で優先して集めろ。"
+			],
+			tasks: [{
+				id: "C1_Q01_T1",
+				type: "item",
+				item: "minecraft:raw_copper",
+				count: 32L
+			}],
+			rewards: [{
+				id: "C1_Q01_R1",
+				type: "item",
+				item: "minecraft:copper_ingot",
+				count: 16
+			}]
+		},
+		{
+			x: 2.0d,
+			y: 0.0d,
+			id: "C1_Q02",
+			title: "Andesite Alloy",
+			icon: "create:andesite_alloy",
+			description: [
+				"Create の基礎素材。",
+				"鉄と閃緑岩を組み合わせて作る合金だ。",
+				"これがなければ、Create の機械は動かない。"
+			],
+			dependencies: ["C1_Q01"],
+			tasks: [{
+				id: "C1_Q02_T1",
+				type: "item",
+				item: "create:andesite_alloy",
+				count: 16L
+			}],
+			rewards: [
+				{
+					id: "C1_Q02_R1",
+					type: "item",
+					item: "create:shaft",
+					count: 4
+				},
+				{
+					id: "C1_Q02_R2",
+					type: "item",
+					item: "create:cogwheel",
+					count: 4
+				}
+			]
+		},
+		{
+			x: 2.0d,
+			y: -2.5d,
+			id: "C1_Q03",
+			title: "IE への第一歩",
+			icon: "immersiveengineering:hammer",
+			description: [
+				"Immersive Engineering はまず Engineer's Hammer から始まる。",
+				"このハンマーがなければ、IE の多くのブロックは機能しない。",
+				"重工業の扉を開く鍵だ。"
+			],
+			dependencies: ["C1_Q01"],
+			tasks: [{
+				id: "C1_Q03_T1",
+				type: "item",
+				item: "immersiveengineering:hammer",
+				count: 1L
+			}],
+			rewards: [
+				{
+					id: "C1_Q03_R1",
+					type: "item",
+					item: "minecraft:iron_ingot",
+					count: 8
+				},
+				{
+					id: "C1_Q03_R2",
+					type: "item",
+					item: "minecraft:copper_ingot",
+					count: 8
+				}
+			]
+		},
+		{
+			x: 4.0d,
+			y: 1.5d,
+			id: "C1_Q04",
+			title: "動力の芽生え",
+			icon: "create:water_wheel",
+			description: [
+				"Create の機械には動力が必要だ。",
+				"まずは水車か風車で、最初の回転力を生み出せ。",
+				"川のそばに設置すれば、水車は手軽な動力源になる。"
+			],
+			dependencies: ["C1_Q02"],
+			tasks: [{
+				id: "C1_Q04_T1",
+				type: "item",
+				item: "create:water_wheel",
+				count: 1L
+			}],
+			rewards: [
+				{
+					id: "C1_Q04_R1",
+					type: "item",
+					item: "create:cogwheel",
+					count: 8
+				},
+				{
+					id: "C1_Q04_R2",
+					type: "item",
+					item: "create:large_cogwheel",
+					count: 4
+				}
+			]
+		},
+		{
+			x: 4.0d,
+			y: -1.0d,
+			id: "C1_Q05",
+			title: "Coke Oven 建設",
+			icon: "immersiveengineering:coke_brick",
+			description: [
+				"石炭をコークスに変える多ブロック炉。",
+				"IE の上位機械はコークスコールを必要とする。",
+				"Coke Brick を焼いて、Engineer's Hammer で完成させろ。"
+			],
+			dependencies: ["C1_Q03"],
+			tasks: [{
+				id: "C1_Q05_T1",
+				type: "item",
+				item: "immersiveengineering:coke_brick",
+				count: 27L
+			}],
+			rewards: [{
+				id: "C1_Q05_R1",
+				type: "item",
+				item: "immersiveengineering:coal_coke",
+				count: 16
+			}]
+		},
+		{
+			x: 4.0d,
+			y: -4.0d,
+			id: "C1_Q06",
+			title: "Treated Wood",
+			icon: "immersiveengineering:treated_wood_horizontal",
+			description: [
+				"IE の構造材の基本。",
+				"Coke Oven で生成した木タールを木材に染み込ませて作る。",
+				"MV / HV タイアーの機械は大量に必要とする。"
+			],
+			dependencies: ["C1_Q05"],
+			tasks: [{
+				id: "C1_Q06_T1",
+				type: "item",
+				item: "immersiveengineering:treated_wood_horizontal",
+				count: 16L
+			}],
+			rewards: [{
+					id: "C1_Q06_R1",
+					type: "item",
+					item: "immersiveengineering:treated_wood_horizontal",
+					count: 16
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 0.0d,
+			id: "C1_Q07",
+			title: "廃墟を漁れ",
+			icon: "minecraft:map",
+			description: [
+				"地上の廃墟やダンジョンには、旧文明の遺産が眠っている。",
+				"危険を冒してでも探索する価値がある。",
+				"だが欲張るな——荷物が重くなったら撤退しろ。"
+			],
+			dependencies: ["C1_Q04", "C1_Q05"],
+			tasks: [{
+				id: "C1_Q07_T1",
+				type: "checkmark",
+				title: "地上の廃墟またはダンジョンを1か所探索した"
+			}],
+			rewards: [
+				{
+					id: "C1_Q07_R1",
+					type: "item",
+					item: "minecraft:diamond",
+					count: 2
+				},
+				{
+					id: "C1_Q07_R2",
+					type: "item",
+					item: "minecraft:gunpowder",
+					count: 16
+				},
+				{
+					id: "C1_Q07_R3",
+					type: "item",
+					item: "minecraft:map",
+					count: 1
+				}
+			]
+		},
+		{
+			x: 6.0d,
+			y: -3.0d,
+			id: "C1_Q08",
+			title: "LV Wire Coil",
+			icon: "immersiveengineering:wire_coil_copper",
+			description: [
+				"IE の電力網の起点。",
+				"LV（低電圧）は最初に扱うエネルギー段階だ。",
+				"銅のワイヤーコイルで機械を繋げ。"
+			],
+			dependencies: ["C1_Q06"],
+			tasks: [{
+				id: "C1_Q08_T1",
+				type: "item",
+				item: "immersiveengineering:wire_coil_copper",
+				count: 4L
+			}],
+			rewards: [{
+				id: "C1_Q08_R1",
+				type: "item",
+				item: "immersiveengineering:wire_coil_copper",
+				count: 8
+			}]
+		},
+		{
+			x: 8.0d,
+			y: 1.5d,
+			id: "C1_Q09",
+			title: "Mechanical Press",
+			icon: "create:mechanical_press",
+			description: [
+				"Create の加工機械の要。",
+				"プレスで金属板やケーシングを量産できる。",
+				"動力を繋いで、最初の自動化ラインを作れ。"
+			],
+			dependencies: ["C1_Q04", "C1_Q07"],
+			tasks: [{
+				id: "C1_Q09_T1",
+				type: "item",
+				item: "create:mechanical_press",
+				count: 1L
+			}],
+			rewards: [
+				{
+					id: "C1_Q09_R1",
+					type: "item",
+					item: "create:shaft",
+					count: 8
+				},
+				{
+					id: "C1_Q09_R2",
+					type: "item",
+					item: "create:andesite_casing",
+					count: 4
+				}
+			]
+		},
+		{
+			x: 8.0d,
+			y: -1.5d,
+			id: "C1_Q10",
+			title: "鉱石の山",
+			icon: "minecraft:iron_ingot",
+			description: [
+				"空中拠点を作るには大量の金属が必要だ。",
+				"今のうちに蓄えておけ。",
+				"後で後悔しても遅い。"
+			],
+			dependencies: ["C1_Q07"],
+			tasks: [{
+				id: "C1_Q10_T1",
+				type: "item",
+				item: "minecraft:iron_ingot",
+				count: 64L
+			}],
+			rewards: [{
+				id: "C1_Q10_R1",
+				type: "item",
+				item: "minecraft:iron_ingot",
+				count: 16
+			}]
+		},
+		{
+			x: 8.0d,
+			y: -4.5d,
+			id: "C1_Q11",
+			title: "最初の武装",
+			icon: "minecraft:crossbow",
+			description: [
+				"地上はますます危険になっている。",
+				"銃火器や弓で武装し、探索の安全を確保しろ。",
+				"TaCZ の銃が手に入るなら、それが最善だ。"
+			],
+			dependencies: ["C1_Q07"],
+			tasks: [
+				{
+					id: "C1_Q11_T1",
+					type: "item",
+					item: "minecraft:gunpowder",
+					count: 32L
+				},
+				{
+					id: "C1_Q11_T2",
+					type: "item",
+					item: "minecraft:crossbow",
+					count: 1L
+				}
+			],
+			rewards: [
+				{
+					id: "C1_Q11_R1",
+					type: "item",
+					item: "minecraft:arrow",
+					count: 64
+				},
+				{
+					id: "C1_Q11_R2",
+					type: "item",
+					item: "minecraft:iron_chestplate",
+					count: 1
+				}
+			]
+		},
+		{
+			x: 10.0d,
+			y: 0.0d,
+			id: "C1_Q12",
+			title: "工業化の夜明け",
+			icon: "create:brass_ingot",
+			subtitle: "地上サバイバル章クリア",
+			description: [
+				"Create の機械が動き始め、IE の炉が火を噴く。",
+				"この段階まで来れば、空への道は近い。",
+				"次の章では、本格的な工業機械を揃える。"
+			],
+			dependencies: ["C1_Q09", "C1_Q10", "C1_Q11"],
+			tasks: [{
+				id: "C1_Q12_T1",
+				type: "checkmark",
+				title: "第1章クリアを確認"
+			}],
+			rewards: [
+				{
+					id: "C1_Q12_R1",
+					type: "item",
+					item: "create:andesite_alloy",
+					count: 32
+				},
+				{
+					id: "C1_Q12_R2",
+					type: "item",
+					item: "immersiveengineering:treated_wood_horizontal",
+					count: 32
+				},
+				{
+					id: "C1_Q12_R3",
+					type: "xp",
+					xp: 150
+				}
+			]
+		}
+	]
+}

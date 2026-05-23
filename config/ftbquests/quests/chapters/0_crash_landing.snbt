@@ -1,0 +1,332 @@
+{
+	id: "C0",
+	group: "",
+	order_index: 0,
+	filename: "0_crash_landing",
+	title: "第0章：墜落 / Crash Landing",
+	icon: "minecraft:flint_and_steel",
+	subtitle: "地上は、もう安全ではない。",
+	default_quest_shape: "square",
+	default_hide_dependency_lines: false,
+	quests: [
+		{
+			x: 0.0d,
+			y: 0.0d,
+			id: "C0_Q01",
+			title: "目覚め",
+			icon: "minecraft:oak_log",
+			subtitle: "まず、動け。",
+			description: [
+				"機体は地に叩きつけられた。",
+				"散乱した残骸の中で目が覚める。",
+				"遠くから唸り声が聞こえてくる——",
+				"急いで動かなければ。"
+			],
+			tasks: [{
+				id: "C0_Q01_T1",
+				type: "item",
+				item: "minecraft:oak_log",
+				count: 8L
+			}],
+			rewards: [
+				{
+					id: "C0_Q01_R1",
+					type: "item",
+					item: "minecraft:torch",
+					count: 16
+				},
+				{
+					id: "C0_Q01_R2",
+					type: "item",
+					item: "minecraft:bread",
+					count: 4
+				}
+			]
+		},
+		{
+			x: 2.0d,
+			y: 0.0d,
+			id: "C0_Q02",
+			title: "石の道具一式",
+			icon: "minecraft:stone_pickaxe",
+			description: [
+				"素手で戦い続けるつもりか？",
+				"まず作業台を作り、石の道具を揃えろ。",
+				"これがすべての始まりだ。"
+			],
+			dependencies: ["C0_Q01"],
+			tasks: [
+				{
+					id: "C0_Q02_T1",
+					type: "item",
+					item: "minecraft:stone_pickaxe",
+					count: 1L
+				},
+				{
+					id: "C0_Q02_T2",
+					type: "item",
+					item: "minecraft:stone_sword",
+					count: 1L
+				},
+				{
+					id: "C0_Q02_T3",
+					type: "item",
+					item: "minecraft:stone_shovel",
+					count: 1L
+				}
+			],
+			rewards: [{
+				id: "C0_Q02_R1",
+				type: "item",
+				item: "minecraft:apple",
+				count: 8
+			}]
+		},
+		{
+			x: 4.0d,
+			y: 1.5d,
+			id: "C0_Q03",
+			title: "食料確保",
+			icon: "minecraft:bread",
+			description: [
+				"空腹で倒れれば、それが最期だ。",
+				"動いている間に食料を手に入れろ。",
+				"何でもいい——とにかく腹を満たせ。"
+			],
+			dependencies: ["C0_Q02"],
+			tasks: [{
+				id: "C0_Q03_T1",
+				type: "item",
+				item: "minecraft:bread",
+				count: 8L
+			}],
+			rewards: [{
+				id: "C0_Q03_R1",
+				type: "item",
+				item: "minecraft:cooked_chicken",
+				count: 8
+			}]
+		},
+		{
+			x: 4.0d,
+			y: -1.5d,
+			id: "C0_Q04",
+			title: "松明を灯せ",
+			icon: "minecraft:torch",
+			description: [
+				"夜の地上は特に危険だ。",
+				"闇の中にいる奴らを近づけるな。",
+				"光が命を救う。"
+			],
+			dependencies: ["C0_Q02"],
+			tasks: [{
+				id: "C0_Q04_T1",
+				type: "item",
+				item: "minecraft:torch",
+				count: 32L
+			}],
+			rewards: [{
+				id: "C0_Q04_R1",
+				type: "item",
+				item: "minecraft:coal",
+				count: 32
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 1.5d,
+			id: "C0_Q05",
+			title: "仮設キャンプ設営",
+			icon: "minecraft:furnace",
+			description: [
+				"長期滞在はするな。",
+				"だが採掘の拠点は必要だ。",
+				"炉と箱——それだけあれば十分だ。"
+			],
+			dependencies: ["C0_Q03"],
+			tasks: [
+				{
+					id: "C0_Q05_T1",
+					type: "item",
+					item: "minecraft:furnace",
+					count: 1L
+				},
+				{
+					id: "C0_Q05_T2",
+					type: "item",
+					item: "minecraft:chest",
+					count: 2L
+				}
+			],
+			rewards: [{
+				id: "C0_Q05_R1",
+				type: "item",
+				item: "minecraft:flint_and_steel",
+				count: 1
+			}]
+		},
+		{
+			x: 6.0d,
+			y: -1.5d,
+			id: "C0_Q06",
+			title: "初夜を生き延びろ",
+			icon: "minecraft:zombie_head",
+			description: [
+				"ホードが来る。",
+				"この夜を生き延びれば、次の一手を考えられる。",
+				"戦え、隠れろ、どちらでもいい——朝を迎えろ。"
+			],
+			dependencies: ["C0_Q02", "C0_Q04"],
+			tasks: [{
+				id: "C0_Q06_T1",
+				type: "kill",
+				entity: "minecraft:zombie",
+				value: 10L
+			}],
+			rewards: [
+				{
+					id: "C0_Q06_R1",
+					type: "item",
+					item: "minecraft:leather_chestplate",
+					count: 1
+				},
+				{
+					id: "C0_Q06_R2",
+					type: "item",
+					item: "minecraft:golden_apple",
+					count: 1
+				}
+			]
+		},
+		{
+			x: 8.0d,
+			y: 0.0d,
+			id: "C0_Q07",
+			title: "鉄を掘れ",
+			icon: "minecraft:raw_iron",
+			description: [
+				"石の道具では限界がある。",
+				"鉄を掘りに行け——だが長居は禁物だ。",
+				"掘ったら戻れ。それだけだ。"
+			],
+			dependencies: ["C0_Q05", "C0_Q06"],
+			tasks: [{
+				id: "C0_Q07_T1",
+				type: "item",
+				item: "minecraft:raw_iron",
+				count: 16L
+			}],
+			rewards: [{
+				id: "C0_Q07_R1",
+				type: "item",
+				item: "minecraft:iron_ingot",
+				count: 4
+			}]
+		},
+		{
+			x: 8.0d,
+			y: -3.0d,
+			id: "C0_Q08",
+			title: "【重要】地上は敵だ",
+			icon: "minecraft:barrier",
+			subtitle: "このルールを忘れるな。",
+			description: [
+				"地上に恒久拠点を作ってはいけない。",
+				"地上は採掘と戦利品回収のためだけの場所だ。",
+				"生活の基盤は、すべて空に作れ。",
+				"このルールが、あなたを生かし続ける。"
+			],
+			dependencies: ["C0_Q06"],
+			tasks: [{
+				id: "C0_Q08_T1",
+				type: "checkmark",
+				title: "地上滞在禁止ルールを理解した"
+			}],
+			rewards: [
+				{
+					id: "C0_Q08_R1",
+					type: "item",
+					item: "minecraft:feather",
+					count: 8
+				},
+				{
+					id: "C0_Q08_R2",
+					type: "xp",
+					xp: 30
+				}
+			]
+		},
+		{
+			x: 10.0d,
+			y: 0.0d,
+			id: "C0_Q09",
+			title: "製鉄開始",
+			icon: "minecraft:iron_ingot",
+			description: [
+				"炉に火を灯せ。",
+				"溶けた鉄の音が聞こえる。",
+				"これがすべての工業化の起点だ。"
+			],
+			dependencies: ["C0_Q07"],
+			tasks: [{
+				id: "C0_Q09_T1",
+				type: "item",
+				item: "minecraft:iron_ingot",
+				count: 16L
+			}],
+			rewards: [
+				{
+					id: "C0_Q09_R1",
+					type: "item",
+					item: "minecraft:iron_ingot",
+					count: 8
+				},
+				{
+					id: "C0_Q09_R2",
+					type: "item",
+					item: "minecraft:copper_ingot",
+					count: 16
+				}
+			]
+		},
+		{
+			x: 12.0d,
+			y: 0.0d,
+			id: "C0_Q10",
+			title: "空へ——",
+			icon: "minecraft:feather",
+			subtitle: "生存の第一段階クリア",
+			description: [
+				"最低限の準備は整った。",
+				"次は空に逃げる手段を作ることだ。",
+				"地上工業化、そして初飛行への道が開けた。",
+				"振り返るな。空を見上げろ。"
+			],
+			dependencies: ["C0_Q08", "C0_Q09"],
+			tasks: [{
+				id: "C0_Q10_T1",
+				type: "checkmark",
+				title: "第0章クリアを確認"
+			}],
+			rewards: [
+				{
+					id: "C0_Q10_R1",
+					type: "item",
+					item: "minecraft:iron_ingot",
+					count: 16
+				},
+				{
+					id: "C0_Q10_R2",
+					type: "item",
+					item: "minecraft:copper_ingot",
+					count: 16
+				},
+				{
+					id: "C0_Q10_R3",
+					type: "xp",
+					xp: 100
+				}
+			]
+		}
+	]
+}

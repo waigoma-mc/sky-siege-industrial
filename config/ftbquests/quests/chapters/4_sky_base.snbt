@@ -1,0 +1,420 @@
+{
+	id: "C4",
+	group: "",
+	order_index: 4,
+	filename: "4_sky_base",
+	title: "第4章：空中拠点化 / Sky Base",
+	icon: "ae2:me_chest",
+	subtitle: "空中に、生活と工業の基盤を作れ。",
+	default_quest_shape: "square",
+	default_hide_dependency_lines: false,
+	quests: [
+		{
+			x: 0.0d,
+			y: 0.0d,
+			id: "C4_Q01",
+			title: "農業区画の設営",
+			icon: "minecraft:wheat_seeds",
+			description: [
+				"空中で食料を自給できなければ、毎回地上に降りることになる。",
+				"飛行船内に耕地を作り、小麦・ニンジン・ジャガイモを植えろ。",
+				"農場は拠点の命綱だ。"
+			],
+			tasks: [
+				{
+					id: "C4_Q01_T1",
+					type: "item",
+					item: "minecraft:wheat_seeds",
+					count: 16L
+				},
+				{
+					id: "C4_Q01_T2",
+					type: "checkmark",
+					title: "空中拠点に農業区画（耕地 16 マス以上）を設置した"
+				}
+			],
+			rewards: [
+				{
+					id: "C4_Q01_R1",
+					type: "item",
+					item: "minecraft:bread",
+					count: 32
+				},
+				{
+					id: "C4_Q01_R2",
+					type: "item",
+					item: "minecraft:carrot",
+					count: 16
+				}
+			]
+		},
+		{
+			x: 2.0d,
+			y: 0.0d,
+			id: "C4_Q02",
+			title: "食料自給自足",
+			icon: "minecraft:bread",
+			description: [
+				"農場が軌道に乗れば、地上へ食料調達に降りる必要がなくなる。",
+				"Create の自動収穫機を使えば、さらに効率が上がる。",
+				"空腹から解放された瞬間、真の空中生活が始まる。"
+			],
+			dependencies: ["C4_Q01"],
+			tasks: [{
+				id: "C4_Q02_T1",
+				type: "item",
+				item: "minecraft:bread",
+				count: 32L
+			}],
+			rewards: [
+				{
+					id: "C4_Q02_R1",
+					type: "item",
+					item: "minecraft:golden_carrot",
+					count: 4
+				},
+				{
+					id: "C4_Q02_R2",
+					type: "item",
+					item: "minecraft:cooked_beef",
+					count: 16
+				}
+			]
+		},
+		{
+			x: 0.0d,
+			y: -3.0d,
+			id: "C4_Q03",
+			title: "空中発電区画",
+			icon: "immersiveengineering:windmill",
+			description: [
+				"飛行船に発電設備を搭載しろ。",
+				"IE の風車か Create の帆を使えば、空中でも発電できる。",
+				"工業化が進むにつれて電力需要は爆発的に増える——今から備えろ。"
+			],
+			tasks: [{
+				id: "C4_Q03_T1",
+				type: "checkmark",
+				title: "空中拠点に発電区画を設置し、電力供給を開始した"
+			}],
+			rewards: [
+				{
+					id: "C4_Q03_R1",
+					type: "item",
+					item: "immersiveengineering:wire_coil_copper",
+					count: 16
+				},
+				{
+					id: "C4_Q03_R2",
+					type: "item",
+					item: "immersiveengineering:connector",
+					count: 8
+				}
+			]
+		},
+		{
+			x: 2.0d,
+			y: -3.0d,
+			id: "C4_Q04",
+			title: "電力網の構築",
+			icon: "immersiveengineering:wire_coil_copper",
+			description: [
+				"発電機から各機械へ電力を届けるケーブル網を作れ。",
+				"LV → MV → HV と段階的に強化していく必要がある。",
+				"整理されていない配線は後で必ず苦労する——今から綺麗にしろ。"
+			],
+			dependencies: ["C4_Q03"],
+			tasks: [
+				{
+					id: "C4_Q04_T1",
+					type: "item",
+					item: "immersiveengineering:wire_coil_copper",
+					count: 32L
+				},
+				{
+					id: "C4_Q04_T2",
+					type: "item",
+					item: "immersiveengineering:connector",
+					count: 8L
+				}
+			],
+			rewards: [
+				{
+					id: "C4_Q04_R1",
+					type: "item",
+					item: "immersiveengineering:wire_coil_steel",
+					count: 8
+				}
+			]
+		},
+		{
+			x: 2.0d,
+			y: 3.0d,
+			id: "C4_Q05",
+			title: "空中加工区画",
+			icon: "create:mechanical_press",
+			description: [
+				"地上から回収した鉱石を空中で処理できる体制を作れ。",
+				"Crushing Wheels + Mechanical Press を飛行船に移設しろ。",
+				"地上は採掘のため、加工は空中で——これが効率的なサイクルだ。"
+			],
+			dependencies: ["C4_Q01"],
+			tasks: [{
+				id: "C4_Q05_T1",
+				type: "checkmark",
+				title: "空中拠点に鉱石加工区画（Crushing Wheels 等）を設置した"
+			}],
+			rewards: [
+				{
+					id: "C4_Q05_R1",
+					type: "item",
+					item: "create:shaft",
+					count: 16
+				},
+				{
+					id: "C4_Q05_R2",
+					type: "item",
+					item: "create:cogwheel",
+					count: 16
+				}
+			]
+		},
+		{
+			x: 4.0d,
+			y: 1.5d,
+			id: "C4_Q06",
+			title: "倉庫区画の整備",
+			icon: "minecraft:barrel",
+			description: [
+				"増え続けるアイテムを整理する仕組みが必要だ。",
+				"チェストと樽で素材ごとに分類しろ。",
+				"AE2 が完成するまでの間の、手動倉庫管理だ。"
+			],
+			dependencies: ["C4_Q02", "C4_Q05"],
+			tasks: [
+				{
+					id: "C4_Q06_T1",
+					type: "item",
+					item: "minecraft:barrel",
+					count: 8L
+				},
+				{
+					id: "C4_Q06_T2",
+					type: "item",
+					item: "minecraft:chest",
+					count: 8L
+				}
+			],
+			rewards: [
+				{
+					id: "C4_Q06_R1",
+					type: "item",
+					item: "minecraft:barrel",
+					count: 8
+				},
+				{
+					id: "C4_Q06_R2",
+					type: "item",
+					item: "minecraft:hopper",
+					count: 4
+				}
+			]
+		},
+		{
+			x: 4.0d,
+			y: -1.5d,
+			id: "C4_Q07",
+			title: "チャンクロード",
+			icon: "ftbchunks:chunk_overview",
+			description: [
+				"飛行船が離れていても空中拠点を稼働させ続けるには、",
+				"FTB Chunks でチャンクをロードしておく必要がある。",
+				"拠点のあるチャンクをすべてロード登録しろ。"
+			],
+			dependencies: ["C4_Q04"],
+			tasks: [{
+				id: "C4_Q07_T1",
+				type: "checkmark",
+				title: "FTB Chunks で空中拠点のチャンクをロードした"
+			}],
+			rewards: [
+				{
+					id: "C4_Q07_R1",
+					type: "item",
+					item: "minecraft:ender_pearl",
+					count: 4
+				}
+			]
+		},
+		{
+			x: 6.0d,
+			y: 1.5d,
+			id: "C4_Q08",
+			title: "ME Chest — AE2 の第一歩",
+			icon: "ae2:me_chest",
+			description: [
+				"Applied Energistics 2 のネットワークへようこそ。",
+				"ME Chest は AE2 の最もシンプルなストレージだ。",
+				"Storage Cell を差し込み、アイテムを吸い込ませろ。"
+			],
+			dependencies: ["C4_Q06"],
+			tasks: [{
+				id: "C4_Q08_T1",
+				type: "item",
+				item: "ae2:me_chest",
+				count: 1L
+			}],
+			rewards: [
+				{
+					id: "C4_Q08_R1",
+					type: "item",
+					item: "ae2:1k_item_storage_cell",
+					count: 2
+				},
+				{
+					id: "C4_Q08_R2",
+					type: "item",
+					item: "ae2:fluix_crystal",
+					count: 8
+				}
+			]
+		},
+		{
+			x: 8.0d,
+			y: 1.5d,
+			id: "C4_Q09",
+			title: "ME Drive",
+			icon: "ae2:drive",
+			description: [
+				"ME Chest の上位——ME Drive は複数の Storage Cell を一括管理できる。",
+				"ここから本格的な AE2 ネットワーク構築が始まる。",
+				"Controller と繋いでネットワークを広げろ。"
+			],
+			dependencies: ["C4_Q08"],
+			tasks: [{
+				id: "C4_Q09_T1",
+				type: "item",
+				item: "ae2:drive",
+				count: 1L
+			}],
+			rewards: [
+				{
+					id: "C4_Q09_R1",
+					type: "item",
+					item: "ae2:4k_item_storage_cell",
+					count: 2
+				},
+				{
+					id: "C4_Q09_R2",
+					type: "item",
+					item: "ae2:calculation_processor",
+					count: 4
+				}
+			]
+		},
+		{
+			x: 8.0d,
+			y: -1.5d,
+			id: "C4_Q10",
+			title: "ME Controller",
+			icon: "ae2:controller",
+			description: [
+				"AE2 ネットワークの中枢。",
+				"Controller に全てのデバイスを繋ぐことで、ネットワークが完成する。",
+				"空中拠点のメインストレージはここに置け——地上には置くな。"
+			],
+			dependencies: ["C4_Q09", "C4_Q07"],
+			tasks: [{
+				id: "C4_Q10_T1",
+				type: "item",
+				item: "ae2:controller",
+				count: 1L
+			}],
+			rewards: [
+				{
+					id: "C4_Q10_R1",
+					type: "item",
+					item: "ae2:logic_processor",
+					count: 4
+				},
+				{
+					id: "C4_Q10_R2",
+					type: "item",
+					item: "ae2:engineering_processor",
+					count: 4
+				}
+			]
+		},
+		{
+			x: 6.0d,
+			y: -4.5d,
+			id: "C4_Q11",
+			title: "空中農場の完成",
+			icon: "minecraft:wheat",
+			description: [
+				"農場が軌道に乗り、食料が安定して手に入るようになった。",
+				"Create の自動収穫機を追加すれば、さらに無人運用できる。",
+				"地上への食料調達降下は——もう不要だ。"
+			],
+			dependencies: ["C4_Q05", "C4_Q07"],
+			tasks: [{
+				id: "C4_Q11_T1",
+				type: "item",
+				item: "minecraft:wheat",
+				count: 64L
+			}],
+			rewards: [
+				{
+					id: "C4_Q11_R1",
+					type: "item",
+					item: "minecraft:bread",
+					count: 32
+				},
+				{
+					id: "C4_Q11_R2",
+					type: "item",
+					item: "minecraft:cooked_beef",
+					count: 16
+				}
+			]
+		},
+		{
+			x: 10.0d,
+			y: 0.0d,
+			id: "C4_Q12",
+			title: "空中要塞の礎",
+			icon: "ae2:controller",
+			subtitle: "空中拠点化章クリア",
+			description: [
+				"農場・発電・加工・倉庫・AE2——すべてが空に揃った。",
+				"これは要塞ではなく、まだ拠点だ。",
+				"次の章では、この拠点を武装させる。"
+			],
+			dependencies: ["C4_Q10", "C4_Q11"],
+			tasks: [{
+				id: "C4_Q12_T1",
+				type: "checkmark",
+				title: "第4章クリアを確認"
+			}],
+			rewards: [
+				{
+					id: "C4_Q12_R1",
+					type: "item",
+					item: "ae2:controller",
+					count: 1
+				},
+				{
+					id: "C4_Q12_R2",
+					type: "item",
+					item: "mekanism:energy_tablet",
+					count: 4
+				},
+				{
+					id: "C4_Q12_R3",
+					type: "xp",
+					xp: 400
+				}
+			]
+		}
+	]
+}

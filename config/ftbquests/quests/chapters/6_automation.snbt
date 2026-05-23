@@ -1,0 +1,530 @@
+{
+	id: "C6",
+	group: "",
+	order_index: 6,
+	filename: "6_automation",
+	title: "第6章：自動化と大量生産 / Automation",
+	icon: "mekanism:enrichment_chamber",
+	subtitle: "機械が機械を動かす。これが工業の極致だ。",
+	default_quest_shape: "square",
+	default_hide_dependency_lines: false,
+	quests: [
+		{
+			x: 0.0d,
+			y: 0.0d,
+			id: "C6_Q01",
+			title: "Mekanism 入門",
+			icon: "mekanism:enrichment_chamber",
+			description: [
+				"Mekanism は鉱石処理・ガス処理・電力・最終装備を担う巨大 Mod だ。",
+				"まず Enrichment Chamber（濃縮室）から始めろ。",
+				"鉱石を粉末にして処理量を2倍に増やす最初の機械だ。"
+			],
+			tasks: [{
+				id: "C6_Q01_T1",
+				type: "item",
+				item: "mekanism:enrichment_chamber",
+				count: 1L
+			}],
+			rewards: [
+				{
+					id: "C6_Q01_R1",
+					type: "item",
+					item: "mekanism:alloy_infused",
+					count: 8
+				},
+				{
+					id: "C6_Q01_R2",
+					type: "item",
+					item: "mekanism:energy_tablet",
+					count: 4
+				}
+			]
+		},
+		{
+			x: 2.0d,
+			y: 0.0d,
+			id: "C6_Q02",
+			title: "鉱石2倍化ライン",
+			icon: "mekanism:crusher",
+			description: [
+				"Crusher（破砕機）→ Enrichment Chamber の2段処理ラインで、",
+				"鉱石1個から鉱物2個が手に入る。",
+				"今すぐラインを引いて、採掘効率を2倍にしろ。"
+			],
+			dependencies: ["C6_Q01"],
+			tasks: [
+				{
+					id: "C6_Q02_T1",
+					type: "item",
+					item: "mekanism:crusher",
+					count: 1L
+				},
+				{
+					id: "C6_Q02_T2",
+					type: "checkmark",
+					title: "Mekanism で鉱石2倍化ラインを稼働させた"
+				}
+			],
+			rewards: [
+				{
+					id: "C6_Q02_R1",
+					type: "item",
+					item: "minecraft:iron_ingot",
+					count: 64
+				},
+				{
+					id: "C6_Q02_R2",
+					type: "item",
+					item: "mekanism:alloy_reinforced",
+					count: 4
+				}
+			]
+		},
+		{
+			x: 4.0d,
+			y: 0.0d,
+			id: "C6_Q03",
+			title: "鉱石3倍化ライン",
+			icon: "mekanism:purification_chamber",
+			description: [
+				"Purification Chamber（精製室）を追加すると、処理が3倍になる。",
+				"Oxygen Gas が必要——Electrolyzer で水を分解して生産しろ。",
+				"ガス処理の扉が開いた。Mekanism の本質はここからだ。"
+			],
+			dependencies: ["C6_Q02"],
+			tasks: [
+				{
+					id: "C6_Q03_T1",
+					type: "item",
+					item: "mekanism:purification_chamber",
+					count: 1L
+				},
+				{
+					id: "C6_Q03_T2",
+					type: "checkmark",
+					title: "Mekanism で鉱石3倍化ラインを稼働させた"
+				}
+			],
+			rewards: [
+				{
+					id: "C6_Q03_R1",
+					type: "item",
+					item: "minecraft:iron_ingot",
+					count: 128
+				},
+				{
+					id: "C6_Q03_R2",
+					type: "item",
+					item: "mekanism:osmium_ingot",
+					count: 32
+				}
+			]
+		},
+		{
+			x: 0.0d,
+			y: -3.0d,
+			id: "C6_Q04",
+			title: "AE2 自動クラフト開始",
+			icon: "ae2:pattern_provider",
+			description: [
+				"AE2 の自動クラフトは、ネットワークの真の力だ。",
+				"Pattern Provider にパターンを登録すれば、",
+				"材料を入れるだけで自動でアイテムが完成する。"
+			],
+			tasks: [{
+				id: "C6_Q04_T1",
+				type: "item",
+				item: "ae2:pattern_provider",
+				count: 1L
+			}],
+			rewards: [
+				{
+					id: "C6_Q04_R1",
+					type: "item",
+					item: "ae2:crafting_unit",
+					count: 4
+				},
+				{
+					id: "C6_Q04_R2",
+					type: "item",
+					item: "ae2:calculation_processor",
+					count: 8
+				}
+			]
+		},
+		{
+			x: 2.0d,
+			y: -3.0d,
+			id: "C6_Q05",
+			title: "最初のパターン登録",
+			icon: "ae2:crafting_unit",
+			description: [
+				"Crafting Unit と Crafting Monitor でクラフティングシステムを組め。",
+				"最初に登録するパターンは——よく使う鉄アイテムや弾薬にしろ。",
+				"AE2 が自動で作り始めた瞬間、世界が変わる。"
+			],
+			dependencies: ["C6_Q04"],
+			tasks: [
+				{
+					id: "C6_Q05_T1",
+					type: "item",
+					item: "ae2:crafting_unit",
+					count: 4L
+				},
+				{
+					id: "C6_Q05_T2",
+					type: "checkmark",
+					title: "AE2 でパターンを登録し、自動クラフトを1回実行した"
+				}
+			],
+			rewards: [
+				{
+					id: "C6_Q05_R1",
+					type: "item",
+					item: "ae2:crafting_storage_1k",
+					count: 2
+				},
+				{
+					id: "C6_Q05_R2",
+					type: "item",
+					item: "ae2:engineering_processor",
+					count: 8
+				}
+			]
+		},
+		{
+			x: 4.0d,
+			y: -3.0d,
+			id: "C6_Q06",
+			title: "主要素材の自動クラフト",
+			icon: "ae2:crafting_monitor",
+			description: [
+				"Mekanism Alloy・Create の Brass・弾薬素材——",
+				"繰り返し必要になるものを全部自動化しろ。",
+				"手作りする必要がなくなった時、真の工業拠点が完成する。"
+			],
+			dependencies: ["C6_Q05"],
+			tasks: [{
+				id: "C6_Q06_T1",
+				type: "checkmark",
+				title: "主要素材（Mekanism Alloy・Create Brass・弾薬素材）の自動クラフトを稼働させた"
+			}],
+			rewards: [
+				{
+					id: "C6_Q06_R1",
+					type: "item",
+					item: "ae2:crafting_storage_4k",
+					count: 2
+				},
+				{
+					id: "C6_Q06_R2",
+					type: "item",
+					item: "ae2:logic_processor",
+					count: 16
+				}
+			]
+		},
+		{
+			x: 0.0d,
+			y: 3.0d,
+			id: "C6_Q07",
+			title: "Create 自動搬送ライン",
+			icon: "create:andesite_funnel",
+			description: [
+				"Create の Belt と Funnel で素材搬送を自動化しろ。",
+				"地上から荷揚げした鉱石が、加工ラインを流れていく——",
+				"これが Create の美学だ。"
+			],
+			tasks: [
+				{
+					id: "C6_Q07_T1",
+					type: "item",
+					item: "create:belt",
+					count: 16L
+				},
+				{
+					id: "C6_Q07_T2",
+					type: "item",
+					item: "create:andesite_funnel",
+					count: 8L
+				}
+			],
+			rewards: [
+				{
+					id: "C6_Q07_R1",
+					type: "item",
+					item: "create:belt",
+					count: 16
+				},
+				{
+					id: "C6_Q07_R2",
+					type: "item",
+					item: "create:brass_funnel",
+					count: 4
+				}
+			]
+		},
+		{
+			x: 2.0d,
+			y: 3.0d,
+			id: "C6_Q08",
+			title: "弾薬自動生産ライン",
+			icon: "minecraft:gunpowder",
+			description: [
+				"弾薬を毎回手作りするのは時間の無駄だ。",
+				"Create のプレス機と自動搬送で、弾薬ラインを組め。",
+				"「消耗品は全て自動化する」これが工業の鉄則だ。"
+			],
+			dependencies: ["C6_Q07"],
+			tasks: [{
+				id: "C6_Q08_T1",
+				type: "checkmark",
+				title: "弾薬自動生産ラインを稼働させ、弾薬が自動生産されるようにした"
+			}],
+			rewards: [
+				{
+					id: "C6_Q08_R1",
+					type: "item",
+					item: "minecraft:gunpowder",
+					count: 128
+				},
+				{
+					id: "C6_Q08_R2",
+					type: "item",
+					item: "minecraft:iron_ingot",
+					count: 64
+				}
+			]
+		},
+		{
+			x: 4.0d,
+			y: 3.0d,
+			id: "C6_Q09",
+			title: "地上降下補給セットの自動生産",
+			icon: "sophisticatedbackpacks:backpack",
+			description: [
+				"降下前に毎回揃えるアイテムを、自動で補給できるようにしろ。",
+				"弾薬・食料・回復アイテム・採掘道具——",
+				"補給ステーションで全部まとめて補充できれば、降下準備は5秒で済む。"
+			],
+			dependencies: ["C6_Q08"],
+			tasks: [{
+				id: "C6_Q09_T1",
+				type: "checkmark",
+				title: "降下用補給セット（弾薬・食料・回復アイテム）の自動生産または補給ステーションを設置した"
+			}],
+			rewards: [
+				{
+					id: "C6_Q09_R1",
+					type: "item",
+					item: "minecraft:golden_apple",
+					count: 8
+				},
+				{
+					id: "C6_Q09_R2",
+					type: "item",
+					item: "minecraft:cooked_beef",
+					count: 32
+				}
+			]
+		},
+		{
+			x: 6.0d,
+			y: 0.0d,
+			id: "C6_Q10",
+			title: "Mekanism 高出力発電",
+			icon: "mekanismgenerators:solar_generator",
+			description: [
+				"Mekanism の上位機械は電力を大量消費する。",
+				"太陽光発電機・風力発電機を増設して電力基盤を強化しろ。",
+				"いずれ核融合炉まで繋がる道だ——今から電力設計を見直せ。"
+			],
+			dependencies: ["C6_Q03", "C6_Q06"],
+			tasks: [{
+				id: "C6_Q10_T1",
+				type: "checkmark",
+				title: "Mekanism の発電設備を増設し、十分な電力供給体制を確立した"
+			}],
+			rewards: [
+				{
+					id: "C6_Q10_R1",
+					type: "item",
+					item: "mekanism:energy_tablet",
+					count: 8
+				},
+				{
+					id: "C6_Q10_R2",
+					type: "item",
+					item: "mekanism:alloy_atomic",
+					count: 4
+				}
+			]
+		},
+		{
+			x: 6.0d,
+			y: -3.0d,
+			id: "C6_Q11",
+			title: "大量金属生産",
+			icon: "minecraft:iron_block",
+			description: [
+				"3倍化ラインが安定稼働する今こそ、大量生産のチャンスだ。",
+				"鉄・銅・金・オスミウム——全種類の金属を大量に蓄えろ。",
+				"Sky Fortress の建設には、想像の10倍の素材が必要だ。"
+			],
+			dependencies: ["C6_Q03", "C6_Q10"],
+			tasks: [
+				{
+					id: "C6_Q11_T1",
+					type: "item",
+					item: "minecraft:iron_block",
+					count: 16L
+				},
+				{
+					id: "C6_Q11_T2",
+					type: "item",
+					item: "minecraft:copper_block",
+					count: 8L
+				},
+				{
+					id: "C6_Q11_T3",
+					type: "item",
+					item: "mekanism:osmium_block",
+					count: 4L
+				}
+			],
+			rewards: [
+				{
+					id: "C6_Q11_R1",
+					type: "item",
+					item: "minecraft:iron_block",
+					count: 8
+				},
+				{
+					id: "C6_Q11_R2",
+					type: "item",
+					item: "create:brass_ingot",
+					count: 64
+				}
+			]
+		},
+		{
+			x: 8.0d,
+			y: 0.0d,
+			id: "C6_Q12",
+			title: "弾薬庫を満たせ",
+			icon: "minecraft:tnt",
+			description: [
+				"Sky Fortress の完成が近づくにつれ、地上戦の規模も大きくなる。",
+				"弾薬庫に大量の弾薬を蓄えておけ——",
+				"撃ちきれずに終わることが、最高の余裕だ。"
+			],
+			dependencies: ["C6_Q09", "C6_Q11"],
+			tasks: [{
+				id: "C6_Q12_T1",
+				type: "item",
+				item: "minecraft:gunpowder",
+				count: 512L
+			}],
+			rewards: [
+				{
+					id: "C6_Q12_R1",
+					type: "item",
+					item: "minecraft:tnt",
+					count: 16
+				},
+				{
+					id: "C6_Q12_R2",
+					type: "item",
+					item: "minecraft:gunpowder",
+					count: 128
+				}
+			]
+		},
+		{
+			x: 6.0d,
+			y: 3.0d,
+			id: "C6_Q13",
+			title: "AE2 物流の完成",
+			icon: "ae2:import_bus",
+			description: [
+				"Import Bus・Export Bus で素材の流れを完全制御しろ。",
+				"生産ライン→AE2→自動クラフト→倉庫——",
+				"ここまで繋がれば、あとは拡張するだけだ。"
+			],
+			dependencies: ["C6_Q06", "C6_Q08"],
+			tasks: [
+				{
+					id: "C6_Q13_T1",
+					type: "item",
+					item: "ae2:import_bus",
+					count: 2L
+				},
+				{
+					id: "C6_Q13_T2",
+					type: "item",
+					item: "ae2:export_bus",
+					count: 2L
+				}
+			],
+			rewards: [
+				{
+					id: "C6_Q13_R1",
+					type: "item",
+					item: "ae2:crafting_storage_16k",
+					count: 2
+				},
+				{
+					id: "C6_Q13_R2",
+					type: "item",
+					item: "ae2:64k_item_storage_cell",
+					count: 1
+				}
+			]
+		},
+		{
+			x: 10.0d,
+			y: 0.0d,
+			id: "C6_Q14",
+			title: "工業帝国の確立",
+			icon: "mekanism:alloy_atomic",
+			subtitle: "自動化章クリア",
+			description: [
+				"鉱石処理ラインが唸り、AE2 が自動で組み立て、弾薬庫が溢れている。",
+				"もはや手作業は過去のものだ。",
+				"次の章では——この工業力を要塞化する。"
+			],
+			dependencies: ["C6_Q12", "C6_Q13"],
+			tasks: [{
+				id: "C6_Q14_T1",
+				type: "checkmark",
+				title: "第6章クリアを確認"
+			}],
+			rewards: [
+				{
+					id: "C6_Q14_R1",
+					type: "item",
+					item: "mekanism:alloy_atomic",
+					count: 8
+				},
+				{
+					id: "C6_Q14_R2",
+					type: "item",
+					item: "create:brass_ingot",
+					count: 64
+				},
+				{
+					id: "C6_Q14_R3",
+					type: "item",
+					item: "minecraft:netherite_ingot",
+					count: 2
+				},
+				{
+					id: "C6_Q14_R4",
+					type: "xp",
+					xp: 700
+				}
+			]
+		}
+	]
+}

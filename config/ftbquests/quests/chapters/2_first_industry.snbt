@@ -1,0 +1,423 @@
+{
+	id: "C2",
+	group: "",
+	order_index: 2,
+	filename: "2_first_industry",
+	title: "第2章：初期工業化 / First Industry",
+	icon: "create:mechanical_press",
+	subtitle: "機械が動き始める。工業化の夜明けだ。",
+	default_quest_shape: "square",
+	default_hide_dependency_lines: false,
+	quests: [
+		{
+			x: 0.0d,
+			y: 0.0d,
+			id: "C2_Q01",
+			title: "Mechanical Mixer",
+			icon: "create:mechanical_mixer",
+			description: [
+				"Mechanical Press と並ぶ Create の主力加工機。",
+				"Brass Alloy や染料混合など、多くのレシピに使う。",
+				"Basin とセットで使うのが基本だ。"
+			],
+			tasks: [{
+				id: "C2_Q01_T1",
+				type: "item",
+				item: "create:mechanical_mixer",
+				count: 1L
+			}],
+			rewards: [
+				{
+					id: "C2_Q01_R1",
+					type: "item",
+					item: "create:basin",
+					count: 2
+				},
+				{
+					id: "C2_Q01_R2",
+					type: "item",
+					item: "create:cogwheel",
+					count: 8
+				}
+			]
+		},
+		{
+			x: 0.0d,
+			y: -2.5d,
+			id: "C2_Q02",
+			title: "Crushing Wheels",
+			icon: "create:crushing_wheel",
+			description: [
+				"鉱石を砕いて粉末にし、処理量を増やす Create の機械。",
+				"上下一対で噛み合わせる必要がある。",
+				"速度が重要——速すぎると砕けないので注意。"
+			],
+			tasks: [{
+				id: "C2_Q02_T1",
+				type: "item",
+				item: "create:crushing_wheel",
+				count: 2L
+			}],
+			rewards: [
+				{
+					id: "C2_Q02_R1",
+					type: "item",
+					item: "create:shaft",
+					count: 8
+				},
+				{
+					id: "C2_Q02_R2",
+					type: "item",
+					item: "create:andesite_casing",
+					count: 4
+				}
+			]
+		},
+		{
+			x: 2.0d,
+			y: -1.0d,
+			id: "C2_Q03",
+			title: "最初の鉱石処理ライン",
+			icon: "create:depot",
+			description: [
+				"Crushing Wheels で砕いた鉱石を Depot に載せ、",
+				"Mechanical Press で圧縮する——これが最初の加工ラインだ。",
+				"Funnel と Belt で自動化してみろ。"
+			],
+			dependencies: ["C2_Q01", "C2_Q02"],
+			tasks: [
+				{
+					id: "C2_Q03_T1",
+					type: "item",
+					item: "create:depot",
+					count: 2L
+				},
+				{
+					id: "C2_Q03_T2",
+					type: "checkmark",
+					title: "Crushing Wheels による鉱石処理ラインを稼働させた"
+				}
+			],
+			rewards: [
+				{
+					id: "C2_Q03_R1",
+					type: "item",
+					item: "minecraft:iron_ingot",
+					count: 32
+				},
+				{
+					id: "C2_Q03_R2",
+					type: "item",
+					item: "minecraft:copper_ingot",
+					count: 32
+				}
+			]
+		},
+		{
+			x: 0.0d,
+			y: 2.5d,
+			id: "C2_Q04",
+			title: "LV 発電設備",
+			icon: "immersiveengineering:windmill",
+			description: [
+				"IE の機械を動かすには電力が必要だ。",
+				"まずは風力発電機（Windmill）か熱電発電機を作れ。",
+				"空中拠点への電力供給を見越した設計を心がけろ。"
+			],
+			tasks: [{
+				id: "C2_Q04_T1",
+				type: "item",
+				item: "immersiveengineering:windmill",
+				count: 1L
+			}],
+			rewards: [
+				{
+					id: "C2_Q04_R1",
+					type: "item",
+					item: "immersiveengineering:wire_coil_copper",
+					count: 8
+				},
+				{
+					id: "C2_Q04_R2",
+					type: "item",
+					item: "immersiveengineering:connector",
+					count: 4
+				}
+			]
+		},
+		{
+			x: 2.0d,
+			y: 2.5d,
+			id: "C2_Q05",
+			title: "Steel Ingot",
+			icon: "immersiveengineering:ingot_steel",
+			description: [
+				"Coke Oven で生成した Coal Coke と鉄を合わせる。",
+				"Steel（鋼鉄）は IE の上位機械に不可欠な素材だ。",
+				"大量に必要になる——今から蓄えておけ。"
+			],
+			dependencies: ["C2_Q04"],
+			tasks: [{
+				id: "C2_Q05_T1",
+				type: "item",
+				item: "immersiveengineering:ingot_steel",
+				count: 16L
+			}],
+			rewards: [
+				{
+					id: "C2_Q05_R1",
+					type: "item",
+					item: "immersiveengineering:ingot_steel",
+					count: 8
+				},
+				{
+					id: "C2_Q05_R2",
+					type: "item",
+					item: "minecraft:iron_ingot",
+					count: 16
+				}
+			]
+		},
+		{
+			x: 4.0d,
+			y: 0.0d,
+			id: "C2_Q06",
+			title: "Brass Alloy",
+			icon: "create:brass_ingot",
+			description: [
+				"Create の中盤素材の要。",
+				"銅と亜鉛（Zinc）を Mixer で混ぜて作る。",
+				"これがなければ Create の上位機械は作れない。"
+			],
+			dependencies: ["C2_Q03", "C2_Q05"],
+			tasks: [{
+				id: "C2_Q06_T1",
+				type: "item",
+				item: "create:brass_ingot",
+				count: 16L
+			}],
+			rewards: [
+				{
+					id: "C2_Q06_R1",
+					type: "item",
+					item: "create:brass_ingot",
+					count: 8
+				},
+				{
+					id: "C2_Q06_R2",
+					type: "item",
+					item: "create:brass_casing",
+					count: 4
+				}
+			]
+		},
+		{
+			x: 4.0d,
+			y: -3.0d,
+			id: "C2_Q07",
+			title: "地上採掘前哨基地",
+			icon: "minecraft:chest",
+			description: [
+				"空中拠点ができるまでの仮の採掘拠点を作れ。",
+				"場所は廃墟の近く、または鉱脈の上が良い。",
+				"ただし——ここを永住の地にするな。"
+			],
+			dependencies: ["C2_Q03"],
+			tasks: [{
+				id: "C2_Q07_T1",
+				type: "checkmark",
+				title: "地上採掘前哨基地を1か所設営した（仮設・撤退可能な構造）"
+			}],
+			rewards: [
+				{
+					id: "C2_Q07_R1",
+					type: "item",
+					item: "minecraft:chest",
+					count: 4
+				},
+				{
+					id: "C2_Q07_R2",
+					type: "item",
+					item: "minecraft:torch",
+					count: 64
+				},
+				{
+					id: "C2_Q07_R3",
+					type: "item",
+					item: "minecraft:map",
+					count: 1
+				}
+			]
+		},
+		{
+			x: 6.0d,
+			y: 1.5d,
+			id: "C2_Q08",
+			title: "Create × IE 連携",
+			icon: "createcraftsandadditions:electric_motor",
+			description: [
+				"Create と IE を繋ぐのが Create Crafts & Additions。",
+				"IE の電力を Create の回転力に変換できる。",
+				"両方の機械を組み合わせた複合ラインが作れる。"
+			],
+			dependencies: ["C2_Q06", "C2_Q05"],
+			tasks: [{
+				id: "C2_Q08_T1",
+				type: "item",
+				item: "createcraftsandadditions:electric_motor",
+				count: 1L
+			}],
+			rewards: [
+				{
+					id: "C2_Q08_R1",
+					type: "item",
+					item: "createcraftsandadditions:rolling_mill",
+					count: 1
+				},
+				{
+					id: "C2_Q08_R2",
+					type: "item",
+					item: "create:brass_ingot",
+					count: 8
+				}
+			]
+		},
+		{
+			x: 6.0d,
+			y: -1.5d,
+			id: "C2_Q09",
+			title: "大量の金属素材",
+			icon: "minecraft:iron_block",
+			description: [
+				"空中拠点の建設には大量の金属が必要だ。",
+				"今のうちに鉱石処理ラインを酷使しておけ。",
+				"後悔するのは足りなくなってからだ。"
+			],
+			dependencies: ["C2_Q06", "C2_Q07"],
+			tasks: [
+				{
+					id: "C2_Q09_T1",
+					type: "item",
+					item: "minecraft:iron_ingot",
+					count: 128L
+				},
+				{
+					id: "C2_Q09_T2",
+					type: "item",
+					item: "minecraft:copper_ingot",
+					count: 64L
+				}
+			],
+			rewards: [
+				{
+					id: "C2_Q09_R1",
+					type: "item",
+					item: "minecraft:iron_block",
+					count: 4
+				},
+				{
+					id: "C2_Q09_R2",
+					type: "item",
+					item: "immersiveengineering:ingot_steel",
+					count: 16
+				}
+			]
+		},
+		{
+			x: 6.0d,
+			y: -4.5d,
+			id: "C2_Q10",
+			title: "Engineer's Blueprint",
+			icon: "immersiveengineering:blueprint",
+			description: [
+				"IE の設計図。特殊なレシピに使うアイテムだ。",
+				"空中拠点に置く IE 機械の建設設計を始めろ。",
+				"どこに何を置くか——事前に計画しておけ。"
+			],
+			dependencies: ["C2_Q07"],
+			tasks: [{
+				id: "C2_Q10_T1",
+				type: "item",
+				item: "immersiveengineering:blueprint",
+				count: 1L
+			}],
+			rewards: [{
+				id: "C2_Q10_R1",
+				type: "item",
+				item: "immersiveengineering:ingot_steel",
+				count: 8
+			}]
+		},
+		{
+			x: 8.0d,
+			y: 0.0d,
+			id: "C2_Q11",
+			title: "AE2 の種",
+			icon: "ae2:certus_quartz_crystal",
+			description: [
+				"廃墟の深部や隕石クレーターを探せ。",
+				"Certus Quartz が見つかるはずだ。",
+				"これが後の AE2 ネットワークの起点になる。"
+			],
+			dependencies: ["C2_Q08", "C2_Q09"],
+			tasks: [{
+				id: "C2_Q11_T1",
+				type: "item",
+				item: "ae2:certus_quartz_crystal",
+				count: 8L
+			}],
+			rewards: [
+				{
+					id: "C2_Q11_R1",
+					type: "item",
+					item: "ae2:certus_quartz_crystal",
+					count: 8
+				},
+				{
+					id: "C2_Q11_R2",
+					type: "item",
+					item: "ae2:sky_stone_block",
+					count: 4
+				}
+			]
+		},
+		{
+			x: 10.0d,
+			y: 0.0d,
+			id: "C2_Q12",
+			title: "空への準備完了",
+			icon: "create:brass_casing",
+			subtitle: "初期工業化章クリア",
+			description: [
+				"Create の機械が動き、IE の炉が稼働している。",
+				"金属の備蓄も十分だ。",
+				"次の章では——ついに空へ飛び立つ。"
+			],
+			dependencies: ["C2_Q10", "C2_Q11"],
+			tasks: [{
+				id: "C2_Q12_T1",
+				type: "checkmark",
+				title: "第2章クリアを確認"
+			}],
+			rewards: [
+				{
+					id: "C2_Q12_R1",
+					type: "item",
+					item: "minecraft:iron_block",
+					count: 8
+				},
+				{
+					id: "C2_Q12_R2",
+					type: "item",
+					item: "create:brass_ingot",
+					count: 32
+				},
+				{
+					id: "C2_Q12_R3",
+					type: "xp",
+					xp: 200
+				}
+			]
+		}
+	]
+}

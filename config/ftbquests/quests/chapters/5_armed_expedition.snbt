@@ -1,0 +1,469 @@
+{
+	id: "C5",
+	group: "",
+	order_index: 5,
+	filename: "5_armed_expedition",
+	title: "第5章：武装降下作戦 / Armed Expedition",
+	icon: "minecraft:crossbow",
+	subtitle: "危険な地上へ、武装して降りろ。",
+	default_quest_shape: "square",
+	default_hide_dependency_lines: false,
+	quests: [
+		{
+			x: 0.0d,
+			y: 0.0d,
+			id: "C5_Q01",
+			title: "銃火器の入手",
+			icon: "minecraft:crossbow",
+			description: [
+				"弓矢の時代は終わりだ。",
+				"TaCZ（Timeless & Classics Zero）の銃火器を手に入れろ。",
+				"地上の強化 Mob には、まともな武器が必要だ。"
+			],
+			tasks: [{
+				id: "C5_Q01_T1",
+				type: "checkmark",
+				title: "TaCZ の銃火器を1丁入手または作成した"
+			}],
+			rewards: [
+				{
+					id: "C5_Q01_R1",
+					type: "item",
+					item: "minecraft:gunpowder",
+					count: 64
+				},
+				{
+					id: "C5_Q01_R2",
+					type: "item",
+					item: "minecraft:iron_ingot",
+					count: 16
+				}
+			]
+		},
+		{
+			x: 2.0d,
+			y: 1.5d,
+			id: "C5_Q02",
+			title: "弾薬の生産",
+			icon: "minecraft:gunpowder",
+			description: [
+				"銃は弾がなければただの鉄の棒だ。",
+				"弾薬を生産するラインを作れ。",
+				"地上探索中に弾切れで詰むな——予備を持って降りろ。"
+			],
+			dependencies: ["C5_Q01"],
+			tasks: [{
+				id: "C5_Q02_T1",
+				type: "item",
+				item: "minecraft:gunpowder",
+				count: 128L
+			}],
+			rewards: [
+				{
+					id: "C5_Q02_R1",
+					type: "item",
+					item: "minecraft:gunpowder",
+					count: 32
+				},
+				{
+					id: "C5_Q02_R2",
+					type: "item",
+					item: "minecraft:iron_ingot",
+					count: 32
+				}
+			]
+		},
+		{
+			x: 0.0d,
+			y: -2.5d,
+			id: "C5_Q03",
+			title: "防具の強化",
+			icon: "minecraft:iron_chestplate",
+			description: [
+				"Born in Chaos の強化 Mob は、バニラより遥かに手強い。",
+				"少なくとも鉄装備フル一式は揃えておけ。",
+				"装備を惜しんで死ぬくらいなら、最初から全力で行け。"
+			],
+			tasks: [
+				{
+					id: "C5_Q03_T1",
+					type: "item",
+					item: "minecraft:iron_helmet",
+					count: 1L
+				},
+				{
+					id: "C5_Q03_T2",
+					type: "item",
+					item: "minecraft:iron_chestplate",
+					count: 1L
+				},
+				{
+					id: "C5_Q03_T3",
+					type: "item",
+					item: "minecraft:iron_leggings",
+					count: 1L
+				},
+				{
+					id: "C5_Q03_T4",
+					type: "item",
+					item: "minecraft:iron_boots",
+					count: 1L
+				}
+			],
+			rewards: [
+				{
+					id: "C5_Q03_R1",
+					type: "item",
+					item: "minecraft:diamond",
+					count: 4
+				}
+			]
+		},
+		{
+			x: 2.0d,
+			y: -2.5d,
+			id: "C5_Q04",
+			title: "降下準備",
+			icon: "sophisticatedbackpacks:backpack",
+			description: [
+				"地上降下前のチェックリスト。",
+				"バックパックに弾薬・食料・応急キット・採掘道具を詰め込め。",
+				"準備が足りない降下は、一方通行の旅になる。"
+			],
+			dependencies: ["C5_Q02", "C5_Q03"],
+			tasks: [
+				{
+					id: "C5_Q04_T1",
+					type: "item",
+					item: "sophisticatedbackpacks:backpack",
+					count: 1L
+				},
+				{
+					id: "C5_Q04_T2",
+					type: "item",
+					item: "minecraft:golden_apple",
+					count: 4L
+				}
+			],
+			rewards: [
+				{
+					id: "C5_Q04_R1",
+					type: "item",
+					item: "minecraft:ender_pearl",
+					count: 8
+				},
+				{
+					id: "C5_Q04_R2",
+					type: "item",
+					item: "minecraft:cooked_beef",
+					count: 16
+				}
+			]
+		},
+		{
+			x: 2.0d,
+			y: -5.0d,
+			id: "C5_Q05",
+			title: "大型構造物の発見",
+			icon: "minecraft:spyglass",
+			description: [
+				"Explorer's Compass で大型ダンジョンや廃墟都市の位置を探せ。",
+				"When Dungeons Arise の巨大構造物は戦利品の宝庫だ。",
+				"上空から偵察して、降下計画を立てろ。"
+			],
+			dependencies: ["C5_Q01"],
+			tasks: [{
+				id: "C5_Q05_T1",
+				type: "item",
+				item: "minecraft:spyglass",
+				count: 1L
+			}],
+			rewards: [
+				{
+					id: "C5_Q05_R1",
+					type: "item",
+					item: "minecraft:map",
+					count: 3
+				},
+				{
+					id: "C5_Q05_R2",
+					type: "xp",
+					xp: 50
+				}
+			]
+		},
+		{
+			x: 4.0d,
+			y: 0.0d,
+			id: "C5_Q06",
+			title: "ダンジョン突入",
+			icon: "minecraft:skeleton_skull",
+			description: [
+				"見つけた大型構造物に突入しろ。",
+				"内部の Mob は通常より強い——慎重に、しかし確実に。",
+				"最深部まで到達すれば、レアな戦利品が手に入る。"
+			],
+			dependencies: ["C5_Q04", "C5_Q05"],
+			tasks: [
+				{
+					id: "C5_Q06_T1",
+					type: "kill",
+					entity: "minecraft:skeleton",
+					value: 30L
+				},
+				{
+					id: "C5_Q06_T2",
+					type: "checkmark",
+					title: "大型ダンジョンまたは構造物を1か所攻略した"
+				}
+			],
+			rewards: [
+				{
+					id: "C5_Q06_R1",
+					type: "item",
+					item: "minecraft:diamond",
+					count: 8
+				},
+				{
+					id: "C5_Q06_R2",
+					type: "item",
+					item: "minecraft:emerald",
+					count: 16
+				},
+				{
+					id: "C5_Q06_R3",
+					type: "item",
+					item: "minecraft:enchanted_book",
+					count: 2
+				}
+			]
+		},
+		{
+			x: 4.0d,
+			y: -3.5d,
+			id: "C5_Q07",
+			title: "廃墟都市探索",
+			icon: "minecraft:lantern",
+			description: [
+				"Lost Cities の廃墟都市は危険だが、報酬も大きい。",
+				"建物の中には旧文明の素材や機械の残骸が眠っている。",
+				"ホードに包囲される前に回収して撤退しろ。"
+			],
+			dependencies: ["C5_Q05"],
+			tasks: [{
+				id: "C5_Q07_T1",
+				type: "checkmark",
+				title: "廃墟都市（Lost Cities）を探索し、チェストを少なくとも5個開けた"
+			}],
+			rewards: [
+				{
+					id: "C5_Q07_R1",
+					type: "item",
+					item: "minecraft:diamond",
+					count: 4
+				},
+				{
+					id: "C5_Q07_R2",
+					type: "item",
+					item: "minecraft:gold_ingot",
+					count: 32
+				},
+				{
+					id: "C5_Q07_R3",
+					type: "item",
+					item: "minecraft:netherite_scrap",
+					count: 1
+				}
+			]
+		},
+		{
+			x: 6.0d,
+			y: 1.5d,
+			id: "C5_Q08",
+			title: "レア素材回収",
+			icon: "minecraft:diamond",
+			description: [
+				"ダンジョン攻略の成果を空中拠点に持ち帰れ。",
+				"ダイヤモンド・エメラルド・エンチャント本——これが次の段階への資金だ。",
+				"失うのが怖いなら、全部AEに入れてから次の降下をしろ。"
+			],
+			dependencies: ["C5_Q06"],
+			tasks: [
+				{
+					id: "C5_Q08_T1",
+					type: "item",
+					item: "minecraft:diamond",
+					count: 16L
+				},
+				{
+					id: "C5_Q08_T2",
+					type: "item",
+					item: "minecraft:emerald",
+					count: 32L
+				}
+			],
+			rewards: [
+				{
+					id: "C5_Q08_R1",
+					type: "item",
+					item: "minecraft:netherite_ingot",
+					count: 1
+				},
+				{
+					id: "C5_Q08_R2",
+					type: "item",
+					item: "minecraft:diamond",
+					count: 8
+				}
+			]
+		},
+		{
+			x: 6.0d,
+			y: -1.5d,
+			id: "C5_Q09",
+			title: "ホードを迎え撃て",
+			icon: "minecraft:zombie_head",
+			description: [
+				"The Hordes は大群で押し寄せてくる——回避できない場合は迎え撃て。",
+				"前哨基地を防衛可能な状態に強化しろ。",
+				"壁、照明、落とし穴——何でも使え。"
+			],
+			dependencies: ["C5_Q06"],
+			tasks: [
+				{
+					id: "C5_Q09_T1",
+					type: "kill",
+					entity: "minecraft:zombie",
+					value: 50L
+				},
+				{
+					id: "C5_Q09_T2",
+					type: "checkmark",
+					title: "地上前哨基地に防衛設備（壁・照明・罠）を設置した"
+				}
+			],
+			rewards: [
+				{
+					id: "C5_Q09_R1",
+					type: "item",
+					item: "minecraft:rotten_flesh",
+					count: 32
+				},
+				{
+					id: "C5_Q09_R2",
+					type: "item",
+					item: "minecraft:bone",
+					count: 32
+				},
+				{
+					id: "C5_Q09_R3",
+					type: "xp",
+					xp: 100
+				}
+			]
+		},
+		{
+			x: 6.0d,
+			y: -5.0d,
+			id: "C5_Q10",
+			title: "撤退の技術",
+			icon: "minecraft:ender_pearl",
+			description: [
+				"勇敢と無謀は違う。",
+				"危機を察知したら即撤退——飛行船に戻れ。",
+				"生きて帰ることが、次の降下を可能にする。"
+			],
+			dependencies: ["C5_Q07"],
+			tasks: [{
+				id: "C5_Q10_T1",
+				type: "checkmark",
+				title: "地上で危機的状況に陥り、飛行船に撤退して生き延びた"
+			}],
+			rewards: [
+				{
+					id: "C5_Q10_R1",
+					type: "item",
+					item: "minecraft:ender_pearl",
+					count: 8
+				},
+				{
+					id: "C5_Q10_R2",
+					type: "item",
+					item: "minecraft:golden_apple",
+					count: 2
+				}
+			]
+		},
+		{
+			x: 8.0d,
+			y: 0.0d,
+			id: "C5_Q11",
+			title: "弾薬補充完了",
+			icon: "minecraft:gunpowder",
+			description: [
+				"帰還後はすぐに弾薬を補充しろ。",
+				"次の降下に備えて、常に満タンの状態を維持する習慣をつけろ。",
+				"補充を怠った瞬間が、命取りになる。"
+			],
+			dependencies: ["C5_Q08", "C5_Q09"],
+			tasks: [{
+				id: "C5_Q11_T1",
+				type: "item",
+				item: "minecraft:gunpowder",
+				count: 256L
+			}],
+			rewards: [
+				{
+					id: "C5_Q11_R1",
+					type: "item",
+					item: "minecraft:iron_ingot",
+					count: 64
+				},
+				{
+					id: "C5_Q11_R2",
+					type: "item",
+					item: "minecraft:gold_ingot",
+					count: 16
+				}
+			]
+		},
+		{
+			x: 10.0d,
+			y: 0.0d,
+			id: "C5_Q12",
+			title: "戦士の帰還",
+			icon: "minecraft:diamond_sword",
+			subtitle: "武装降下作戦章クリア",
+			description: [
+				"危険な地上を制し、豊富な戦利品を携えて帰還した。",
+				"これが、空中要塞に住む者の生き方だ。",
+				"次の章では——いよいよ本格的な工業化が始まる。"
+			],
+			dependencies: ["C5_Q10", "C5_Q11"],
+			tasks: [{
+				id: "C5_Q12_T1",
+				type: "checkmark",
+				title: "第5章クリアを確認"
+			}],
+			rewards: [
+				{
+					id: "C5_Q12_R1",
+					type: "item",
+					item: "minecraft:diamond",
+					count: 8
+				},
+				{
+					id: "C5_Q12_R2",
+					type: "item",
+					item: "mekanism:osmium_ingot",
+					count: 16
+				},
+				{
+					id: "C5_Q12_R3",
+					type: "xp",
+					xp: 500
+				}
+			]
+		}
+	]
+}

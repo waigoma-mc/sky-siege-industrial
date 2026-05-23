@@ -1,0 +1,397 @@
+{
+	id: "C8",
+	group: "",
+	order_index: 8,
+	filename: "8_reclaim_surface",
+	title: "第8章：地上奪還 / Reclaim the Surface",
+	icon: "minecraft:beacon",
+	subtitle: "地上を、取り戻せ。",
+	default_quest_shape: "square",
+	default_hide_dependency_lines: false,
+	quests: [
+		{
+			x: 0.0d,
+			y: 0.0d,
+			id: "C8_Q01",
+			title: "大型ダンジョン攻略 I",
+			icon: "minecraft:skeleton_skull",
+			description: [
+				"Sky Fortress の砲撃と強化装備で、大型ダンジョンを攻略しろ。",
+				"When Dungeons Arise や YUNG's の最上位ダンジョンが対象だ。",
+				"入念な準備をして、確実に制圧せよ。"
+			],
+			tasks: [
+				{
+					id: "C8_Q01_T1",
+					type: "kill",
+					entity: "minecraft:skeleton",
+					value: 50L
+				},
+				{
+					id: "C8_Q01_T2",
+					type: "checkmark",
+					title: "大型ダンジョン（1か所目）を完全制圧した"
+				}
+			],
+			rewards: [
+				{
+					id: "C8_Q01_R1",
+					type: "item",
+					item: "minecraft:diamond",
+					count: 16
+				},
+				{
+					id: "C8_Q01_R2",
+					type: "item",
+					item: "minecraft:netherite_scrap",
+					count: 2
+				},
+				{
+					id: "C8_Q01_R3",
+					type: "item",
+					item: "minecraft:enchanted_book",
+					count: 3
+				}
+			]
+		},
+		{
+			x: 2.0d,
+			y: 0.0d,
+			id: "C8_Q02",
+			title: "大型ダンジョン攻略 II",
+			icon: "minecraft:wither_skeleton_skull",
+			description: [
+				"1か所の攻略で終わりにするな。",
+				"地上を奪還するには、主要な脅威を根絶する必要がある。",
+				"2か所目——今度はより大規模な構造物を選べ。"
+			],
+			dependencies: ["C8_Q01"],
+			tasks: [{
+				id: "C8_Q02_T1",
+				type: "checkmark",
+				title: "大型ダンジョン（2か所目）を完全制圧した"
+			}],
+			rewards: [
+				{
+					id: "C8_Q02_R1",
+					type: "item",
+					item: "minecraft:diamond",
+					count: 24
+				},
+				{
+					id: "C8_Q02_R2",
+					type: "item",
+					item: "minecraft:netherite_scrap",
+					count: 3
+				}
+			]
+		},
+		{
+			x: 4.0d,
+			y: 0.0d,
+			id: "C8_Q03",
+			title: "大型ダンジョン攻略 III",
+			icon: "minecraft:dragon_head",
+			description: [
+				"3か所目の大型ダンジョンを攻略せよ。",
+				"ここまで来たあなたは、もはや空中の支配者だ。",
+				"地上の何者も、あなたの前に立ちはだかれない。"
+			],
+			dependencies: ["C8_Q02"],
+			tasks: [{
+				id: "C8_Q03_T1",
+				type: "checkmark",
+				title: "大型ダンジョン（3か所目）を完全制圧した"
+			}],
+			rewards: [
+				{
+					id: "C8_Q03_R1",
+					type: "item",
+					item: "minecraft:netherite_ingot",
+					count: 2
+				},
+				{
+					id: "C8_Q03_R2",
+					type: "item",
+					item: "minecraft:diamond",
+					count: 32
+				},
+				{
+					id: "C8_Q03_R3",
+					type: "item",
+					item: "minecraft:enchanted_book",
+					count: 4
+				}
+			]
+		},
+		{
+			x: 2.0d,
+			y: -2.5d,
+			id: "C8_Q04",
+			title: "廃墟都市の制圧",
+			icon: "minecraft:lantern",
+			description: [
+				"Lost Cities の廃墟都市を1つ、完全制圧しろ。",
+				"Zombie を50体以上倒し、全てのチェストを開け、",
+				"旗（Banner）を建てて制圧の証とせよ。"
+			],
+			dependencies: ["C8_Q02"],
+			tasks: [
+				{
+					id: "C8_Q04_T1",
+					type: "kill",
+					entity: "minecraft:zombie",
+					value: 100L
+				},
+				{
+					id: "C8_Q04_T2",
+					type: "checkmark",
+					title: "廃墟都市1か所を制圧し、制圧の証（旗や記念碑）を建てた"
+				}
+			],
+			rewards: [
+				{
+					id: "C8_Q04_R1",
+					type: "item",
+					item: "minecraft:gold_block",
+					count: 8
+				},
+				{
+					id: "C8_Q04_R2",
+					type: "item",
+					item: "minecraft:diamond",
+					count: 16
+				},
+				{
+					id: "C8_Q04_R3",
+					type: "item",
+					item: "minecraft:nether_star",
+					count: 1
+				}
+			]
+		},
+		{
+			x: 0.0d,
+			y: 2.5d,
+			id: "C8_Q05",
+			title: "地上前哨基地 I",
+			icon: "minecraft:white_banner",
+			description: [
+				"攻略した地域に永続前哨基地を建設しろ。",
+				"防壁・照明・補給チェスト・Waystone が揃った、",
+				"守れる拠点でなければならない。"
+			],
+			tasks: [{
+				id: "C8_Q05_T1",
+				type: "checkmark",
+				title: "防衛済み地上前哨基地（1か所目）を建設した"
+			}],
+			rewards: [
+				{
+					id: "C8_Q05_R1",
+					type: "item",
+					item: "minecraft:iron_block",
+					count: 16
+				},
+				{
+					id: "C8_Q05_R2",
+					type: "item",
+					item: "waystones:waystone",
+					count: 1
+				}
+			]
+		},
+		{
+			x: 2.0d,
+			y: 2.5d,
+			id: "C8_Q06",
+			title: "地上前哨基地 II",
+			icon: "minecraft:cyan_banner",
+			description: [
+				"2か所目の前哨基地を建設しろ。",
+				"場所は資源の豊富な地点か、ダンジョンへの中継点が良い。",
+				"前哨基地は、地上征服の足場だ。"
+			],
+			dependencies: ["C8_Q05"],
+			tasks: [{
+				id: "C8_Q06_T1",
+				type: "checkmark",
+				title: "防衛済み地上前哨基地（2か所目）を建設した"
+			}],
+			rewards: [
+				{
+					id: "C8_Q06_R1",
+					type: "item",
+					item: "minecraft:iron_block",
+					count: 16
+				},
+				{
+					id: "C8_Q06_R2",
+					type: "item",
+					item: "minecraft:diamond",
+					count: 8
+				}
+			]
+		},
+		{
+			x: 4.0d,
+			y: 2.5d,
+			id: "C8_Q07",
+			title: "地上前哨基地 III",
+			icon: "minecraft:red_banner",
+			description: [
+				"3か所目の前哨基地が完成した時、地上に安全地帯の網が張られる。",
+				"もはや地上は恐怖の場所ではなく——あなたの領土だ。"
+			],
+			dependencies: ["C8_Q06"],
+			tasks: [{
+				id: "C8_Q07_T1",
+				type: "checkmark",
+				title: "防衛済み地上前哨基地（3か所目）を建設した"
+			}],
+			rewards: [
+				{
+					id: "C8_Q07_R1",
+					type: "item",
+					item: "minecraft:diamond",
+					count: 16
+				},
+				{
+					id: "C8_Q07_R2",
+					type: "item",
+					item: "minecraft:emerald",
+					count: 32
+				}
+			]
+		},
+		{
+			x: 6.0d,
+			y: 0.0d,
+			id: "C8_Q08",
+			title: "核分裂炉の稼働",
+			icon: "mekanism:fission_fuel_assembly",
+			description: [
+				"Mekanism の核分裂炉（Fission Reactor）を稼働させろ。",
+				"膨大な電力が手に入る——ただし制御を誤れば大惨事だ。",
+				"安全機構を十分に整えてから起動しろ。"
+			],
+			dependencies: ["C8_Q03", "C8_Q04"],
+			tasks: [{
+				id: "C8_Q08_T1",
+				type: "checkmark",
+				title: "Mekanism 核分裂炉を安全装置付きで稼働させた"
+			}],
+			rewards: [
+				{
+					id: "C8_Q08_R1",
+					type: "item",
+					item: "mekanism:energy_tablet",
+					count: 16
+				},
+				{
+					id: "C8_Q08_R2",
+					type: "item",
+					item: "mekanism:alloy_atomic",
+					count: 16
+				}
+			]
+		},
+		{
+			x: 8.0d,
+			y: 1.5d,
+			id: "C8_Q09",
+			title: "地上に記念碑を",
+			icon: "minecraft:beacon",
+			description: [
+				"ここが、あなたが最初に降り立った場所だ。",
+				"ビーコンまたは記念碑を建てろ。",
+				"地上を恐怖から取り戻した者の証として——永遠にそこに立ち続けるだろう。"
+			],
+			dependencies: ["C8_Q07", "C8_Q08"],
+			tasks: [
+				{
+					id: "C8_Q09_T1",
+					type: "item",
+					item: "minecraft:beacon",
+					count: 1L
+				},
+				{
+					id: "C8_Q09_T2",
+					type: "checkmark",
+					title: "地上に記念碑またはビーコンを建設した"
+				}
+			],
+			rewards: [
+				{
+					id: "C8_Q09_R1",
+					type: "item",
+					item: "minecraft:nether_star",
+					count: 1
+				},
+				{
+					id: "C8_Q09_R2",
+					type: "item",
+					item: "minecraft:netherite_ingot",
+					count: 4
+				}
+			]
+		},
+		{
+			x: 10.0d,
+			y: 0.0d,
+			id: "C8_Q10",
+			title: "地上奪還完了！",
+			icon: "minecraft:nether_star",
+			subtitle: "Sky Siege Industrial — クリア",
+			description: [
+				"空中工業要塞 Sky Fortress を完成させ、",
+				"地上の大型ダンジョンを3か所制圧し、",
+				"廃墟都市を奪還し、",
+				"地上に3か所の防衛済み前哨基地を築き、",
+				"核分裂炉を稼働させ、",
+				"記念碑を建てた。",
+				"",
+				"地上は、あなたのものだ。",
+				"",
+				"お疲れ様でした。"
+			],
+			dependencies: ["C8_Q09"],
+			tasks: [{
+				id: "C8_Q10_T1",
+				type: "checkmark",
+				title: "Sky Siege Industrial をクリアした"
+			}],
+			rewards: [
+				{
+					id: "C8_Q10_R1",
+					type: "item",
+					item: "minecraft:nether_star",
+					count: 3
+				},
+				{
+					id: "C8_Q10_R2",
+					type: "item",
+					item: "minecraft:netherite_ingot",
+					count: 8
+				},
+				{
+					id: "C8_Q10_R3",
+					type: "item",
+					item: "minecraft:firework_rocket",
+					count: 64
+				},
+				{
+					id: "C8_Q10_R4",
+					type: "item",
+					item: "minecraft:diamond_block",
+					count: 4
+				},
+				{
+					id: "C8_Q10_R5",
+					type: "xp",
+					xp: 2000
+				}
+			]
+		}
+	]
+}

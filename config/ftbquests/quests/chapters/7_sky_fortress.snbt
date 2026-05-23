@@ -1,0 +1,434 @@
+{
+	id: "C7",
+	group: "",
+	order_index: 7,
+	filename: "7_sky_fortress",
+	title: "第7章：空中要塞 / Sky Fortress",
+	icon: "create_big_cannons:cannon_mount",
+	subtitle: "これは拠点ではない。要塞だ。",
+	default_quest_shape: "square",
+	default_hide_dependency_lines: false,
+	quests: [
+		{
+			x: 0.0d,
+			y: 0.0d,
+			id: "C7_Q01",
+			title: "武器庫の設置",
+			icon: "minecraft:iron_sword",
+			description: [
+				"全ての武器・弾薬・装備を一か所に集めた武器庫を作れ。",
+				"降下前はここで装備を整え、帰還後はここで補充する。",
+				"武器庫が整えば、作戦の効率が大幅に上がる。"
+			],
+			tasks: [{
+				id: "C7_Q01_T1",
+				type: "checkmark",
+				title: "武器・弾薬・装備を管理する専用の武器庫区画を空中拠点に設置した"
+			}],
+			rewards: [
+				{
+					id: "C7_Q01_R1",
+					type: "item",
+					item: "minecraft:diamond_sword",
+					count: 1
+				},
+				{
+					id: "C7_Q01_R2",
+					type: "item",
+					item: "minecraft:diamond_chestplate",
+					count: 1
+				}
+			]
+		},
+		{
+			x: 2.0d,
+			y: 1.5d,
+			id: "C7_Q02",
+			title: "弾薬庫の設置",
+			icon: "minecraft:tnt",
+			description: [
+				"武器庫の隣に弾薬庫を設ける。",
+				"大砲の砲弾・銃弾・爆薬——全て分類して保管しろ。",
+				"爆発物の扱いには注意しろ——近くにベッドを置くな。"
+			],
+			dependencies: ["C7_Q01"],
+			tasks: [
+				{
+					id: "C7_Q02_T1",
+					type: "checkmark",
+					title: "弾薬庫区画を設置し、砲弾・銃弾・爆薬を保管した"
+				},
+				{
+					id: "C7_Q02_T2",
+					type: "item",
+					item: "minecraft:gunpowder",
+					count: 256L
+				}
+			],
+			rewards: [
+				{
+					id: "C7_Q02_R1",
+					type: "item",
+					item: "minecraft:tnt",
+					count: 32
+				},
+				{
+					id: "C7_Q02_R2",
+					type: "item",
+					item: "minecraft:gunpowder",
+					count: 128
+				}
+			]
+		},
+		{
+			x: 2.0d,
+			y: -1.5d,
+			id: "C7_Q03",
+			title: "砲台の設置",
+			icon: "create_big_cannons:cannon_mount",
+			description: [
+				"Create Big Cannons で空中拠点に砲台を設置しろ。",
+				"Cannon Mount と Cannon Barrel を組み合わせて作る。",
+				"地上を見下ろす砲台——これが要塞の証だ。"
+			],
+			dependencies: ["C7_Q01"],
+			tasks: [
+				{
+					id: "C7_Q03_T1",
+					type: "item",
+					item: "create_big_cannons:cannon_mount",
+					count: 1L
+				},
+				{
+					id: "C7_Q03_T2",
+					type: "checkmark",
+					title: "空中拠点に砲台を設置し、発射テストを行った"
+				}
+			],
+			rewards: [
+				{
+					id: "C7_Q03_R1",
+					type: "item",
+					item: "create_big_cannons:cannon_barrel",
+					count: 4
+				},
+				{
+					id: "C7_Q03_R2",
+					type: "item",
+					item: "create_big_cannons:solid_ammo_casing",
+					count: 16
+				}
+			]
+		},
+		{
+			x: 4.0d,
+			y: 0.0d,
+			id: "C7_Q04",
+			title: "Sky Fortress の主砲",
+			icon: "create_big_cannons:cannon_barrel",
+			subtitle: "要塞の牙。",
+			description: [
+				"単発の砲台ではない——複数門の砲列を作れ。",
+				"前・後・左・右——全方向に対応した砲台配置が理想だ。",
+				"地上の何物も、空からの砲撃に耐えられない。"
+			],
+			dependencies: ["C7_Q02", "C7_Q03"],
+			tasks: [{
+				id: "C7_Q04_T1",
+				type: "checkmark",
+				title: "空中要塞に3門以上の砲台を設置し、地上への砲撃テストに成功した"
+			}],
+			rewards: [
+				{
+					id: "C7_Q04_R1",
+					type: "item",
+					item: "create_big_cannons:solid_ammo_casing",
+					count: 32
+				},
+				{
+					id: "C7_Q04_R2",
+					type: "xp",
+					xp: 200
+				}
+			]
+		},
+		{
+			x: 0.0d,
+			y: -3.5d,
+			id: "C7_Q05",
+			title: "小型降下艇の建造",
+			icon: "vs_eureka:ship_helm",
+			description: [
+				"母艦（メイン要塞）とは別に、地上降下専用の小型船を作れ。",
+				"母艦は空中に留め、降下艇で地上へ向かうのが安全な運用だ。",
+				"降下艇が撃墜されても、母艦は無事だ。"
+			],
+			tasks: [{
+				id: "C7_Q05_T1",
+				type: "checkmark",
+				title: "母艦とは別に、地上降下専用の小型飛行船または降下艇を建造した"
+			}],
+			rewards: [
+				{
+					id: "C7_Q05_R1",
+					type: "item",
+					item: "minecraft:oak_planks",
+					count: 64
+				},
+				{
+					id: "C7_Q05_R2",
+					type: "item",
+					item: "vs_eureka:balloon",
+					count: 16
+				}
+			]
+		},
+		{
+			x: 2.0d,
+			y: -3.5d,
+			id: "C7_Q06",
+			title: "前哨基地補給ネットワーク",
+			icon: "waystones:waystone",
+			description: [
+				"地上の各前哨基地にウェイストーンを設置しろ。",
+				"空中要塞から前哨基地へのワープルートを確立することで、",
+				"補給と撤退が劇的に速くなる。"
+			],
+			dependencies: ["C7_Q05"],
+			tasks: [
+				{
+					id: "C7_Q06_T1",
+					type: "item",
+					item: "waystones:waystone",
+					count: 3L
+				},
+				{
+					id: "C7_Q06_T2",
+					type: "checkmark",
+					title: "空中要塞と地上前哨基地を Waystone で繋いだ"
+				}
+			],
+			rewards: [
+				{
+					id: "C7_Q06_R1",
+					type: "item",
+					item: "waystones:waystone",
+					count: 2
+				},
+				{
+					id: "C7_Q06_R2",
+					type: "item",
+					item: "minecraft:ender_pearl",
+					count: 16
+				}
+			]
+		},
+		{
+			x: 4.0d,
+			y: -2.0d,
+			id: "C7_Q07",
+			title: "Chemical Injection Chamber",
+			icon: "mekanism:chemical_injection_chamber",
+			description: [
+				"4倍化ラインへの道。",
+				"Chemical Injection Chamber（化学注入室）で、",
+				"クリスタル→シャード化処理を行うことで鉱石4倍処理が始まる。"
+			],
+			dependencies: ["C7_Q04"],
+			tasks: [{
+				id: "C7_Q07_T1",
+				type: "item",
+				item: "mekanism:chemical_injection_chamber",
+				count: 1L
+			}],
+			rewards: [
+				{
+					id: "C7_Q07_R1",
+					type: "item",
+					item: "mekanism:alloy_atomic",
+					count: 8
+				},
+				{
+					id: "C7_Q07_R2",
+					type: "item",
+					item: "mekanism:chemical_dissolution_chamber",
+					count: 1
+				}
+			]
+		},
+		{
+			x: 6.0d,
+			y: 0.0d,
+			id: "C7_Q08",
+			title: "鉱石4倍化ライン",
+			icon: "minecraft:iron_block",
+			description: [
+				"Dissolution Chamber → Washer → Crystallizer → Injection Chamber の",
+				"完全な5段処理ラインで、鉱石1個から4倍の金属が手に入る。",
+				"一度作れば、採掘効率が根本から変わる。"
+			],
+			dependencies: ["C7_Q07"],
+			tasks: [{
+				id: "C7_Q08_T1",
+				type: "checkmark",
+				title: "Mekanism で鉱石4倍化ライン（または5段階処理）を稼働させた"
+			}],
+			rewards: [
+				{
+					id: "C7_Q08_R1",
+					type: "item",
+					item: "minecraft:iron_block",
+					count: 32
+				},
+				{
+					id: "C7_Q08_R2",
+					type: "item",
+					item: "minecraft:diamond",
+					count: 16
+				}
+			]
+		},
+		{
+			x: 6.0d,
+			y: -3.5d,
+			id: "C7_Q09",
+			title: "大型発電設備",
+			icon: "mekanismgenerators:gas_burning_generator",
+			description: [
+				"4倍化ラインを安定稼働させるには膨大な電力が必要だ。",
+				"Mekanism の Gas Burning Generator や Wind Generator を大量設置しろ。",
+				"いずれ核分裂炉（Fission Reactor）への布石にもなる。"
+			],
+			dependencies: ["C7_Q08"],
+			tasks: [{
+				id: "C7_Q09_T1",
+				type: "checkmark",
+				title: "空中要塞に大型発電設備を設置し、4倍化ラインを安定稼働させた"
+			}],
+			rewards: [
+				{
+					id: "C7_Q09_R1",
+					type: "item",
+					item: "mekanism:energy_tablet",
+					count: 16
+				},
+				{
+					id: "C7_Q09_R2",
+					type: "item",
+					item: "mekanism:alloy_atomic",
+					count: 8
+				}
+			]
+		},
+		{
+			x: 4.0d,
+			y: 3.0d,
+			id: "C7_Q10",
+			title: "MekaSuit への道",
+			icon: "mekanism:meka_suit_helmet",
+			description: [
+				"Mekanism の最終装備——MekaSuit。",
+				"今はまだ材料収集の段階だが、方向性を定めろ。",
+				"地上奪還作戦の前に、最高の装備を纏う権利がある。"
+			],
+			dependencies: ["C7_Q08"],
+			tasks: [{
+				id: "C7_Q10_T1",
+				type: "item",
+				item: "mekanism:alloy_atomic",
+				count: 16L
+			}],
+			rewards: [
+				{
+					id: "C7_Q10_R1",
+					type: "item",
+					item: "mekanism:alloy_atomic",
+					count: 8
+				},
+				{
+					id: "C7_Q10_R2",
+					type: "item",
+					item: "minecraft:netherite_ingot",
+					count: 4
+				}
+			]
+		},
+		{
+			x: 8.0d,
+			y: 0.0d,
+			id: "C7_Q11",
+			title: "補給ネットワーク完成",
+			icon: "waystones:waystone",
+			description: [
+				"前哨基地・採掘拠点・地上補給ポイントを繋ぐ網を整備しろ。",
+				"3か所以上の前哨基地が空中要塞と繋がった時、",
+				"真の補給体制が完成する。"
+			],
+			dependencies: ["C7_Q06", "C7_Q09"],
+			tasks: [{
+				id: "C7_Q11_T1",
+				type: "checkmark",
+				title: "空中要塞と3か所以上の地上前哨基地を補給ネットワーク化した"
+			}],
+			rewards: [
+				{
+					id: "C7_Q11_R1",
+					type: "item",
+					item: "minecraft:diamond",
+					count: 16
+				},
+				{
+					id: "C7_Q11_R2",
+					type: "item",
+					item: "minecraft:emerald",
+					count: 32
+				}
+			]
+		},
+		{
+			x: 10.0d,
+			y: 0.0d,
+			id: "C7_Q12",
+			title: "Sky Fortress 完成",
+			icon: "create_big_cannons:cannon_barrel",
+			subtitle: "これが、空中工業要塞だ。",
+			description: [
+				"武器庫・弾薬庫・砲台・4倍化ライン・大型発電設備・補給網——",
+				"すべてが揃った。",
+				"これはもはや飛行船ではない——空中要塞だ。",
+				"地上奪還の時が来た。"
+			],
+			dependencies: ["C7_Q10", "C7_Q11"],
+			tasks: [{
+				id: "C7_Q12_T1",
+				type: "checkmark",
+				title: "Sky Fortress（空中工業要塞）の完成を確認・宣言した"
+			}],
+			rewards: [
+				{
+					id: "C7_Q12_R1",
+					type: "item",
+					item: "minecraft:netherite_ingot",
+					count: 4
+				},
+				{
+					id: "C7_Q12_R2",
+					type: "item",
+					item: "minecraft:diamond",
+					count: 32
+				},
+				{
+					id: "C7_Q12_R3",
+					type: "item",
+					item: "minecraft:firework_rocket",
+					count: 16
+				},
+				{
+					id: "C7_Q12_R4",
+					type: "xp",
+					xp: 1000
+				}
+			]
+		}
+	]
+}

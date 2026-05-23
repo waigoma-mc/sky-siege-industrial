@@ -1,0 +1,18 @@
+{
+	default_chapter_group: {
+		id: "0",
+		order_index: 0,
+		chapters: [
+			"0_crash_landing",
+			"1_ground_survival",
+			"2_first_industry",
+			"3_first_flight",
+			"4_sky_base",
+			"5_armed_expedition",
+			"6_automation",
+			"7_sky_fortress",
+			"8_reclaim_surface"
+		]
+	},
+	chapter_groups: []
+}
