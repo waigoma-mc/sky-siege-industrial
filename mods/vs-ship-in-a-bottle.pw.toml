@@ -1,0 +1,13 @@
+name = "Ship In A Bottle"
+filename = "ship_in_a_bottle-1.20.1-2.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/hWzcJMlo/versions/29oV3Wbv/ship_in_a_bottle-1.20.1-2.0.0.jar"
+hash-format = "sha512"
+hash = "e9bf2b327d37c858ffc38083224c4b5d991ba37655df70446e411d642754c01cabe0bdf0a043389860c5f54f95a1cb660bb9be2d1b9d2e9774a100a89602304a"
+
+[update]
+[update.modrinth]
+mod-id = "hWzcJMlo"
+version = "29oV3Wbv"

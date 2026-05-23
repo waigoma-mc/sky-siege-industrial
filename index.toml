@@ -5,6 +5,46 @@ file = ".tool-versions"
 hash = "a707dabae9db476fe14518c8119b5ab6769021780d48fd5423bc97122974520a"
 
 [[files]]
+file = "config/ftbquests/quests/chapter_groups.snbt"
+hash = "5ad11896bf9746b6b2eb4f6a4cbb8cdf4790d7bb4475f8c2e82e4efffde12aa4"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/0_crash_landing.snbt"
+hash = "3d1fc9fc014a48dcda9bf98269cdf582967586cae19fab0171ca11a827a8e93a"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/1_ground_survival.snbt"
+hash = "f1953c2626124ad3bde4252a1924e939841739f54b6f18124ba10f5e9f5eaf4d"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/2_first_industry.snbt"
+hash = "bbeb80f9a043f7264188400f807f277a6861a76a7bd884512aebd4b4a9a35534"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/3_first_flight.snbt"
+hash = "56ea4897b0cda2d2894aeac1cadbf7da08be6ea616bdcdd5f754b63466799482"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/4_sky_base.snbt"
+hash = "72ea3e2b6b466a063b1a57cdc7bd72cca9d5a826077ad846745d85e5bcae3c31"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/5_armed_expedition.snbt"
+hash = "db4f6b9149b2117c31ca9f62c471003a0c68dfbbc78dd263b6a6899c4940019d"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/6_automation.snbt"
+hash = "11bbfd2b2feb1527c6bd6af8881c906d257d012b550308ade9c759af2cccc445"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/7_sky_fortress.snbt"
+hash = "70cbb161f473cf612776cc2d9fadb2e30a8334c4f2311b7ac8166432a2cef038"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/8_reclaim_surface.snbt"
+hash = "5f8e48b000ffee696ab1ed9f14e4600199efc60400f3cd1574e2372b1ac7728f"
+
+[[files]]
 file = "mods/accelerated-rendering.pw.toml"
 hash = "a64de1268d1fdbd39c7a66bdef2cca019d6eec2b0dfcc971ed175d306f43be57"
 metafile = true
@@ -87,11 +127,6 @@ metafile = true
 [[files]]
 file = "mods/auto-third-person.pw.toml"
 hash = "33f0ce84338cd894d0e835b5904d0942fce1219ba3bb5aa92a758274de0bcf08"
-metafile = true
-
-[[files]]
-file = "mods/bad-mobs.pw.toml"
-hash = "ad277ad1cc85c6dce61a2ab784dfcb54b5c522a824f06cb94339bf32bdb5d52a"
 metafile = true
 
 [[files]]
@@ -367,6 +402,11 @@ metafile = true
 [[files]]
 file = "mods/flux-networks.pw.toml"
 hash = "de63df967225278681e18afe0e323110322ec02006746980fbe77dbd974b20b3"
+metafile = true
+
+[[files]]
+file = "mods/forgified-fabric-api.pw.toml"
+hash = "2a2f2168bf03bfa3034ad9583588676c5d66b6f7c767df9fe259ab55350792d2"
 metafile = true
 
 [[files]]
@@ -935,6 +975,11 @@ hash = "0b3c359b8f7636c2cdbb003dd1d8ba291d10e96d778fd7e4f56e925bcc11ace8"
 metafile = true
 
 [[files]]
+file = "mods/vs-ship-in-a-bottle.pw.toml"
+hash = "0e8889b088bf37d79d21f52dac7d6be17187138809a7a886b0e84ca8ed16152d"
+metafile = true
+
+[[files]]
 file = "mods/waterdripsound.pw.toml"
 hash = "afc36afb2848b4a8ae508839f6eacd875ee4dcfe4b053493d7e1b48a48421601"
 metafile = true
@@ -1007,11 +1052,6 @@ metafile = true
 [[files]]
 file = "mods/zombie-awareness.pw.toml"
 hash = "081b32c88849a82d01a3a98871b9860f395822179747d65812e86e9098e9cc61"
-metafile = true
-
-[[files]]
-file = "resourcepacks/ship-in-a-bottle.pw.toml"
-hash = "d3cba91c78bbd0a76b4dead630c9462e159dc58c4bf8260a2adfb8b1e334dca5"
 metafile = true
 
 [[files]]
