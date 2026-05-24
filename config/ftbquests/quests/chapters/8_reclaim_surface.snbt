@@ -506,8 +506,8 @@
 				type: "checkmark"
 			}]
 			title: "核融合炉の稼働"
-			x: 8.0d
-			y: -2.0d
+			x: 7.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["3DB806BD483E41FF"]
@@ -518,44 +518,44 @@
 				"これを纏った時、あなたは人間ではなく兵器になる。"
 			]
 			icon: "mekanism:mekasuit_helmet"
-			id: "F100000000000021"
+			id: "2DB330B49E9FE273"
 			rewards: [
 				{
 					count: 4
-					id: "F300000000000063"
+					id: "676443923F1D3E77"
 					item: "minecraft:netherite_ingot"
 					type: "item"
 				}
 				{
 					count: 16
-					id: "F300000000000064"
+					id: "1BDB3CF0D509DCD6"
 					item: "mekanism:alloy_atomic"
 					type: "item"
 				}
 				{
-					id: "F300000000000065"
+					id: "4A7EF57EFC5B7925"
 					type: "xp"
 					xp: 2000
 				}
 			]
 			tasks: [
 				{
-					id: "F200000000000038"
+					id: "37EDBFFD62E10A36"
 					title: "MekaSuit のヘルメットを作成した"
 					type: "checkmark"
 				}
 				{
-					id: "F200000000000039"
+					id: "04C3D139E02C3D59"
 					title: "MekaSuit の胸当てを作成した"
 					type: "checkmark"
 				}
 				{
-					id: "F200000000000040"
+					id: "69D62E2547215970"
 					title: "MekaSuit のパンツを作成した"
 					type: "checkmark"
 				}
 				{
-					id: "F200000000000041"
+					id: "5970B7EFDDA7F978"
 					title: "MekaSuit のブーツを作成した"
 					type: "checkmark"
 				}
@@ -573,23 +573,23 @@
 				"これが本当の意味での「統合補給網」だ。"
 			]
 			icon: "ae2:quantum_ring"
-			id: "F100000000000022"
+			id: "0FD1014688E11BB1"
 			rewards: [
 				{
 					count: 4
-					id: "F300000000000066"
+					id: "0982508ED4140948"
 					item: "ae2:item_storage_cell_64k"
 					type: "item"
 				}
 				{
 					count: 8
-					id: "F300000000000067"
+					id: "0D0CCA224877B12D"
 					item: "ae2:engineering_processor"
 					type: "item"
 				}
 			]
 			tasks: [{
-				id: "F200000000000042"
+				id: "434FCA0F6F1931FD"
 				title: "AE2 Quantum Network Bridge で拠点間ネットワークを構築した"
 				type: "checkmark"
 			}]
@@ -598,30 +598,29 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["F100000000000022"]
 			description: [
 				"MEGA Cells の巨大ストレージセルを導入しろ。"
 				"1M・4M・16M・64M 容量——通常の 64k セルでは到底追いつかない量を一括管理できる。"
 				"エンドゲームの素材量を AE2 で管理するには、MEGA Cells が不可欠だ。"
 			]
 			icon: "ae2:drive"
-			id: "F100000000000023"
+			id: "06E69EB0B57DE753"
 			rewards: [
 				{
 					count: 2
-					id: "F300000000000068"
+					id: "2538D1F3EF271A29"
 					item: "ae2:item_storage_cell_64k"
 					type: "item"
 				}
 				{
 					count: 8
-					id: "F300000000000069"
+					id: "7A74A262407B3BAD"
 					item: "ae2:logic_processor"
 					type: "item"
 				}
 			]
 			tasks: [{
-				id: "F200000000000043"
+				id: "3EB9F18A1E1A94F4"
 				title: "MEGA Cells の 1M 以上のストレージセルを1つ作成・設置した"
 				type: "checkmark"
 			}]
@@ -638,28 +637,28 @@
 				"これが AE2 の頂点だ。"
 			]
 			icon: "ae2:crafting_unit"
-			id: "F100000000000024"
+			id: "1E5BE294EC03CC2B"
 			rewards: [
 				{
 					count: 4
-					id: "F300000000000070"
+					id: "0DE824E2657DAD11"
 					item: "ae2:engineering_processor"
 					type: "item"
 				}
 				{
 					count: 4
-					id: "F300000000000071"
+					id: "41273083984BAF4C"
 					item: "mekanism:alloy_atomic"
 					type: "item"
 				}
 				{
-					id: "F300000000000072"
+					id: "54302524DBAB56C3"
 					type: "xp"
 					xp: 1000
 				}
 			]
 			tasks: [{
-				id: "F200000000000044"
+				id: "41DD874448C9AAA6"
 				title: "AdvancedAE で MekaSuit または最終合金の多段自動クラフトを稼働させた"
 				type: "checkmark"
 			}]
@@ -668,7 +667,6 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["F100000000000021"]
 			description: [
 				"MekaSuit を着込み、武装した Sky Fortress から降下する。"
 				"核融合炉の電力、MEGA Cells の補給、Quantum Bridge の支援——"
@@ -676,35 +674,35 @@
 				"これが、Sky Siege Industrial の真のエンディングだ。"
 			]
 			icon: "minecraft:beacon"
-			id: "F100000000000025"
+			id: "383D2F8432430583"
 			rewards: [
 				{
 					count: 8
-					id: "F300000000000073"
+					id: "2EA4F2EF4690CFD0"
 					item: "minecraft:nether_star"
 					type: "item"
 				}
 				{
 					count: 16
-					id: "F300000000000074"
+					id: "4FF8BD6F78D1FF3F"
 					item: "minecraft:netherite_ingot"
 					type: "item"
 				}
 				{
 					count: 128
-					id: "F300000000000075"
+					id: "56B2889C22BE6D68"
 					item: "minecraft:firework_rocket"
 					type: "item"
 				}
 				{
-					id: "F300000000000076"
+					id: "5D647A4E7ABC761C"
 					type: "xp"
 					xp: 5000
 				}
 			]
 			subtitle: "Sky Siege Industrial — True Ending"
 			tasks: [{
-				id: "F200000000000045"
+				id: "271F472125A5991E"
 				title: "MekaSuit を装着し、Sky Fortress から最終降下作戦を実行した"
 				type: "checkmark"
 			}]

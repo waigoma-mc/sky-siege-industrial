@@ -558,22 +558,22 @@
 				"上空を飛びながら、空の遺産を探し出せ。"
 			]
 			icon: "minecraft:map"
-			id: "F100000000000026"
+			id: "75EB38E72FC490A1"
 			rewards: [
 				{
 					count: 4
-					id: "F300000000000026"
+					id: "657195B9FD62F9DA"
 					item: "minecraft:diamond"
 					type: "item"
 				}
 				{
-					id: "F300000000000027"
+					id: "5B60ECBC8CD7AE89"
 					type: "xp"
 					xp: 100
 				}
 			]
 			tasks: [{
-				id: "F200000000000026"
+				id: "367BF942C3C2D4F0"
 				title: "Moog's Soaring Structures の空中遺構を1つ発見し、内部を探索した"
 				type: "checkmark"
 			}]
@@ -589,23 +589,23 @@
 				"風任せで漂う時代は終わりだ——自分の力で空を走れ。"
 			]
 			icon: "create:mechanical_bearing"
-			id: "F100000000000027"
+			id: "5100E783731CC97F"
 			rewards: [
 				{
 					count: 8
-					id: "F300000000000028"
+					id: "38A48D95C4C76A90"
 					item: "create:shaft"
 					type: "item"
 				}
 				{
 					count: 4
-					id: "F300000000000029"
+					id: "016F5D31608148D2"
 					item: "create:cogwheel"
 					type: "item"
 				}
 			]
 			tasks: [{
-				id: "F200000000000027"
+				id: "2EA4AE92B51E8424"
 				title: "Create: Propulsion の推進装置を飛行船に取り付け、自力で推進した"
 				type: "checkmark"
 			}]

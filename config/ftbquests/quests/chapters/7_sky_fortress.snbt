@@ -242,7 +242,7 @@
 				type: "checkmark"
 			}]
 			title: "前哨基地補給ネットワーク"
-			x: 0.0d
+			x: 10.0d
 			y: -3.5d
 		}
 		{
@@ -537,8 +537,8 @@
 				type: "checkmark"
 			}]
 			title: "Mekanism Tools 装備"
-			x: 8.0d
-			y: 4.5d
+			x: 10.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["7FA80C132FEF2D10"]
@@ -569,8 +569,8 @@
 				type: "checkmark"
 			}]
 			title: "More Mekanism Processing"
-			x: 8.0d
-			y: -2.5d
+			x: 5.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["7FA80C132FEF2D10"]
@@ -580,29 +580,29 @@
 				"地上への降下回数を大幅に減らせる——拠点そばに設置して酷使しろ。"
 			]
 			icon: "immersiveengineering:excavator_bucket"
-			id: "F10000000000001F"
+			id: "1A7D8D571699B347"
 			rewards: [
 				{
 					count: 32
-					id: "F300000000000059"
+					id: "5BED83679630C132"
 					item: "mekanism:ingot_osmium"
 					type: "item"
 				}
 				{
 					count: 16
-					id: "F300000000000060"
+					id: "41428952CFB2A4A0"
 					item: "immersiveengineering:ingot_steel"
 					type: "item"
 				}
 			]
 			tasks: [{
-				id: "F200000000000036"
+				id: "2A933963AC9B1CF6"
 				title: "IE の Excavator（採掘機）を設置・稼働させた"
 				type: "checkmark"
 			}]
 			title: "IE Excavator"
-			x: 10.0d
-			y: -3.0d
+			x: 6.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["2BD1081A2FC5C21F"]
@@ -612,29 +612,29 @@
 				"エネルギー・素材を双方向に転送する補給網を完成させろ。"
 			]
 			icon: "mekanism:quantum_entangloporter"
-			id: "F100000000000020"
+			id: "3627667BC0109F08"
 			rewards: [
 				{
 					count: 8
-					id: "F300000000000061"
+					id: "1CEFFD80E5BDCB24"
 					item: "mekanism:alloy_atomic"
 					type: "item"
 				}
 				{
 					count: 4
-					id: "F300000000000062"
+					id: "14C1E1E5503E71C5"
 					item: "minecraft:netherite_ingot"
 					type: "item"
 				}
 			]
 			tasks: [{
-				id: "F200000000000037"
+				id: "7F56615C31380C61"
 				item: "mekanism:quantum_entangloporter"
 				type: "item"
 			}]
 			title: "Quantum Entangloporter"
-			x: 10.0d
-			y: 2.5d
+			x: 9.0d
+			y: -1.5d
 		}
 	]
 	title: "第7章：空中要塞 / Sky Fortress"

@@ -360,7 +360,6 @@
 			dependencies: [
 				"13C00D0CB2ABAB45"
 				"195D54FBACF34377"
-				"F10000000000001E"
 			]
 			description: [
 				"AE2 の自動化へ進むため、まずは金型を用意する。"

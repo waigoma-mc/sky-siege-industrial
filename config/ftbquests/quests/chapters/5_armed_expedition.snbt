@@ -52,8 +52,8 @@
 				type: "checkmark"
 			}]
 			title: "銃火器の入手"
-			x: 0.0d
-			y: 0.0d
+			x: -4.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["75ABE90137D1A8F5"]
@@ -85,8 +85,8 @@
 				type: "item"
 			}]
 			title: "弾薬の生産"
-			x: 2.0d
-			y: 1.5d
+			x: -1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -159,7 +159,7 @@
 				}
 			]
 			title: "防具の強化"
-			x: 0.0d
+			x: -4.0d
 			y: -2.5d
 		}
 		{
@@ -233,8 +233,8 @@
 				type: "item"
 			}]
 			title: "大型構造物の発見"
-			x: 2.0d
-			y: -5.0d
+			x: -1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -282,8 +282,8 @@
 				}
 			]
 			title: "ダンジョン突入"
-			x: 4.0d
-			y: 0.0d
+			x: 5.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["534F32E28C8BCF31"]
@@ -319,8 +319,8 @@
 				type: "checkmark"
 			}]
 			title: "廃墟都市探索"
-			x: 4.0d
-			y: -3.5d
+			x: 5.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["55B00A1E976B75A5"]
@@ -359,8 +359,8 @@
 				}
 			]
 			title: "レア素材回収"
-			x: 6.0d
-			y: 1.5d
+			x: 9.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["55B00A1E976B75A5"]
@@ -404,8 +404,8 @@
 				}
 			]
 			title: "ホードを迎え撃て"
-			x: 6.0d
-			y: -1.5d
+			x: 9.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["463424B81AFC1490"]
@@ -436,8 +436,8 @@
 				type: "checkmark"
 			}]
 			title: "撤退の技術"
-			x: 6.0d
-			y: -5.0d
+			x: 9.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -472,8 +472,8 @@
 				type: "item"
 			}]
 			title: "弾薬補充完了"
-			x: 8.0d
-			y: 0.0d
+			x: 12.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -519,8 +519,8 @@
 				type: "checkmark"
 			}]
 			title: "戦士の帰還"
-			x: 10.0d
-			y: 0.0d
+			x: 17.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["75ABE90137D1A8F5"]
@@ -557,8 +557,8 @@
 				type: "checkmark"
 			}]
 			title: "Superb Warfare"
-			x: 2.0d
-			y: 4.0d
+			x: -1.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["4CE93DE96BCC9D08"]
@@ -589,8 +589,8 @@
 				type: "checkmark"
 			}]
 			title: "フックショット"
-			x: 2.0d
-			y: -7.5d
+			x: -1.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["75ABE90137D1A8F5"]
@@ -613,8 +613,8 @@
 				type: "checkmark"
 			}]
 			title: "射撃訓練"
-			x: -2.0d
-			y: 0.0d
+			x: -1.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["55B00A1E976B75A5"]
@@ -653,8 +653,8 @@
 				}
 			]
 			title: "Apotheosis 強化錬成"
-			x: 6.0d
-			y: -4.0d
+			x: 9.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["158B456228C2F353"]
@@ -686,8 +686,8 @@
 				type: "checkmark"
 			}]
 			title: "銃のカスタマイズ"
-			x: 4.0d
-			y: 3.0d
+			x: 2.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["4CE93DE96BCC9D08"]
@@ -696,36 +696,48 @@
 				"バレルロール・急降下・急上昇——戦闘機さながらの空中機動が可能になる。"
 				"地上への降下時、空中から一気に奇襲をかけろ。"
 			]
-			icon: "minecraft:elytra"
-			id: "F100000000000028"
+			icon: {
+				Count: 1
+				id: "minecraft:elytra"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "02BA8559832BE018"
 			rewards: [
 				{
 					count: 16
-					id: "F30000000000002A"
+					id: "1806C3A3BBA7FDEA"
 					item: "minecraft:firework_rocket"
 					type: "item"
 				}
 				{
-					id: "F30000000000002B"
+					id: "0F246A733D4F38F3"
 					type: "xp"
 					xp: 100
 				}
 			]
 			tasks: [
 				{
-					id: "F200000000000028"
-					item: "minecraft:elytra"
+					id: "488C76852B30C4CE"
+					item: {
+						Count: 1
+						id: "minecraft:elytra"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "F200000000000029"
+					id: "392EA3AF45976692"
 					title: "Do a Barrel Roll の空中機動を使い、戦闘または移動に活用した"
 					type: "checkmark"
 				}
 			]
 			title: "空中曲芸飛行"
-			x: -4.0d
-			y: 0.0d
+			x: -1.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["75ABE90137D1A8F5"]
@@ -734,37 +746,43 @@
 				"海賊船は独自の VS 船体を持ち、近づけばすぐに攻撃を仕掛けてくる。"
 				"SkySiege の名に懸けて——敵飛行船を撃墜せよ。"
 			]
-			icon: "minecraft:crossbow"
-			id: "F100000000000029"
+			icon: {
+				Count: 1
+				id: "minecraft:crossbow"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3AFCB2B3F000988B"
 			rewards: [
 				{
 					count: 16
-					id: "F30000000000002C"
+					id: "52828F637A2D3670"
 					item: "minecraft:gold_ingot"
 					type: "item"
 				}
 				{
 					count: 4
-					id: "F30000000000002D"
+					id: "60C0165EAD57CC91"
 					item: "minecraft:diamond"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "F20000000000002A"
+					id: "0A40663F3ABCDE1D"
 					title: "Valkyrien Pirates の海賊船に遭遇した"
 					type: "checkmark"
 				}
 				{
-					id: "F20000000000002B"
+					id: "10AAF1A78B531F70"
 					title: "海賊船または海賊の首領を撃破した"
 					type: "checkmark"
 				}
 			]
 			title: "空の海賊団を撃破せよ"
-			x: 0.0d
-			y: 6.0d
+			x: -1.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["55B00A1E976B75A5"]
@@ -774,36 +792,36 @@
 				"TaCZ の銃火器で武装し、城の主を討て。"
 			]
 			icon: "minecraft:stone_bricks"
-			id: "F10000000000002A"
+			id: "67DFB843FD06F0E1"
 			rewards: [
 				{
 					count: 16
-					id: "F30000000000002E"
+					id: "1C4B3F080D9290F2"
 					item: "minecraft:diamond"
 					type: "item"
 				}
 				{
 					count: 4
-					id: "F30000000000002F"
+					id: "216FE3DF6920286D"
 					item: "minecraft:netherite_ingot"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "F20000000000002C"
+					id: "48726D81E7044561"
 					title: "The Lost Castle のダンジョンを発見した"
 					type: "checkmark"
 				}
 				{
-					id: "F20000000000002D"
+					id: "020CF71836C301BC"
 					title: "城の主（ボス）を討伐した"
 					type: "checkmark"
 				}
 			]
 			title: "失われた城の攻略"
-			x: 6.0d
-			y: -7.0d
+			x: 9.0d
+			y: 2.5d
 		}
 	]
 	title: "第5章：武装降下作戦 / Armed Expedition"
