@@ -1,6 +1,6 @@
 name = "Carry On + Valkyrien Skies Compat"
 filename = "CarryOnVSCompat-Forge-1.20.1-1.0.1.jar"
-side = "server"
+side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/VdZ1CoT5/versions/AnFgA2UR/CarryOnVSCompat-Forge-1.20.1-1.0.1.jar"

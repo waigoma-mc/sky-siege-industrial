@@ -36,7 +36,6 @@
 - Trackwork
 - Create
 - Create: Interactive
-- Create: VS Engineering
 - Create: Propulsion
 - Create: Copycats+
 - Create Renewability
@@ -244,7 +243,6 @@
 - FastWorkbench
 - Memory Leak Fix
 - ModernFix
-- Noisium
 - Observable
 - Packet Fixer
 - XXL Packets
