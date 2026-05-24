@@ -4451,6 +4451,11 @@ hash = "43ff48404322ec170ef9a931bc2f95cc9b488e2834934e2af6c5e0ebebc5fb9c"
 metafile = true
 
 [[files]]
+file = "mods/noisium.pw.toml"
+hash = "85f965de3efa0ad66252b3540afff30d5a3cf8c9cb86692987830b8ae08489c5"
+metafile = true
+
+[[files]]
 file = "mods/observable.pw.toml"
 hash = "5d0eae777859369335212a6a68a0c835fc7487ace8016749fe9f377de1c4b392"
 metafile = true

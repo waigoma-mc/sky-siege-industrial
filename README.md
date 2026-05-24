@@ -243,6 +243,7 @@
 - FastWorkbench
 - Memory Leak Fix
 - ModernFix
+- Noisium
 - Observable
 - Packet Fixer
 - XXL Packets
