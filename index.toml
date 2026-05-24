@@ -4587,7 +4587,7 @@ metafile = true
 
 [[files]]
 file = "mods/shoulder-surfing-reloaded.pw.toml"
-hash = "1f73c31d79079b42aadcd745dc25a010426b742a490d35607e7e8ec5e2231cb8"
+hash = "f5b7f434cf2c359b397fdfac305718e899c65479748997f42040458e15069d94"
 metafile = true
 
 [[files]]
@@ -4697,7 +4697,7 @@ metafile = true
 
 [[files]]
 file = "mods/third-person-shooting.pw.toml"
-hash = "989294bd5a949b20e2f0d40af68bd94d35de09661301dd65679ca0f03f5e309e"
+hash = "ab9571a6901dd14fbc424ebc834d2206c2dbbe39bf65e2f234286baa496538a9"
 metafile = true
 
 [[files]]

@@ -1,6 +1,6 @@
 name = "Third Person Shooting: Zero"
 filename = "tp_shooting-1.20.1-5.1.1+tacz1.1.6-all.jar"
-side = "both"
+side = "client"
 
 [download]
 hash-format = "sha1"
